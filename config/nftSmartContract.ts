@@ -34,4 +34,4 @@ export const mintTxBaseGasLimit = 14000000;
 export const mintFunctionName = 'mint';
 
 // Single token seling price - configurable on smart contract when deployed 1 EGLD = 10^18
-export const tokenSellingPrice = '1000000000000000';
+export const tokenSellingPrice = '10000000000';
