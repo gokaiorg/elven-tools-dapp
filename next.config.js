@@ -17,7 +17,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: `https://devnet-api.elrond.com/:path*`,
+        destination: `${process.env.ELROND_CUSTOM_API}/:path*`,
       },
     ];
   },
