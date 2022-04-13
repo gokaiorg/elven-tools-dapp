@@ -4,16 +4,16 @@
 
 // Elven Tools NFT Smart Contract address - replace it with yours
 export const smartContractAddress =
-  'erd1qqqqqqqqqqqqqpgq5maff85xn0t3r8wr3zn4vhthej9c2ne2gtks8u4tr3';
+  'erd1qqqqqqqqqqqqqpgqvg379zhcs22dhma02zq4j3xp8q5539pph50sapy54k';
 
 // Amount of the NFTs in the collection
-export const collectionSize = 384;
+export const collectionSize = 100;
 
 // Number of the NFTs for one address in total
-export const tokensLimitPerAddressTotal = 3;
+export const tokensLimitPerAddressTotal = 10;
 
 // Collection ticker
-export const collectionTicker = 'HAHAHA-5c4481';
+export const collectionTicker = 'MRG-3d2dc4';
 
 // Start or pause minting process. UI will react on this. Remember to keep itin in sync with Smart Contract. This is very important.
 export const isMintingStarted = true;
@@ -34,4 +34,4 @@ export const mintTxBaseGasLimit = 14000000;
 export const mintFunctionName = 'mint';
 
 // Single token seling price - configurable on smart contract when deployed 1 EGLD = 10^18
-export const tokenSellingPrice = '1000000000000000';
+export const tokenSellingPrice = '100000000000000000';
