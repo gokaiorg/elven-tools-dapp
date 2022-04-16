@@ -21,6 +21,8 @@
     "@elrondnetwork/erdjs": "9.2.4",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@fontsource/dm-sans": "^4.5.6",
+    "@fontsource/mclaren": "^4.5.6",
     "@fontsource/poppins": "^4.5.5",
     "bignumber.js": "9.0.2",
     "buffer": "6.0.3",

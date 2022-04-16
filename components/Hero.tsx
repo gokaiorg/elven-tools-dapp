@@ -1,6 +1,7 @@
 import { Box, Text } from '@chakra-ui/react';
 import { CollectionInfoBox } from './CollectionInfoBox';
 import { chainType, networkConfig } from '../config/network';
+
 import {
   collectionTicker,
   smartContractAddress,
@@ -10,55 +11,32 @@ import { shortenHash } from '../utils/shortenHash';
 
 export const Hero = () => {
   return (
-    <Box width="100%">
+    <Box width="100%" position="relative" zIndex="2">
       <Text
         as="h1"
         fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
-        textAlign={{ base: 'center', md: 'left' }}
+        maxWidth={{ base: '100%', md: '100%', lg: '60%' }}
+        textAlign={{ base: 'center', md: 'center' }}
         fontWeight="black"
         lineHeight="shorter"
+        mx="auto"
         mb={5}
       >
-        Open source Dapp template for the{' '}
-        <Text
-          as="a"
-          color="elvenTools.color3.base"
-          href="https://www.elven.tools"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          Elven Tools
-        </Text>{' '}
-        and{' '}
-        <Text
-          as="a"
-          color="elvenTools.color2.base"
-          href="https://www.elrond.com"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          Elrond
-        </Text>{' '}
-        blockchain.
-      </Text>
+        Collectible NFT DAO project on Elrond Network
+      </Text> 
       <Text
-        as="h2"
-        fontSize="lg"
-        fontWeight="thin"
-        textAlign={{ base: 'center', md: 'left' }}
+        as="p"
+        fontSize="2xl"
+        textAlign={{ base: 'center', md: 'center' }}
       >
-        The actual working example is connected to the Elven Tools smart
-        contract deployed on the Elrond blockchain{' '}
-        <Text as="span" fontWeight="medium">
-          devnet
-        </Text>
-        ! You can play with it. I will redeploy it from time to time to keep the
-        minting active. You can also use the template on the mainnet with a
-        couple of config changes. Check the Elven Tools website for docs.
+        Maiar Ghosts - Drop 1 coming soon
+      </Text>
+      <Text as="p" fontSize="2xl" fontWeight="medium" textAlign="center">
+          Buy NFTS and become a member of Gokai Labs DAO.
       </Text>
       <Box
         display="flex"
-        justifyContent={{ base: 'center', md: 'flex-start' }}
+        justifyContent={{ base: 'center', md: 'center' }}
         mt={10}
         gap={3}
         sx={{
