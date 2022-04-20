@@ -5,34 +5,29 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
-  title: 'Elven Tools NFT minter dapp demo - Elrond blockchain',
+  title: 'Gokai Labs | Collectible NFT DAO project on Elrond Network - Maiar Ghosts NFT collection',
   description:
     'Gokai Labs is a DAO project drived by the community via a governance NFT, Mr Ghost on Elrond Network. Get a Mr Ghost, become a member.',
-  image: `${dappHostname}/og-image.png`,
+  image: `${dappHostname}/social.png`,
 };
 
 // FAQ section data
 export const faq = [
   {
-    question: 'What is an ESDT on Elrond?',
+    question: 'What are NFTs and why should you buy them?',
     answer:
-      'ESDT stands for Elrond Standard Digital Token. Custom tokens at native speed and scalability, without ERC20. The Elrond network natively supports the issuance of custom tokens, without the need for contracts such as ERC20, but addressing the same use-cases. And due to the native in-protocol support, transactions with custom tokens do not require the VM at all. In effect, this means that custom tokens are as fast and as scalable as the native EGLD token itself.',
+      'NFTs are exciting. NFT stands for Non-Fungible Token, which are unique digital assets. Since an NFT can only have one owner at a time, when you buy an NFT you are buying exclusive ownership of a digital asset. Rarity increases the excitement around an item. NFTs offer a unique opportunity to participate in a very promising market system with endless possibilities, including the possibility of making considerable profits.',
   },
   {
-    question: 'What is an NFT on Elrond?',
+    question: 'Why choose the Elrond network and its EGLD token?',
     answer:
-      'The Elrond protocol introduces native NFT support by adding metadata and attributes on top of the already existing ESDT. This way, one can issue a semi-fungible token or a non-fungible token which is quite similar to an ESDT, but has a few more attributes, as well as an assignable URI. Once owning a quantity of a NFT/SFT, users will have their data store directly under their account, inside the trie.',
+      'Elrond is a high-speed blockchain that aims to provide scalability, efficiency and security and is able to perform 15,000 transactions per second at a transaction cost of $0.001. EGLD is the native token of the Elrond blockchain and is used to reward validators and to pay network fees. The Elrond platform is designed for the new Internet economy and decentralised WEB3 applications.',
   },
   {
     question:
-      'Why knowing the collection ticker and minter smart contract is essential?',
+      'Who is Mr Ghosts and why should I have at least one?',
     answer:
-      'It is crucial because these two prove that the NFTs come from a verified source. The NFT project should always show the collection ticker and minter smart contract to gain trust.',
-  },
-  {
-    question: 'What is Elven Tools?',
-    answer:
-      'The Elven Tools is an open-source toolset including the CLI tool, Smart Contract for handling the NFT collections, and this dapp template. You can, of course, use each tool separately. But the CLI helps with smart contract deployments and the setup process. You can also interact with the smart contract using the CLI or even use it as a buyer.',
+      'Mr Ghost is a collectible, unique, original and beautiful NFT on Elrond , Mr Ghost is the governance token of Gokai Labs DAO and its number is limited to 8658 maximum! Mr Ghost makes you a shareholder of Gokai Labs and a major player in the strategic decisions of the organisation! From now on you can vote in the Discord server to validate the next NFT drops, their prices and other questions the community is wondering about.',
   },
 ];
 
@@ -41,57 +36,66 @@ export const roadmap = [
   {
     title: 'Q2 2022',
     points: [
-      'erdjs 10 integration and refactoring',
-      'UI automated tests',
-      'Ledger auth implementation',
-      'Better UI and more useful hooks',
+      'Collection design',
+      'Giveaway & Drop 1',
+      'Marketing campaign',
     ],
   },
   {
     title: 'Q3 2022',
     points: [
-      'More usefull UI components',
-      'More helpful docs and videos',
-      'More functionality for logged in user',
-      'Blog feature implementation',
+      'Community votes',
+      'Next drops',
+      'Partnerships',
     ],
   },
   {
     title: 'Q4 2022',
     points: [
-      'Backend cache (Redis?)',
-      'Image optimization (Cloudinary?)',
-      '...sky is the limit!',
+      'DAO governance',
+      'Runing a node',
+      'Land tokenisation? Community wishes?',
     ],
   },
 ];
 
 export const team = [
   {
-    name: 'John Doe',
-    bio: 'Web designer and artist',
-    imageUrl: '/john.svg',
+    name: 'Jeremy',
+    bio: 'Founder',
+    imageUrl: '/jeremy-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: [
-      'https://www.twitter.com',
-      'https://www.behance.net',
-      'https://www.dribbble.com',
+      'https://www.linkedin.com/in/jeremy-douchamps/',
     ],
   },
   {
-    name: 'Mark Doe',
-    bio: 'Smart Contract programmer',
-    imageUrl: '/mark.svg',
-    socialMediaLinks: ['https://www.twitter.com', 'https://www.github.com'],
+    name: 'Vladimir',
+    bio: 'Developper',
+    imageUrl: '/build-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: ['https://github.com/VladimirAndrianov96'],
   },
   {
-    name: 'Jack Doe',
-    bio: 'Community relations and marketing',
-    imageUrl: '/jack.svg',
+    name: 'Nati',
+    bio: 'Marketer',
+    imageUrl: '/nati-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: [
-      'https://www.twitter.com',
-      'https://www.discord.com',
-      'https://www.telegram.me',
-      'https://www.medium.com',
+      'https://www.linkedin.com/in/nati-douchamps-1151a8144/',
+    ],
+  },
+  {
+    name: 'Albert',
+    bio: 'SEO Expert',
+    imageUrl: '/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: [
+      'https://www.linkedin.com/in/albertlanne/',
+    ],
+  },
+  {
+    name: 'Louis',
+    bio: 'Artist',
+    imageUrl: '/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: [
+      'https://www.instagram.com/louislanne/',
     ],
   },
 ];

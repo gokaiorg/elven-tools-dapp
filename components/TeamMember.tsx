@@ -24,6 +24,11 @@ export const TeamMember: FC<TeamMemberProps> = ({
       <Text textAlign="center" mt={5} fontWeight="bold" fontSize="xl">
         {name}
       </Text>
+      {bio && (
+        <Text mt={3} textAlign="center">
+          {bio}
+        </Text>
+      )}
       {socialMediaLinks && (
         <Box
           display="flex"
@@ -41,11 +46,6 @@ export const TeamMember: FC<TeamMemberProps> = ({
             />
           ))}
         </Box>
-      )}
-      {bio && (
-        <Text mt={5} textAlign="center">
-          {bio}
-        </Text>
       )}
     </Box>
   );

@@ -6,12 +6,12 @@ export const HeroImage = () => {
   return (
     <Box
       width="400px"
-      height="400px"
+      height="620px"
       display="flex"
       margin="auto"
       position="absolute"
-      top="0" bottom="0" right="0" left="0"
-      zIndex="1"
+      top="-100px" bottom="0" right="0" left="0"
+      zIndex="0"
     >
       <motion.div
         animate={{
