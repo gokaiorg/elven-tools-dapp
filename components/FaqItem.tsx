@@ -16,23 +16,22 @@ export const FaqItem: FC<FaqItemProps> = ({ question, answer }) => {
   return (
     <AccordionItem
       border={0}
-      bgColor="elvenTools.dark.darker"
-      boxShadow="0 0 10px"
-      color="elvenTools.shadowColor"
-      bgGradient="linear-gradient(90deg, elvenTools.dark.base 0%, elvenTools.dark.darker 70%);"
+      bgColor="elvenTools.color3.base"
       mb={6}
+      borderRadius={10}
     >
       <AccordionButton
         _focus={{ outline: 'none' }}
         color="elvenTools.white"
         padding={6}
+        fontSize="xl"
       >
-        <Box flex="1" textAlign="left">
+        <Box flex="1" textAlign="left" fontWeight="black">
           {question}
         </Box>
         <AccordionIcon />
       </AccordionButton>
-      <AccordionPanel color="elvenTools.white">{answer}</AccordionPanel>
+      <AccordionPanel color="elvenTools.white" fontSize="xl">{answer}</AccordionPanel>
     </AccordionItem>
   );
 };

@@ -17,11 +17,11 @@ export const TeamMember: FC<TeamMemberProps> = ({
   bio,
 }) => {
   return (
-    <Box>
+    <Box color="elvenTools.color3.base">
       <Box display="flex" alignItems="center" justifyContent="center">
         <Image src={imageUrl} alt={name} width={250} height={250} />
       </Box>
-      <Text textAlign="center" mt={5} fontWeight="bold" fontSize="xl">
+      <Text textAlign="center" fontWeight="bold" fontSize="xl">
         {name}
       </Text>
       {bio && (
@@ -41,7 +41,7 @@ export const TeamMember: FC<TeamMemberProps> = ({
             <SocialIcon
               key={index}
               url={link}
-              bgColor="#fff"
+              bgColor="elvenTools.color3.base"
               style={{ width: 30, height: 30 }}
             />
           ))}

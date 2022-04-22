@@ -7,6 +7,7 @@ import { HeaderMenuButtons } from '../components/HeaderMenuButtons';
 import { Faq } from '../components/Faq';
 import { Roadmap } from '../components/Roadmap';
 import { Team } from '../components/Team';
+import { ImgMoon } from '../components/ImgMoon';
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <Hero />
       </Box>
       <Container maxW='1280px'>
+        <ImgMoon />
         <Roadmap />
         <Faq />
         <Team />
