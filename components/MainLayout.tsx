@@ -14,7 +14,7 @@ export const MainLayout: FC<MetaHeadProps> = memo(
           metaUrl={metaUrl}
         />
         <Box minHeight="calc(100vh - 120px)" pb="48">
-          <Container maxW="container.xl">
+          <Container maxW="100%" p={0}>
             <Box>{children}</Box>
           </Container>
         </Box>

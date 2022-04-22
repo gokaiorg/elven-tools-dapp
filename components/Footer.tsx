@@ -1,4 +1,5 @@
 import { Container, Box, Text } from '@chakra-ui/react';
+import { SocialMediaIcons } from '../components/SocialMediaIcons';
 
 export const Footer = () => {
   return (
@@ -15,6 +16,7 @@ export const Footer = () => {
         fontWeight="normal"
         textAlign="center"
       >
+        <SocialMediaIcons />
         <Box>Elven Tools Dapp Template</Box>
         <Box fontSize="xs" fontWeight="hairline">
           All for free. Please support the project. Give it credit and tell the

@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 import { Box, Button } from '@chakra-ui/react';
 import { useCallback, FC } from 'react';
 import { ActionButton } from '../components/ActionButton';
-import { SocialMediaIcons } from '../components/SocialMediaIcons';
 import { LoginModalButton } from '../components/LoginModalButton';
 
 interface HeaderMenuButtonsProps {
@@ -43,7 +42,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         </Button>
       )}
 
-      <SocialMediaIcons />
+      
 
       {enabled.includes('mint') && (
         <ActionButton onClick={handleMintClick}>Mint</ActionButton>

@@ -1,8 +1,14 @@
 import { Box, Text } from '@chakra-ui/react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { HeroImage } from './HeroImage';
+import { ImgEarth } from './ImgEarth';
+import { ImgWin } from './ImgWin';
 
 export const Hero = () => {
   return (
-    <Box display="flex" flexDirection="column" width="100%" position="relative" zIndex="2">
+    <Box display="flex" flexDirection="column" width="100%" height="calc(100vh - 85px)" position="relative" zIndex="1" background="black">
+      <ImgEarth />
       <Text
         as="h1"
         fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
@@ -11,20 +17,40 @@ export const Hero = () => {
         fontWeight="black"
         lineHeight="shorter"
         mx="auto"
+        pt={20}
         mb={5}
+        zIndex="10"
       >
         Collectible NFT DAO project on Elrond Network
       </Text> 
-      <Text
-        as="p"
-        fontSize="2xl"
-        textAlign={{ base: 'center', md: 'center' }}
-      >
-        Maiar Ghosts - Drop 1 coming soon
+      <Text as="p" fontSize="2xl" fontWeight="medium" textAlign="center" zIndex="10">
+          Buy Maiar Ghosts NFTs and become a member of Gokai Labs DAO
       </Text>
-      <Text as="p" fontSize="2xl" fontWeight="medium" textAlign="center">
-          Buy NFTS and become a member of Gokai Labs DAO.
-      </Text>
+      <Box display="flex" position="relative" zIndex="10" m="0 auto">
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <Text
+            as="a"
+            fontSize='xl'
+            display="flex"
+            p="1rem 2rem"
+            mt={5}
+            background="elvenTools.color2.lighter"
+            _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
+            color="elvenTools.color2.base"
+            borderRadius="full"
+            href="https://medium.com/@GokaiLabs"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            Discover
+          </Text>
+        </motion.div>
+      </Box>
+      <Box position="absolute" bottom="-7px">
+        <Image src="/bg-mr-ghost-bottom.png" alt="Mr Ghost Moon" width={2048} height={2048} />
+      </Box>
+      <HeroImage />
+      <ImgWin />
     </Box>
   );
 };

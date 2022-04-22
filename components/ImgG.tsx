@@ -5,7 +5,7 @@ export const ImgG = () => {
   return (
     <svg
       width="100%"
-      height="auto"
+      height="100%"
       viewBox="0 0 255 396"
       xmlns="http://www.w3.org/2000/svg"
     >

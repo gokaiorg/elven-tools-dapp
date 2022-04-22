@@ -5,12 +5,12 @@ import { ImgG } from '../components/ImgG';
 export const HeroImage = () => {
   return (
     <Box
-      width="400px"
-      height="620px"
+      width="350px"
+      height="545px"
       display="flex"
       margin="auto"
       position="absolute"
-      top="-100px" bottom="0" right="0" left="0"
+      top="-200px" bottom="0" right="0" left="0"
       zIndex="0"
     >
       <motion.div

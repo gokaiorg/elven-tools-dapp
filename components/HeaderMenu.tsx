@@ -6,11 +6,15 @@ export const HeaderMenu: FC = ({ children }) => {
   return (
     <Box
       display="flex"
+      position="relative"
+      zIndex="2"
       alignItems="center"
       justifyContent="space-between"
       flexWrap="wrap"
+      background="black"
       gap="2"
-      py={9}
+      py={5}
+      px={5}
       sx={{
         '@media screen and (max-width: 800px)': {
           flexDirection: 'column',
