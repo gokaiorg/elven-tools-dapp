@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Box, Button } from '@chakra-ui/react';
+import { Box, Button, Text } from '@chakra-ui/react';
 import { useCallback, FC } from 'react';
 import { ActionButton } from '../components/ActionButton';
 import { LoginModalButton } from '../components/LoginModalButton';
@@ -12,11 +12,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
   const router = useRouter();
 
   const handleMintClick = useCallback(() => {
-    router.push('/mint');
-  }, [router]);
-
-  const handleAboutClick = useCallback(() => {
-    router.push('/about');
+    router.push('/maiar-ghosts');
   }, [router]);
 
   return (
@@ -30,23 +26,22 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         },
       }}
     >
-      {enabled.includes('about') && (
-        <Button
-          variant="link"
-          color="elvenTools.white"
-          _focus={{ outline: 'none' }}
-          mr={2}
-          onClick={handleAboutClick}
-        >
-          About
-        </Button>
-      )}
-
       
-
-      {enabled.includes('mint') && (
-        <ActionButton onClick={handleMintClick}>Mint</ActionButton>
+      {enabled.includes('maiar-ghosts') && (
+        <ActionButton onClick={handleMintClick}>Maiar Ghosts</ActionButton>
       )}
+
+      <Text
+        as="a"
+        py={2}
+        px={6}
+        fontWeight="black"
+        color="white"
+        href="https://medium.com/@GokaiLabs"
+      >
+        Blog
+      </Text>
+
       {enabled.includes('auth') && <LoginModalButton />}
     </Box>
   );

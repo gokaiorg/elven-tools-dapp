@@ -21,7 +21,17 @@ export const Hero = () => {
         mb={5}
         zIndex="10"
       >
-        Collectible NFT DAO project on Elrond Network
+        Collectible NFT DAO project on
+        <br/>
+        <Text
+          as="a"
+          color="white"
+          href="https://elrond.com/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          Elrond Network
+        </Text>
       </Text> 
       <Text as="p" fontSize="2xl" fontWeight="medium" textAlign="center" zIndex="10">
           Buy Maiar Ghosts NFTs and become a member of Gokai Labs DAO
@@ -38,7 +48,7 @@ export const Hero = () => {
             _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
             color="elvenTools.color2.base"
             borderRadius="full"
-            href="https://medium.com/@GokaiLabs"
+            href="https://linktr.ee/GokaiLabs"
             target="_blank"
             rel="noopener noreferrer nofollow"
           >

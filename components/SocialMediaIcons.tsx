@@ -5,17 +5,27 @@ export const SocialMediaIcons = () => {
   return (
     <Box display="flex" alignItems="center" gap={3}>
       <SocialIcon
-        url="https://www.twitter.com/ElvenTools"
+        url="https://twitter.com/GokaiLabs"
         bgColor="elvenTools.color3.base"
         style={{ width: 30, height: 30 }}
       />
       <SocialIcon
-        url="https://www.github.com/ElvenTools"
+        url="https://discord.gg/tXSeJfVVnH"
         bgColor="elvenTools.color3.base"
         style={{ width: 30, height: 30 }}
       />
       <SocialIcon
-        url="https://www.telegram.me/juliancwirko"
+        url="https://github.com/gokaiorg"
+        bgColor="elvenTools.color3.base"
+        style={{ width: 30, height: 30 }}
+      />
+      <SocialIcon
+        url="https://www.facebook.com/GokaiLabs"
+        bgColor="elvenTools.color3.base"
+        style={{ width: 30, height: 30 }}
+      />
+      <SocialIcon
+        url="https://www.instagram.com/gokai_labs/"
         bgColor="elvenTools.color3.base"
         style={{ width: 30, height: 30 }}
       />
