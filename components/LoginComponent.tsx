@@ -1,11 +1,10 @@
 // Login component wraps all auth services in one place
 // You can always use only one of them if needed
 import { useCallback, memo } from 'react';
-import { Box, Stack } from '@chakra-ui/react';
+import { Box, Stack, Button } from '@chakra-ui/react';
 import { useLogin } from '../hooks/auth/useLogin';
 import { LoginMethodsEnum } from '../types/enums';
 import { MobileLoginQR } from './MobileLoginQR';
-import { ActionButton } from './ActionButton';
 
 export const LoginComponent = memo(() => {
   const { login, isLoggedIn, error, walletConnectUri } = useLogin();
@@ -24,8 +23,7 @@ export const LoginComponent = memo(() => {
       <Stack spacing={4} direction="column" align="center">
         {!isLoggedIn && (
           <>
-            <ActionButton
-              p="1rem 2rem"
+            <Button
               mt={5}
               background="elvenTools.color2.lighter"
               _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
@@ -35,9 +33,8 @@ export const LoginComponent = memo(() => {
               onClick={handleLogin(LoginMethodsEnum.wallet)}
             >
               Elrond Web Wallet
-            </ActionButton>
-            <ActionButton
-              p="1rem 2rem"
+            </Button>
+            <Button
               mt={5}
               background="elvenTools.color2.lighter"
               _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
@@ -47,9 +44,8 @@ export const LoginComponent = memo(() => {
               onClick={handleLogin(LoginMethodsEnum.extension)}
             >
               Maiar Browser Extension
-            </ActionButton>
-            <ActionButton
-              p="1rem 2rem"
+            </Button>
+            <Button
               mt={5}
               background="elvenTools.color2.lighter"
               _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
@@ -59,7 +55,7 @@ export const LoginComponent = memo(() => {
               onClick={handleLogin(LoginMethodsEnum.walletconnect)}
             >
               Maiar Mobile App
-            </ActionButton>
+            </Button>
           </>
         )}
       </Stack>
