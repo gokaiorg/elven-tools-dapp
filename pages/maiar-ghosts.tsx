@@ -6,6 +6,8 @@ import { HeaderMenuButtons } from '../components/HeaderMenuButtons';
 import { MintHero } from '../components/MintHero';
 import { CollectionInfoBox } from '../components/CollectionInfoBox';
 import { chainType, networkConfig } from '../config/network';
+import Image from 'next/image';
+import { ImgEarth } from '../components/ImgEarth';
 
 import {
   collectionTicker,
@@ -22,33 +24,38 @@ const Mint: NextPage = () => {
       </HeaderMenu>
       <Box
         display="flex"
+        flexDirection="column"
+        background="#000"
         justifyContent="space-between"
-        mt={{ base: 8, xl: 12, '2xl': 24 }}
+        position="relative"
       >
+        <ImgEarth />
+        <Box
+          display="flex"
+          justifyContent={{ base: 'center', md: 'center' }}
+          gap={3}
+          sx={{
+            '@media screen and (max-width: 650px)': {
+              flexDirection: 'column',
+            },
+          }}
+        >
+          <CollectionInfoBox
+            content={collectionTicker}
+            label="Collection ticker. Click for details."
+            href={`${networkConfig[chainType].explorerAddress}/collections/${collectionTicker}`}
+          />
+          <CollectionInfoBox
+            content={shortenHash(smartContractAddress, 12)}
+            label={`Minter smart contract. Click for details.`}
+            href={`${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`}
+          />
+          <CollectionInfoBox content="8658" label="Collection amount" />
+        </Box>
         <MintHero />
-              <Box
-        display="flex"
-        justifyContent={{ base: 'center', md: 'center' }}
-        mt={10}
-        gap={3}
-        sx={{
-          '@media screen and (max-width: 650px)': {
-            flexDirection: 'column',
-          },
-        }}
-      >
-        <CollectionInfoBox
-          content={collectionTicker}
-          label="Collection ticker. Click for details."
-          href={`${networkConfig[chainType].explorerAddress}/collections/${collectionTicker}`}
-        />
-        <CollectionInfoBox
-          content={shortenHash(smartContractAddress, 12)}
-          label={`Minter smart contract. Click for details.`}
-          href={`${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`}
-        />
-        <CollectionInfoBox content={collectionSize} label="Collection amount" />
-      </Box>
+        <Box marginBottom="-7px">
+          <Image src="/bg-mr-ghost-bottom.png" alt="Mr Ghost Moon" width={2048} height={379} />
+        </Box>
       </Box>
     </MainLayout>
   );

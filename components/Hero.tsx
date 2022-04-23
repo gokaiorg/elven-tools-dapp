@@ -57,7 +57,7 @@ export const Hero = () => {
         </motion.div>
       </Box>
       <Box position="absolute" bottom="-7px">
-        <Image src="/bg-mr-ghost-bottom.png" alt="Mr Ghost Moon" width={2048} height={2048} />
+        <Image src="/bg-mr-ghost-bottom.png" alt="Mr Ghost Moon" width={2048} height={379} />
       </Box>
       <HeroImage />
       <ImgWin />

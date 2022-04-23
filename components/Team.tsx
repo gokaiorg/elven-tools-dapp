@@ -7,7 +7,7 @@ export const Team = () => {
   if (!Array.isArray(team)) return null;
 
   return (
-    <Box mt={32}>
+    <Box mt={32} mb="48">
       <HomeSectionTitle title="Team" />
       <SimpleGrid columns={{ lg: 5, md: 2, sm: 1 }} spacing={10}>
         {team.map((teamMember, index) => (

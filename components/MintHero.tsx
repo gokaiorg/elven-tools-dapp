@@ -1,4 +1,4 @@
-import { Box, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Container, Text, useBreakpointValue } from '@chakra-ui/react';
 import { useCallback } from 'react';
 import { Address } from '@elrondnetwork/erdjs';
 import { useScQuery, SCQueryType } from '../hooks/interaction/useScQuery';
@@ -6,6 +6,7 @@ import { MintForm } from './MintForm';
 import { Authenticated } from './Authenticated';
 import { useAccount } from '../hooks/auth/useAccount';
 import { LoginModalButton } from './LoginModalButton';
+import Image from 'next/image';
 import {
   isDropActive,
   smartContractAddress,
@@ -129,105 +130,103 @@ export const MintHero = () => {
   const isContentCentered = useBreakpointValue({ base: true, md: false });
 
   return (
-    <Box width="100%">
-      <Text
-        as="h1"
-        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
-        textAlign={{ base: 'center', md: 'left' }}
-        fontWeight="black"
-        lineHeight="shorter"
-        mb={5}
-      >
-        ⚡ Mint some of them
-      </Text>
-      <Text
-        as="h2"
-        fontSize="lg"
-        fontWeight="thin"
-        textAlign={{ base: 'center', md: 'left' }}
-      >
-        To be able to mint you have to be logged in to be able to mint. Remember
-        that it will mint only on the devent. If you want to do that, you need
-        to connect using one of the methods and the devnet address with some
-        xEGLD funds.
-      </Text>
-      {isMintingStarted ? (
-        <Box mt={6}>
-          <NFTLeftToMint
-            data={data}
-            dropData={dropData}
-            dataLoading={isDropActive ? dropIsLoading : totalIsLoading}
-          />
-          <Box>
-            <Authenticated
-              fallback={
-                <Box
-                  mt={6}
-                  display="flex"
-                  justifyContent={isContentCentered ? 'center' : 'flex-start'}
-                >
-                  <LoginModalButton />
-                </Box>
-              }
-              spinnerCentered={isContentCentered}
-            >
-              <NFTAllowlistEnabled
-                data={allowlistCheckData}
-                dataLoading={allowlistCheckLoading}
-              />
-              <NFTMintedAlready
-                data={mintedData}
-                dataLoading={mintedDataLoading}
-              />
-              <NFTLeftToMintPerAddress
-                leftToMintForUser={getLeftToMintForUser()}
-              />
-              <MintForm
-                cb={handleRefreshData}
-                leftToMintForUser={getLeftToMintForUser()}
-              />
-              {mintedData?.data?.data && mintedData.data.data > 0 && (
-                <Box
-                  display="flex"
-                  alignItems="center"
-                  mt={6}
-                  justifyContent={{ base: 'center', md: 'flex-start' }}
-                >
-                  <Text
-                    as="span"
-                    fontSize={{ base: 'md', sm: 'xl' }}
-                    fontWeight="bold"
+    <Container display="flex" flexDirection={{ base: 'column', md: 'row' }} alignItems="center" width="100%" maxWidth="1280px">
+      <Box width={{ base: '100%', md: '40%' }} mr="3rem">
+        <Image
+          src="/maiar-ghosts-mint-elrond-nft-dao.gif"
+          title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
+          alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
+          width={500} height={500} />
+      </Box>
+      <Box width={{ base: '100%', md: '50%' }}>
+        <Text
+          as="h1"
+          fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+          textAlign={{ base: 'center', md: 'left' }}
+          fontWeight="black"
+          lineHeight="shorter"
+          mb={5}
+        >
+         Collection of 8658 unique Mr Ghost NFT on the Elrond blockchain
+        </Text>
+        <Text
+          as="h2"
+          fontSize="lg"
+          fontWeight="thin"
+          textAlign={{ base: 'center', md: 'left' }}
+        >
+          Mr Ghost was born from a wish to create an NFT around the M logo from the Elrond Network ​​digital wallet: Maiar.
+        </Text>
+        {isMintingStarted ? (
+          <Box mt={6}>
+            <NFTLeftToMint
+              data={data}
+              dropData={dropData}
+              dataLoading={isDropActive ? dropIsLoading : totalIsLoading}
+            />
+            <Box>
+              <Authenticated
+                fallback={
+                  <Box
+                    mt={6}
+                    display="flex"
+                    justifyContent={isContentCentered ? 'center' : 'flex-start'}
                   >
-                    Check your NFTs:
-                  </Text>
-                  <Text
-                    as="a"
-                    ml={3}
-                    target="_blank"
-                    color="elvenTools.color2.base"
-                    fontSize="2xl"
-                    fontWeight="black"
-                    textDecoration="underline"
-                    rel="noopener noreferrer nofollow"
-                    href={`${networkConfig[chainType].explorerAddress}/accounts/${address}/nfts`}
+                    <LoginModalButton />
+                  </Box>
+                }
+                spinnerCentered={isContentCentered}
+              >
+                <NFTAllowlistEnabled
+                  data={allowlistCheckData}
+                  dataLoading={allowlistCheckLoading}
+                />
+                <NFTMintedAlready
+                  data={mintedData}
+                  dataLoading={mintedDataLoading}
+                />
+                <NFTLeftToMintPerAddress
+                  leftToMintForUser={getLeftToMintForUser()}
+                />
+                <MintForm
+                  cb={handleRefreshData}
+                  leftToMintForUser={getLeftToMintForUser()}
+                />
+                {mintedData?.data?.data && mintedData.data.data > 0 && (
+                  <Box
+                    display="flex"
+                    alignItems="center"
+                    mt={6}
+                    justifyContent={{ base: 'center', md: 'flex-start' }}
                   >
-                    here
-                  </Text>
-                </Box>
-              )}
-            </Authenticated>
+                    <Text
+                      as="a"
+                      target="_blank"
+                      color="elvenTools.color2.darker"
+                      fontSize="xl"
+                      fontWeight="black"
+                      textDecoration="underline"
+                      rel="noopener noreferrer nofollow"
+                      href={`${networkConfig[chainType].explorerAddress}/accounts/${address}/nfts`}
+                    >
+                      Check your NFTs!
+                    </Text>
+                  </Box>
+                )}
+              </Authenticated>
+            </Box>
           </Box>
-        </Box>
-      ) : (
-        <Box>
-          <Text fontSize="2xl" fontWeight="bold" mt={10}>
-            Minting was not started yet.
-          </Text>
-          <Text fontSize="2xl" fontWeight="bold">
-            Please be back soon!
-          </Text>
-        </Box>
-      )}
-    </Box>
+        ) : (
+          <Box>
+            <Text fontSize="2xl" fontWeight="bold" mt={10}>
+              Minting was not started yet.
+            </Text>
+            <Text fontSize="2xl" fontWeight="bold">
+              Please be back soon!
+            </Text>
+          </Box>
+        )}
+      </Box>
+    </Container>
   );
 };

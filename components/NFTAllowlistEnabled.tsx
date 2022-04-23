@@ -18,42 +18,36 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
         <Box
           display="flex"
           alignItems="center"
-          mt={2}
-          mb={2}
           justifyContent={{ base: 'center', md: 'flex-start' }}
         >
-          <Box>
+          <Box fontSize={{ base: 'md' }}>
             <Text
               as="span"
-              fontSize={{ base: 'md', sm: 'xl' }}
               fontWeight="bold"
             >
               Allowlist is enabled. You are{' '}
             </Text>
             {dataLoading ? (
-              <Spinner ml={3} color="elvenTools.color2.base" />
+              <Spinner ml={3} color="elvenTools.color2.darker" />
             ) : Number(data?.data?.data) !== 0 ? (
               <Text
-                color="elvenTools.color2.base"
+                color="elvenTools.color2.darker"
                 as="span"
                 fontWeight="bold"
-                fontSize={{ base: 'md', sm: 'xl' }}
               >
                 on
               </Text>
             ) : (
               <Text
-                color="elvenTools.color3.base"
+                color="elvenTools.color3.darker"
                 as="span"
                 fontWeight="bold"
-                fontSize={{ base: 'md', sm: 'xl' }}
               >
                 not on
               </Text>
             )}{' '}
             <Text
               as="span"
-              fontSize={{ base: 'md', sm: 'xl' }}
               fontWeight="bold"
             >
               the list!

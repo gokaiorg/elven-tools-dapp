@@ -14,25 +14,24 @@ export const NFTLeftToMintPerAddress: FC<NFTLeftToMintPerAddressProps> = ({
     <Box
       display="flex"
       alignItems="center"
-      mb={6}
       justifyContent={{ base: 'center', md: 'flex-start' }}
+      fontSize={{ base: 'md' }}
     >
-      <Text fontSize={{ base: 'md', sm: 'xl' }} fontWeight="bold">
+      <Text fontWeight="bold">
         You can mint:
       </Text>
       {dataLoading ? (
-        <Spinner ml={3} color="elvenTools.color2.base" />
+        <Spinner ml={3} color="elvenTools.color2.darker" />
       ) : (
         <Text
-          color="elvenTools.color2.base"
-          fontSize="3xl"
+          color="elvenTools.color2.darker"
           fontWeight="black"
           ml={3}
         >
           {leftToMintForUser}
         </Text>
       )}
-      <Text fontSize={{ base: 'md', sm: 'xl' }} fontWeight="bold" ml={3}>
+      <Text fontWeight="bold" ml={3}>
         NFTs
       </Text>
     </Box>

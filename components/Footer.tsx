@@ -8,15 +8,12 @@ export const Footer = () => {
       color="elvenTools.color3.base"
       display="flex"
       alignItems="center"
+      fontSize="sm"
+      fontWeight="normal"
+      py={5}
+      px={5}
     >
-      <Container
-        maxW="container.xl"
-        fontSize="sm"
-        fontWeight="normal"
-        display="flex"
-        alignItems="center"
-      >
-        <SocialMediaIcons />
+      <SocialMediaIcons />
         <Box ml="auto" display="flex" alignItems="center" whiteSpace="nowrap">
           Made with
           <svg
@@ -30,7 +27,6 @@ export const Footer = () => {
           </svg>
           by Gokai Labs
         </Box>
-      </Container>
     </Box>
   );
 };
