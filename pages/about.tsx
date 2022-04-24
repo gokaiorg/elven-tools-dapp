@@ -27,8 +27,8 @@ const About: NextPage = () => {
           About
         </Text>
         <Text mb={4}>
-          This demo page s is a full-featured minting landing page that will work
-          well with the Elven Tools smart contract. You can use{' '}
+          This demo page s is a full-featured minting landing page that will
+          work well with the Elven Tools smart contract. You can use{' '}
           <a href="https://www.elven.tools/docs/cli-introduction.html">
             Elven Tools CLI
           </a>{' '}

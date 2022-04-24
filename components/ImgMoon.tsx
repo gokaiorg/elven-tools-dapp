@@ -3,19 +3,14 @@ import { motion } from 'framer-motion';
 
 export const ImgMoon = () => {
   return (
-    <Box
-      display="flex"
-      margin="auto"
-      width="300px"
-      height="300px"  
-    >
+    <Box display="flex" margin="auto" width="300px" height="300px">
       <motion.div
         animate={{
           y: [-15, 15, -15],
         }}
         transition={{
           duration: 1,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           repeat: Infinity,
           repeatDelay: 0,
         }}

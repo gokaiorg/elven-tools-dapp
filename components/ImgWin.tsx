@@ -10,20 +10,21 @@ export const ImgWin = () => {
         }}
         transition={{
           duration: 20,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           repeat: Infinity,
           repeatDelay: 0,
         }}
       >
         <Box
-          as="img" src="/mr-ghost-winning-elrond-nft-dao-maiar-ghosts.webp"
+          as="img"
+          src="/mr-ghost-winning-elrond-nft-dao-maiar-ghosts.webp"
           width="256px"
           height="auto"
           alt="Mr Ghost Winning - Elrond NFT DAO - Maiar Ghosts"
           title="Mr Ghost Winning - Elrond NFT DAO - Maiar Ghosts"
           zIndex={11}
         />
-      </motion.div> 
+      </motion.div>
     </>
   );
 };

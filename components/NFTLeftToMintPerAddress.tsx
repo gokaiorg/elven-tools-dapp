@@ -17,17 +17,11 @@ export const NFTLeftToMintPerAddress: FC<NFTLeftToMintPerAddressProps> = ({
       justifyContent={{ base: 'center', md: 'flex-start' }}
       fontSize={{ base: 'md' }}
     >
-      <Text fontWeight="bold">
-        You can mint:
-      </Text>
+      <Text fontWeight="bold">You can mint:</Text>
       {dataLoading ? (
         <Spinner ml={3} color="elvenTools.color2.darker" />
       ) : (
-        <Text
-          color="elvenTools.color2.darker"
-          fontWeight="black"
-          ml={3}
-        >
+        <Text color="elvenTools.color2.darker" fontWeight="black" ml={3}>
           {leftToMintForUser}
         </Text>
       )}

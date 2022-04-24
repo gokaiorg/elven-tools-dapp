@@ -130,13 +130,21 @@ export const MintHero = () => {
   const isContentCentered = useBreakpointValue({ base: true, md: false });
 
   return (
-    <Container display="flex" flexDirection={{ base: 'column', md: 'row' }} alignItems="center" width="100%" maxWidth="1280px">
+    <Container
+      display="flex"
+      flexDirection={{ base: 'column', md: 'row' }}
+      alignItems="center"
+      width="100%"
+      maxWidth="1280px"
+    >
       <Box width={{ base: '100%', md: '40%' }} mr="3rem">
         <Image
           src="/maiar-ghosts-mint-elrond-nft-dao.gif"
           title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
           alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
-          width={500} height={500} />
+          width={500}
+          height={500}
+        />
       </Box>
       <Box width={{ base: '100%', md: '50%' }}>
         <Text
@@ -147,7 +155,7 @@ export const MintHero = () => {
           lineHeight="shorter"
           mb={5}
         >
-         Collection of 8658 unique Mr Ghost NFT on the Elrond blockchain
+          Collection of 8658 unique Mr Ghost NFT on the Elrond blockchain
         </Text>
         <Text
           as="h2"
@@ -155,7 +163,8 @@ export const MintHero = () => {
           fontWeight="thin"
           textAlign={{ base: 'center', md: 'left' }}
         >
-          Mr Ghost was born from a wish to create an NFT around the M logo from the Elrond Network ​​digital wallet: Maiar.
+          Mr Ghost was born from a wish to create an NFT around the M logo from
+          the Elrond Network ​​digital wallet: Maiar.
         </Text>
         {isMintingStarted ? (
           <Box mt={6}>

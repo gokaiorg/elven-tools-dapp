@@ -31,7 +31,9 @@ export const FaqItem: FC<FaqItemProps> = ({ question, answer }) => {
         </Box>
         <AccordionIcon />
       </AccordionButton>
-      <AccordionPanel color="elvenTools.white" fontSize="xl">{answer}</AccordionPanel>
+      <AccordionPanel color="elvenTools.white" fontSize="xl">
+        {answer}
+      </AccordionPanel>
     </AccordionItem>
   );
 };

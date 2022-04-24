@@ -26,7 +26,10 @@ export const LoginComponent = memo(() => {
             <Button
               mt={5}
               background="elvenTools.color2.lighter"
-              _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
               color="elvenTools.color2.base"
               borderRadius="full"
               isFullWidth
@@ -37,7 +40,10 @@ export const LoginComponent = memo(() => {
             <Button
               mt={5}
               background="elvenTools.color2.lighter"
-              _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
               color="elvenTools.color2.base"
               borderRadius="full"
               isFullWidth
@@ -48,7 +54,10 @@ export const LoginComponent = memo(() => {
             <Button
               mt={5}
               background="elvenTools.color2.lighter"
-              _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
               color="elvenTools.color2.base"
               borderRadius="full"
               isFullWidth

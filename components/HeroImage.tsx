@@ -10,13 +10,16 @@ export const HeroImage = () => {
       display="flex"
       margin="auto"
       position="absolute"
-      top="-200px" bottom="0" right="0" left="0"
+      top="-200px"
+      bottom="0"
+      right="0"
+      left="0"
       zIndex="0"
     >
       <motion.div
         animate={{
-            scale: [1, 2, 2, 1, 1],
-            opacity: [0, 0.2],
+          scale: [1, 2, 2, 1, 1],
+          opacity: [0, 0.2],
         }}
       >
         <ImgG />

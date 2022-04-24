@@ -15,13 +15,10 @@ const Home: NextPage = () => {
       <HeaderMenu>
         <HeaderMenuButtons enabled={['auth', 'maiar-ghosts', 'about']} />
       </HeaderMenu>
-      <Box
-        position="relative"
-        width="100%"
-      >
+      <Box position="relative" width="100%">
         <Hero />
       </Box>
-      <Container maxW='1280px'>
+      <Container maxW="1280px">
         <ImgMoon />
         <Roadmap />
         <Faq />

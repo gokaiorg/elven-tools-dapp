@@ -7,7 +7,15 @@ import { ImgWin } from './ImgWin';
 
 export const Hero = () => {
   return (
-    <Box display="flex" flexDirection="column" width="100%" height="calc(100vh - 85px)" position="relative" zIndex="1" background="black">
+    <Box
+      display="flex"
+      flexDirection="column"
+      width="100%"
+      height="calc(100vh - 85px)"
+      position="relative"
+      zIndex="1"
+      background="black"
+    >
       <ImgEarth />
       <Text
         as="h1"
@@ -22,7 +30,7 @@ export const Hero = () => {
         zIndex="10"
       >
         Collectible NFT DAO project on
-        <br/>
+        <br />
         <Text
           as="a"
           color="white"
@@ -32,20 +40,29 @@ export const Hero = () => {
         >
           Elrond Network
         </Text>
-      </Text> 
-      <Text as="p" fontSize="2xl" fontWeight="medium" textAlign="center" zIndex="10">
-          Buy Maiar Ghosts NFTs and become a member of Gokai Labs DAO
+      </Text>
+      <Text
+        as="p"
+        fontSize="2xl"
+        fontWeight="medium"
+        textAlign="center"
+        zIndex="10"
+      >
+        Buy Maiar Ghosts NFTs and become a member of Gokai Labs DAO
       </Text>
       <Box display="flex" position="relative" zIndex="10" m="0 auto">
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
           <Text
             as="a"
-            fontSize='xl'
+            fontSize="xl"
             display="flex"
             p="1rem 2rem"
             mt={5}
             background="elvenTools.color2.lighter"
-            _hover={{ bg: 'elvenTools.color2.darker', color: 'elvenTools.color2.lighter' }}
+            _hover={{
+              bg: 'elvenTools.color2.darker',
+              color: 'elvenTools.color2.lighter',
+            }}
             color="elvenTools.color2.base"
             borderRadius="full"
             href="https://linktr.ee/GokaiLabs"
@@ -57,7 +74,12 @@ export const Hero = () => {
         </motion.div>
       </Box>
       <Box position="absolute" bottom="-7px">
-        <Image src="/bg-mr-ghost-bottom.png" alt="Mr Ghost Moon" width={2048} height={379} />
+        <Image
+          src="/bg-mr-ghost-bottom.png"
+          alt="Mr Ghost Moon"
+          width={2048}
+          height={379}
+        />
       </Box>
       <HeroImage />
       <ImgWin />

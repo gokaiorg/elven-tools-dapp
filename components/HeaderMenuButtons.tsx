@@ -26,7 +26,6 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         },
       }}
     >
-      
       {enabled.includes('maiar-ghosts') && (
         <ActionButton onClick={handleMintClick}>Maiar Ghosts</ActionButton>
       )}

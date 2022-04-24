@@ -21,10 +21,7 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
           justifyContent={{ base: 'center', md: 'flex-start' }}
         >
           <Box fontSize={{ base: 'md' }}>
-            <Text
-              as="span"
-              fontWeight="bold"
-            >
+            <Text as="span" fontWeight="bold">
               Allowlist is enabled. You are{' '}
             </Text>
             {dataLoading ? (
@@ -46,10 +43,7 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
                 not on
               </Text>
             )}{' '}
-            <Text
-              as="span"
-              fontWeight="bold"
-            >
+            <Text as="span" fontWeight="bold">
               the list!
             </Text>
           </Box>
