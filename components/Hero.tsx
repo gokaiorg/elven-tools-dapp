@@ -11,21 +11,23 @@ export const Hero = () => {
       display="flex"
       flexDirection="column"
       width="100%"
-      height="calc(100vh - 85px)"
+      height={{ base: 'auto', lg: 'calc(100vh - 85px)' }}
       position="relative"
       zIndex="1"
       background="black"
+      overflow="hidden"
+      pt={{ base: '5', md: '32', lg: '0' }}
     >
       <ImgEarth />
       <Text
         as="h1"
-        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
+        fontSize={{ base: '4xl', md: '3xl', lg: '5xl' }}
         maxWidth={{ base: '100%', md: '100%', lg: '60%' }}
         textAlign={{ base: 'center', md: 'center' }}
         fontWeight="black"
         lineHeight="shorter"
         mx="auto"
-        pt={20}
+        pt={{ base: '16', md: '0', lg: '20' }}
         mb={5}
         zIndex="10"
       >

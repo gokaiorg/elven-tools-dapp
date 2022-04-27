@@ -20,11 +20,6 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
       display="flex"
       gap={5}
       alignItems="center"
-      sx={{
-        '@media screen and (max-width: 515px)': {
-          flexDirection: 'column',
-        },
-      }}
     >
       {enabled.includes('maiar-ghosts') && (
         <ActionButton onClick={handleMintClick}>Maiar Ghosts</ActionButton>

@@ -5,12 +5,13 @@ import { ImgG } from '../components/ImgG';
 export const HeroImage = () => {
   return (
     <Box
-      width="350px"
-      height="545px"
+      width={{ base: '80%', lg: '100%' }}
+      height={{ base: '495px', lg: '545px' }}
       display="flex"
+      justifyContent="center"
       margin="auto"
       position="absolute"
-      top="-200px"
+      top={{ base: '-100px', lg: '-200px' }}
       bottom="0"
       right="0"
       left="0"

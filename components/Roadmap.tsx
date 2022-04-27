@@ -7,9 +7,9 @@ export const Roadmap = () => {
   if (!Array.isArray(roadmap)) return null;
 
   return (
-    <Box mt={32}>
+    <Box mt={{ base:'16', lg: '32'}}>
       <HomeSectionTitle title="Roadmap" />
-      <SimpleGrid columns={{ lg: 3, md: 2, sm: 1 }} spacing={10}>
+      <SimpleGrid columns={{ lg: 3, md: 3, sm: 1 }} spacing={10}>
         {roadmap.map((roadmapItem, index) => (
           <RoadmapItem key={index} {...roadmapItem} />
         ))}

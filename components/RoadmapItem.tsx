@@ -12,7 +12,7 @@ export const RoadmapItem: FC<RoadmapItemProps> = ({ title, points }) => {
       <Text fontSize="2xl" fontWeight="black" mb={3}>
         {title}
       </Text>
-      <UnorderedList color="elvenTools.color3.base" fontSize="xl">
+      <UnorderedList color="elvenTools.color3.base" fontSize="xl" whiteSpace="nowrap">
         {points.map((point, index) => (
           <ListItem key={index}>{point}</ListItem>
         ))}

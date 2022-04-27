@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://gokai.org
+
+# Sitemaps
+Sitemap: https://gokai.org/sitemap.xml

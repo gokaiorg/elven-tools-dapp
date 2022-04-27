@@ -34,19 +34,19 @@ export const faq = [
 // Roadmap section data
 export const roadmap = [
   {
-    title: 'Q2 2022',
-    points: ['Collection design', 'Giveaway & Drop 1', 'Marketing campaign'],
+    title: 'DONE',
+    points: ['Team building', 'Collection design', 'Giveaway'],
   },
   {
-    title: 'Q3 2022',
-    points: ['Community votes', 'Next drops', 'Partnerships'],
+    title: 'IN PROGRESS',
+    points: ['Partnerships', 'Community building', 'Pre-sale'],
   },
   {
-    title: 'Q4 2022',
+    title: 'PLANNED',
     points: [
+      'Cemetery',
       'DAO governance',
-      'Runing a node',
-      'Land tokenisation? Community wishes?',
+      'Become a Validator'
     ],
   },
 ];
