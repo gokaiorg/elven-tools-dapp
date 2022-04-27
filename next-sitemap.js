@@ -5,6 +5,7 @@ module.exports = {
   generateRobotsTxt: true,
   robotsTxtOptions: {
     additionalSitemaps: [
+      'https://gokai.org/sitemap-0.xml',
       'https://gokai.org/sitemap-1.xml',
     ],
   },
