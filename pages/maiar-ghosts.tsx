@@ -49,7 +49,7 @@ const Mint: NextPage = () => {
         <MintHero />
         <Box marginBottom="-7px">
           <Image
-            src="/bg-mr-ghost-bottom.png"
+            src="/static/media/bg-mr-ghost-bottom.png"
             alt="Mr Ghost Moon"
             width={2048}
             height={379}

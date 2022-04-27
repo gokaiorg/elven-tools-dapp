@@ -77,7 +77,7 @@ export const Hero = () => {
       </Box>
       <Box position="absolute" bottom="-7px">
         <Image
-          src="/bg-mr-ghost-bottom.png"
+          src="/static/media/bg-mr-ghost-bottom.png"
           alt="Mr Ghost Moon"
           width={2048}
           height={379}
