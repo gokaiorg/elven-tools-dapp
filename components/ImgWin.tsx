@@ -17,7 +17,7 @@ export const ImgWin = () => {
       >
         <Box
           as="img"
-          src="/mr-ghost-winning-elrond-nft-dao-maiar-ghosts.webp"
+          src="/static/media/mr-ghost-winning-elrond-nft-dao-maiar-ghosts.webp"
           width="256px"
           height="auto"
           alt="Mr Ghost Winning - Elrond NFT DAO - Maiar Ghosts"

@@ -150,7 +150,7 @@ export const MintHero = () => {
         }}
       >
         <img
-          src="/maiar-ghosts-mint-elrond-nft-dao.gif"
+          src="/static/media/maiar-ghosts-mint-elrond-nft-dao.gif"
           title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
           alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
           width={500}

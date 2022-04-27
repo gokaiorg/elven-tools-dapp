@@ -24,7 +24,7 @@ export const ImgEarth = () => {
       >
         <Box
           as="img"
-          src="/mr-ghost-earth-elrond-nft-dao-maiar-ghosts.webp"
+          src="/static/media/mr-ghost-earth-elrond-nft-dao-maiar-ghosts.webp"
           width={{ base: '50px', md: '100px', lg: '150px' }}
           height={{ base: '50px', md: '100px', lg: '150px' }}
           alt="Mr Ghost Earth - Elrond NFT DAO - Maiar Ghosts"

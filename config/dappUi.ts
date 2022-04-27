@@ -55,31 +55,31 @@ export const team = [
   {
     name: 'Jeremy',
     bio: 'Founder',
-    imageUrl: '/jeremy-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/static/media/jeremy-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/jeremy-douchamps/'],
   },
   {
     name: 'Vladimir',
     bio: 'Developper',
-    imageUrl: '/build-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/static/media/build-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://github.com/VladimirAndrianov96'],
   },
   {
     name: 'Nati',
     bio: 'Marketer',
-    imageUrl: '/nati-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/static/media/nati-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/nati-douchamps-1151a8144/'],
   },
   {
     name: 'Albert',
     bio: 'SEO Expert',
-    imageUrl: '/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/static/media/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/albertlanne/'],
   },
   {
     name: 'Louis',
     bio: 'Artist',
-    imageUrl: '/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/static/media/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
 ];
