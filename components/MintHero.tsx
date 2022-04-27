@@ -6,7 +6,7 @@ import { MintForm } from './MintForm';
 import { Authenticated } from './Authenticated';
 import { useAccount } from '../hooks/auth/useAccount';
 import { LoginModalButton } from './LoginModalButton';
-import Image from 'next/image';
+import { motion } from 'framer-motion';
 import {
   isDropActive,
   smartContractAddress,
@@ -138,13 +138,25 @@ export const MintHero = () => {
       maxWidth="1280px"
     >
       <Box width={{ base: '100%', md: '40%' }} mr={{ base: '0', md: '3rem' }}>
-        <Image
+        <motion.div
+        animate={{
+          y: [-15, 15, -15],
+        }}
+        transition={{
+          duration: 1,
+          ease: 'easeInOut',
+          repeat: Infinity,
+          repeatDelay: 0,
+        }}
+      >
+        <img
           src="/maiar-ghosts-mint-elrond-nft-dao.gif"
           title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
           alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
           width={500}
           height={500}
         />
+      </motion.div>
       </Box>
       <Box width={{ base: '100%', md: '50%' }}>
         <Text
