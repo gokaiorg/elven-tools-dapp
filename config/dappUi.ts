@@ -39,7 +39,7 @@ export const roadmap = [
   },
   {
     title: 'IN PROGRESS',
-    points: ['Partnerships', 'Community building', 'Pre-sale'],
+    points: ['Community building', 'Partnerships', 'Pre-sale'],
   },
   {
     title: 'PLANNED',

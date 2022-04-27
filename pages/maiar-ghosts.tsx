@@ -12,7 +12,6 @@ import { ImgEarth } from '../components/ImgEarth';
 import {
   collectionTicker,
   smartContractAddress,
-  collectionSize,
 } from '../config/nftSmartContract';
 import { shortenHash } from '../utils/shortenHash';
 
@@ -32,13 +31,9 @@ const Mint: NextPage = () => {
         <ImgEarth />
         <Box
           display="flex"
+          flexDirection="row"
           justifyContent={{ base: 'center', md: 'center' }}
           gap={3}
-          sx={{
-            '@media screen and (max-width: 650px)': {
-              flexDirection: 'column',
-            },
-          }}
         >
           <CollectionInfoBox
             content={collectionTicker}
@@ -50,7 +45,6 @@ const Mint: NextPage = () => {
             label={`Minter smart contract. Click for details.`}
             href={`${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`}
           />
-          <CollectionInfoBox content="8658" label="Collection amount" />
         </Box>
         <MintHero />
         <Box marginBottom="-7px">

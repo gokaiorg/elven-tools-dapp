@@ -12,18 +12,6 @@ export const Logo = () => {
         position="relative"
         userSelect="none"
       >
-        <Text
-          position="absolute"
-          right="0"
-          top="0"
-          fontSize="10px"
-          fontWeight="semibold"
-          px={1.5}
-          borderRadius="sm"
-          color="elvenTools.color2.base"
-        >
-          devnet
-        </Text>
         <Box width="30px">
           <ImgG />
         </Box>

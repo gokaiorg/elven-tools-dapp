@@ -137,7 +137,7 @@ export const MintHero = () => {
       width="100%"
       maxWidth="1280px"
     >
-      <Box width={{ base: '100%', md: '40%' }} mr="3rem">
+      <Box width={{ base: '100%', md: '40%' }} mr={{ base: '0', md: '3rem' }}>
         <Image
           src="/maiar-ghosts-mint-elrond-nft-dao.gif"
           title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"

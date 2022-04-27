@@ -4,7 +4,7 @@
 
 // Elven Tools NFT Smart Contract address - replace it with yours
 export const smartContractAddress =
-  'erd1qqqqqqqqqqqqqpgqfd6cm32frgvp5vpp3c4wu70sgqev733jh50sht3wly';
+  'erd1qqqqqqqqqqqqqpgqw763s7ea3jksp6gr98kmj6psehtu3flndswsswu7hk';
 
 // Amount of the NFTs in the collection
 export const collectionSize = 8658;
@@ -13,16 +13,16 @@ export const collectionSize = 8658;
 export const tokensLimitPerAddressTotal = 169;
 
 // Collection ticker
-export const collectionTicker = 'MRG-50a95e';
+export const collectionTicker = 'MRG-1c3ba4';
 
 // Start or pause minting process. UI will react on this. Remember to keep itin in sync with Smart Contract. This is very important.
-export const isMintingStarted = true;
+export const isMintingStarted = false;
 
 // Enable/Disable the drop. UI will react on this. Remember to keep it in in sync with Smart Contract. This is very important.
-export const isDropActive = true;
+export const isDropActive = false;
 
 // The number of the NFTs for one address per current active drop can be ignored if there are no drops active
-export const tokensLimitPerAddressPerDrop = 55;
+export const tokensLimitPerAddressPerDrop = 13;
 
 // Enable/Disable allowlist. UI will react on this. Remember to keep it in in sync with Smart Contract. This is very important.
 export const isAllowlistEnabled = true;

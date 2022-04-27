@@ -32,11 +32,9 @@ export const CollectionInfoBox: FC<CollectionInfoBoxProps> = ({
     >
       <Box
         py={3}
-        px={8}
+        px={3}
+        whiteSpace="nowrap"
         borderColor="elvenTools.white"
-        borderWidth={0.5}
-        borderRadius="md"
-        borderStyle="dashed"
       >
         <Text fontWeight="normal">
           {href ? (
