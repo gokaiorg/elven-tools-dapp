@@ -10,6 +10,7 @@ export const defaultMetaTags = {
   description:
     'Gokai Labs is a DAO project drived by the community via a governance NFT, Mr Ghost on Elrond Network. Get a Mr Ghost, become a member.',
   image: `${dappHostname}/social.png`,
+  shortname: 'Gokai Labs',
 };
 
 // FAQ section data
