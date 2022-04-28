@@ -8,6 +8,7 @@ import { Faq } from '../components/Faq';
 import { Roadmap } from '../components/Roadmap';
 import { Team } from '../components/Team';
 import { ImgMoon } from '../components/ImgMoon';
+import { Collab } from '../components/Collab';
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <Roadmap />
         <Faq />
         <Team />
+        <Collab />
       </Container>
     </MainLayout>
   );

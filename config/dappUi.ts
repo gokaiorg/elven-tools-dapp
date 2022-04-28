@@ -84,3 +84,41 @@ export const team = [
     socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
 ];
+
+export const collab = [
+  {
+    name: 'Elrond World',
+    imageUrl: '/static/media/collab-elrond-world-elrond.webp',
+    socialMediaLinks: ['https://mobile.twitter.com/ElrondWorld'],
+  },
+  {
+    name: 'Wwwine',
+    imageUrl: '/static/media/collab-world-wide-wine-elrond.webp',
+    socialMediaLinks: ['https://www.wwwine.io/'],
+  },
+  {
+    name: 'Plata',
+    imageUrl: '/static/media/collab-plata-network-elrond.webp',
+    socialMediaLinks: ['https://plata.network/'],
+  },
+  {
+    name: 'Snapshot',
+    imageUrl: '/static/media/collab-snapshot-elrond.webp',
+    socialMediaLinks: ['https://snapshot.org/#/'],
+  },
+  {
+    name: 'Indie NFT Artwork',
+    imageUrl: '/static/media/collab-indie-nft-artwork-elrond.webp',
+    socialMediaLinks: ['https://www.indienftartwork.com/'],
+  },
+  {
+    name: 'Evoluzion Life',
+    imageUrl: '/static/media/collab-evoluzion-life-elrond.webp',
+    socialMediaLinks: ['https://www.evoluzion.life/'],
+  },
+  {
+    name: 'A la bonne ferme',
+    imageUrl: '/static/media/collab-a-la-bonne-ferme-elrond.webp',
+    socialMediaLinks: ['https://www.alabonneferme.fr/'],
+  },
+];
