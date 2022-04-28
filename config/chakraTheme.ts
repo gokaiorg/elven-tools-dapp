@@ -64,7 +64,7 @@ export const theme = extendTheme({
       color3: {
         lighter: '#fb9567',
         base: '#212529',
-        darker: '#EF1E24',
+        darker: '#C9C6C5',
       },
     },
   },

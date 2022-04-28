@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Box, Show } from '@chakra-ui/react';
+import { Box, Container } from '@chakra-ui/react';
 import { MainLayout } from '../components/MainLayout';
 import { HeaderMenu } from '../components/HeaderMenu';
 import { HeaderMenuButtons } from '../components/HeaderMenuButtons';
@@ -14,6 +14,7 @@ import {
   smartContractAddress,
 } from '../config/nftSmartContract';
 import { shortenHash } from '../utils/shortenHash';
+import { Invest } from '../components/Invest';
 
 const Mint: NextPage = () => {
   return (
@@ -56,6 +57,9 @@ const Mint: NextPage = () => {
           />
         </Box>
       </Box>
+      <Container maxW="1280px">
+        <Invest />
+      </Container>
     </MainLayout>
   );
 };

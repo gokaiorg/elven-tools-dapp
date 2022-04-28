@@ -137,7 +137,7 @@ export const MintHero = () => {
       width="100%"
       maxWidth="1280px"
     >
-      <Box width={{ base: '100%', md: '40%' }} mr={{ base: '0', md: '3rem' }}>
+      <Box width={{ base: '100%', md: '40%' }} mr={{ base: '0', md: '3rem' }} display="flex" justifyContent="center">
         <motion.div
         animate={{
           y: [-15, 15, -15],
@@ -149,7 +149,7 @@ export const MintHero = () => {
           repeatDelay: 0,
         }}
       >
-        <img
+          <img
           src="/static/media/maiar-ghosts-mint-elrond-nft-dao.gif"
           title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
           alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
@@ -191,9 +191,13 @@ export const MintHero = () => {
                   <Box
                     mt={6}
                     display="flex"
+                    alignItems="center"
                     justifyContent={isContentCentered ? 'center' : 'flex-start'}
                   >
-                    <LoginModalButton />
+                    Login to mint{" "}
+                    <Box borderRadius="full" border="1px solid #fff" ml="1rem">
+                      <LoginModalButton />
+                    </Box>
                   </Box>
                 }
                 spinnerCentered={isContentCentered}
@@ -238,7 +242,7 @@ export const MintHero = () => {
             </Box>
           </Box>
         ) : (
-          <Box>
+          <Box textAlign={{ base: 'center', md: 'left' }}>
             <Text fontSize="2xl" fontWeight="bold" mt={10}>
               Minting was not started yet.
             </Text>
