@@ -5,14 +5,12 @@ import { FC } from 'react';
 interface CollabMemberProps {
   name: string;
   imageUrl: string;
-  Links: string;
   socialMediaLinks?: string[];
 }
 
 export const CollabMember: FC<CollabMemberProps> = ({
   name,
   imageUrl,
-  Links,
   socialMediaLinks,
 }) => {
   return (
