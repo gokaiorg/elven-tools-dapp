@@ -2,13 +2,13 @@ import { Box, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { FC } from 'react';
 
-interface CollabMemberProps {
+interface SecondaryMemberProps {
   name: string;
   imageUrl: string;
   socialMediaLinks?: string[];
 }
 
-export const CollabMember: FC<CollabMemberProps> = ({
+export const SecondaryMember: FC<SecondaryMemberProps> = ({
   name,
   imageUrl,
   socialMediaLinks,
@@ -20,7 +20,7 @@ export const CollabMember: FC<CollabMemberProps> = ({
           {socialMediaLinks.map((link, index) => (
             <Box
               as='a'
-              height="120px"
+              height="68px"
               fontSize="xl"
               display="flex"
               key={index}
