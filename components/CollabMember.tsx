@@ -25,10 +25,10 @@ export const CollabMember: FC<CollabMemberProps> = ({
               height="120px"
               fontSize="xl"
               display="flex"
-              href={Links}
+              href={link}
               justifyContent="center"
             >
-              <Image src={imageUrl} alt={name} width="100%" height="100%" objectFit="contain" />
+              <Image src={imageUrl} alt={name} title={name} width="100%" height="100%" objectFit="contain" />
             </Box>
           ))}
         </Box>
