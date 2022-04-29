@@ -23,6 +23,7 @@ export const CollabMember: FC<CollabMemberProps> = ({
               height="120px"
               fontSize="xl"
               display="flex"
+              key={index}
               href={link}
               justifyContent="center"
             >
