@@ -145,26 +145,3 @@ export const secondary = [
     socialMediaLinks: ['https://www.trust.market/collection/MRG-1c3ba4'],
   },
 ];
-
-export const secondary = [
-  {
-    name: 'Buy and Sell Mr Ghost on Deadrare',
-    imageUrl: '/static/media/logo-deadrare.webp',
-    socialMediaLinks: ['https://deadrare.io/collection/MRG-1c3ba4'],
-  },
-  {
-    name: 'Buy and Sell Mr Ghost on Isengard',
-    imageUrl: '/static/media/logo-isengard.webp',
-    socialMediaLinks: ['https://isengard.market/collection/MRG-1c3ba4'],
-  },
-  {
-    name: 'Buy and Sell Mr Ghost on Frame It',
-    imageUrl: '/static/media/logo-frameit.webp',
-    socialMediaLinks: ['https://www.frameit.gg/marketplace/MRG-1c3ba4'],
-  },
-  {
-    name: 'Buy and Sell Mr Ghost on Trust Market',
-    imageUrl: '/static/media/logo-trust.webp',
-    socialMediaLinks: ['https://www.trust.market/collection/MRG-1c3ba4'],
-  },
-];
