@@ -15,6 +15,7 @@ import {
 } from '../config/nftSmartContract';
 import { shortenHash } from '../utils/shortenHash';
 import { Invest } from '../components/Invest';
+import { Secondary } from '../components/Secondary';
 
 const Mint: NextPage = () => {
   return (
@@ -58,6 +59,7 @@ const Mint: NextPage = () => {
         </Box>
       </Box>
       <Container maxW="1280px">
+        <Secondary />
         <Invest />
       </Container>
     </MainLayout>

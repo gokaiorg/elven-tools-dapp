@@ -167,7 +167,7 @@ export const MintHero = () => {
           lineHeight="shorter"
           mb={5}
         >
-          Collection of 8658 unique Mr Ghost NFT on the Elrond blockchain
+          Collection of 8658 unique Mr Ghost NFT haunting the Elrond blockchain
         </Text>
         <Text
           as="h2"

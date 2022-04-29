@@ -90,43 +90,59 @@ export const collab = [
     name: 'Elrond World',
     imageUrl: '/static/media/collab-elrond-world-elrond.webp',
     socialMediaLinks: ['https://mobile.twitter.com/ElrondWorld'],
-    Links: ["https://mobile.twitter.com/ElrondWorld"],
   },
   {
     name: 'Wwwine',
     imageUrl: '/static/media/collab-world-wide-wine-elrond.webp',
     socialMediaLinks: ['https://www.wwwine.io/'],
-    Links: ["https://www.wwwine.io/"],
   },
   {
     name: 'Plata',
     imageUrl: '/static/media/collab-plata-network-elrond.webp',
     socialMediaLinks: ['https://plata.network/'],
-    Links: ["https://plata.network/"],
   },
   {
     name: 'Snapshot',
     imageUrl: '/static/media/collab-snapshot-elrond.webp',
     socialMediaLinks: ['https://snapshot.org/#/'],
-    Links: ["https://snapshot.org/#/"],
   },
   {
     name: 'Indie NFT Artwork',
     imageUrl: '/static/media/collab-indie-nft-artwork-elrond.webp',
     socialMediaLinks: ['https://www.indienftartwork.com/'],
-    Links: ["https://www.indienftartwork.com/"],
   },
   {
     name: 'Evoluzion Life',
     imageUrl: '/static/media/collab-evoluzion-life-elrond.webp',
     socialMediaLinks: ['https://www.evoluzion.life/'],
-    Links: ["https://www.evoluzion.life/"],
   },
   {
     name: 'A la bonne ferme',
     imageUrl: '/static/media/collab-a-la-bonne-ferme-elrond.webp',
     socialMediaLinks: ['https://www.alabonneferme.fr/'],
-    Links: ["https://www.alabonneferme.fr/"],
+  },
+];
+
+export const secondary = [
+  {
+    name: 'Buy and Sell Mr Ghost on Deadrare',
+    imageUrl: '/static/media/logo-deadrare.webp',
+    socialMediaLinks: ['https://deadrare.io/collection/MRG-1c3ba4'],
+  },
+  {
+    name: 'Buy and Sell Mr Ghost on Isengard',
+    imageUrl: '/static/media/logo-isengard.webp',
+    socialMediaLinks: ['https://isengard.market/collection/MRG-1c3ba4'],
+  },
+  {
+    name: 'Buy and Sell Mr Ghost on Frame It',
+    imageUrl: '/static/media/logo-frameit.webp',
+    socialMediaLinks: ['https://www.frameit.gg/marketplace/MRG-1c3ba4'],
+  },
+  {
+    name: 'Buy and Sell Mr Ghost on Trust Market',
+    imageUrl: '/static/media/logo-trust.webp',
+    socialMediaLinks: ['https://www.trust.market/collection/MRG-1c3ba4'],
   },
 ];
 

@@ -5,7 +5,8 @@ import { ImgLogoMaiar } from './ImgLogoMaiar';
 export const Invest = () => {
   return (
     <Box
-      my={16}
+      mt={16}
+      mb={24}
       pt={10}
       pb={20}
       px={5}

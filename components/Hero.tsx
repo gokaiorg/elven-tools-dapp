@@ -50,7 +50,7 @@ export const Hero = () => {
         textAlign="center"
         zIndex="10"
       >
-        Buy Maiar Ghosts NFTs and become a member of Gokai Labs DAO
+        Buy a Mr Ghost NFT and become a member of Gokai Labs
       </Text>
       <Box display="flex" position="relative" zIndex="10" m="0 auto">
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
