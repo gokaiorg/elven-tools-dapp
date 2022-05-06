@@ -244,7 +244,7 @@ export const MintHero = () => {
         ) : (
           <Box textAlign={{ base: 'center', md: 'left' }}>
             <Text fontSize="2xl" fontWeight="bold" mt={10}>
-              Minting was not started yet.
+              PRE-SALE start today 10 AM UTC.
             </Text>
             <Text fontSize="2xl" fontWeight="bold">
               Please be back soon!
