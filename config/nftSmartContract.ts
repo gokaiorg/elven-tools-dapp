@@ -25,7 +25,7 @@ export const isDropActive = true;
 export const tokensLimitPerAddressPerDrop = 13;
 
 // Enable/Disable allowlist. UI will react on this. Remember to keep it in in sync with Smart Contract. This is very important.
-export const isAllowlistEnabled = true;
+export const isAllowlistEnabled = false;
 
 // Base transaction gas limit for the mint tx, it will be calculated, this is just a base
 export const mintTxBaseGasLimit = 14000000;
