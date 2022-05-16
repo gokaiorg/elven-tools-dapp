@@ -36,11 +36,11 @@ export const faq = [
 export const roadmap = [
   {
     title: 'DONE',
-    points: ['Team building', 'Collection design', 'Giveaway'],
+    points: ['Collection design', 'Airdrop', 'Pre-sale'],
   },
   {
     title: 'IN PROGRESS',
-    points: ['Community building', 'Partnerships', 'Pre-sale'],
+    points: ['Community building', 'Partnerships', 'Public Sale: Drop #1'],
   },
   {
     title: 'PLANNED',
@@ -138,6 +138,11 @@ export const secondary = [
     name: 'Buy and Sell Mr Ghost on Frame It',
     imageUrl: '/static/media/logo-frameit.webp',
     socialMediaLinks: ['https://www.frameit.gg/marketplace/MRG-1c3ba4'],
+  },
+  {
+    name: 'Buy and Sell Mr Ghost on Elrond NFT Swap',
+    imageUrl: '/static/media/logo-elrond-nft-swap.webp',
+    socialMediaLinks: ['https://elrondnftswap.com/collection/MRG-1c3ba4'],
   },
   {
     name: 'Buy and Sell Mr Ghost on Trust Market',
