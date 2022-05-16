@@ -31,7 +31,7 @@ export const Hero = () => {
         mb={5}
         zIndex="10"
       >
-        Collectible NFT DAO project on
+        Collectible NFT project on
         <br />
         <Text
           as="a"

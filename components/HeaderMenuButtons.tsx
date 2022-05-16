@@ -25,16 +25,44 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         <ActionButton onClick={handleMintClick}>Maiar Ghosts</ActionButton>
       )}
 
-      <Text
-        as="a"
-        py={2}
-        px={6}
-        fontWeight="black"
-        color="white"
-        href="https://medium.com/@GokaiLabs"
-      >
-        Blog
-      </Text>
+      {enabled.includes('blog') && (
+        <Text
+          as="a"
+          py={2}
+          px={6}
+          fontWeight="black"
+          color="white"
+          href="https://medium.com/@GokaiLabs"
+        >
+          Blog
+        </Text>
+      )}
+
+      {enabled.includes('wallet') && (
+        <Text
+          as="a"
+          py={2}
+          px={6}
+          fontWeight="black"
+          color="white"
+          href="https://walletfp.com/?category=esdt&address=gokai"
+        >
+          Wallet
+        </Text>
+      )}
+
+      {enabled.includes('rarity') && (
+        <Text
+          as="a"
+          py={2}
+          px={6}
+          fontWeight="black"
+          color="white"
+          href="https://elrondindex.io/collection/MRG-1c3ba4"
+        >
+          Rarity
+        </Text>
+      )}
 
       {enabled.includes('auth') && <LoginModalButton />}
     </Box>
