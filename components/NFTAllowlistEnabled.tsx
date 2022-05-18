@@ -22,7 +22,7 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
         >
           <Box fontSize={{ base: 'md' }}>
             <Text as="span" fontWeight="bold">
-              Allowlist is enabled. You are{' '}
+              You are{' '}
             </Text>
             {dataLoading ? (
               <Spinner ml={3} color="elvenTools.color2.darker" />
