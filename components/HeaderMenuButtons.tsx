@@ -29,7 +29,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         <Text
           as="a"
           py={2}
-          px={6}
+          px={{ base: '2', md: '6' }}
           fontWeight="black"
           color="white"
           href="https://medium.com/@GokaiLabs"
@@ -42,7 +42,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         <Text
           as="a"
           py={2}
-          px={6}
+          px={{ base: '2', md: '6' }}
           fontWeight="black"
           color="white"
           href="https://walletfp.com/?category=esdt&address=gokai"
@@ -55,7 +55,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         <Text
           as="a"
           py={2}
-          px={6}
+          px={{ base: '2', md: '6' }}
           fontWeight="black"
           color="white"
           href="https://elrondindex.io/collection/MRG-1c3ba4"
