@@ -20,7 +20,7 @@ export const HeroImage = () => {
       <motion.div
         animate={{
           scale: [1, 2, 2, 1, 1],
-          opacity: [0, 0.2],
+          opacity: [0, 0, 0.2],
         }}
       >
         <ImgG />
