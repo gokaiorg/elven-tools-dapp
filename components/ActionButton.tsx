@@ -24,7 +24,7 @@ export const ActionButton: FC<ActionButtonProps> = ({
     <Box
       as="button"
       py={2}
-      px={6}
+      px={{ base: '2', md: '6' }}
       fontWeight="black"
       cursor={disabled ? 'not-allowed' : 'pointer'}
       color="elvenTools.white"
