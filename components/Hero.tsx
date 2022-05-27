@@ -18,6 +18,7 @@ export const Hero = () => {
       overflow="hidden"
       pt={{ base: '5', md: '32', lg: '0' }}
     >
+      <HeroImage />
       <ImgEarth />
       <Text
         as="h1"
@@ -83,7 +84,6 @@ export const Hero = () => {
           height={379}
         />
       </Box>
-      <HeroImage />
       <ImgWin />
     </Box>
   );

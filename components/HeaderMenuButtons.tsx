@@ -14,6 +14,9 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
   const handleMintClick = useCallback(() => {
     router.push('/maiar-ghosts');
   }, [router]);
+  const handleUtilityClick = useCallback(() => {
+    router.push('/utility');
+  }, [router]);
 
   return (
     <Box
@@ -23,6 +26,9 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
     >
       {enabled.includes('maiar-ghosts') && (
         <ActionButton onClick={handleMintClick}>Maiar Ghosts</ActionButton>
+      )}
+      {enabled.includes('utility') && (
+        <ActionButton onClick={handleUtilityClick}>Utility</ActionButton>
       )}
 
       {enabled.includes('blog') && (
