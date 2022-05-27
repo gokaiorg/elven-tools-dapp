@@ -36,16 +36,16 @@ export const faq = [
 export const roadmap = [
   {
     title: 'DONE',
-    points: ['Collection design', 'Airdrop', 'Pre-sale'],
+    points: ['Airdrop', 'Pre-sale', 'Drop #1'],
   },
   {
     title: 'IN PROGRESS',
-    points: ['Community building', 'Partnerships', 'Public Sale: Drop #1'],
+    points: ['Community building', 'Partnerships', 'Vote for Drop #2'],
   },
   {
     title: 'PLANNED',
     points: [
-      'Cemetery',
+      'Cemetery - NFT Staking',
       'DAO governance',
       'Become a Validator'
     ],
@@ -92,19 +92,24 @@ export const collab = [
     socialMediaLinks: ['https://mobile.twitter.com/ElrondWorld'],
   },
   {
-    name: 'Wwwine',
-    imageUrl: '/static/media/collab-world-wide-wine-elrond.webp',
-    socialMediaLinks: ['https://www.wwwine.io/'],
-  },
-  {
     name: 'Plata',
     imageUrl: '/static/media/collab-plata-network-elrond.webp',
     socialMediaLinks: ['https://plata.network/'],
   },
   {
+    name: 'Effort Economy',
+    imageUrl: '/static/media/collab-effort-economy-elrond.webp',
+    socialMediaLinks: ['https://efforteconomy.io/'],
+  },
+  {
     name: 'Snapshot',
     imageUrl: '/static/media/collab-snapshot-elrond.webp',
     socialMediaLinks: ['https://snapshot.org/#/'],
+  },
+  {
+    name: 'Wwwine',
+    imageUrl: '/static/media/collab-world-wide-wine-elrond.webp',
+    socialMediaLinks: ['https://www.wwwine.io/'],
   },
   {
     name: 'Indie NFT Artwork',
