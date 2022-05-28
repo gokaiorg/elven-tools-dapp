@@ -70,6 +70,19 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         </Text>
       )}
 
+      {enabled.includes('contact') && (
+        <Text
+          as="a"
+          py={2}
+          px={{ base: '2', md: '6' }}
+          fontWeight="black"
+          color="white"
+          href="https://goo.gl/maps/SjdBdMf4e6xW7YYt7"
+        >
+          Contact
+        </Text>
+      )}
+
       {enabled.includes('auth') && <LoginModalButton />}
     </Box>
   );

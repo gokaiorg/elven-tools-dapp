@@ -131,6 +131,11 @@ export const collab = [
     imageUrl: '/static/media/collab-a-la-bonne-ferme-elrond.webp',
     socialMediaLinks: ['https://www.alabonneferme.fr/'],
   },
+  {
+    name: 'Elven Tools',
+    imageUrl: '/static/media/collab-elven-tools-elrond.webp',
+    socialMediaLinks: ['https://www.elven.tools/'],
+  },
 ];
 
 export const secondary = [
