@@ -112,6 +112,11 @@ export const collab = [
     socialMediaLinks: ['https://www.elrondme.com/'],
   },
   {
+    name: 'Orcpunks',
+    imageUrl: '/static/media/collab-orcpunks-elrond.webp',
+    socialMediaLinks: ['https://app.orcpunks.org/'],
+  },
+  {
     name: 'Snapshot',
     imageUrl: '/static/media/collab-snapshot-elrond.webp',
     socialMediaLinks: ['https://snapshot.org/#/'],
