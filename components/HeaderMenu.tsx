@@ -12,7 +12,7 @@ export const HeaderMenu: FC = ({ children }) => {
       justifyContent="space-between"
       flexWrap="wrap"
       background="black"
-      gap="2"
+      gap={{ base: '1', md: '2' }}
       py={5}
       px={5}
       sx={{
