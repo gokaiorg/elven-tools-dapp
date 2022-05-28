@@ -97,9 +97,19 @@ export const collab = [
     socialMediaLinks: ['https://plata.network/'],
   },
   {
+    name: 'Evoluzion Life',
+    imageUrl: '/static/media/collab-evoluzion-life-elrond.webp',
+    socialMediaLinks: ['https://www.evoluzion.life/'],
+  },
+  {
     name: 'Effort Economy',
     imageUrl: '/static/media/collab-effort-economy-elrond.webp',
     socialMediaLinks: ['https://efforteconomy.io/'],
+  },
+  {
+    name: 'Mutant Eheadz',
+    imageUrl: '/static/media/collab-mutant-eheadz-elrond.webp',
+    socialMediaLinks: ['https://www.elrondme.com/'],
   },
   {
     name: 'Snapshot',
@@ -117,14 +127,14 @@ export const collab = [
     socialMediaLinks: ['https://www.indienftartwork.com/'],
   },
   {
-    name: 'Evoluzion Life',
-    imageUrl: '/static/media/collab-evoluzion-life-elrond.webp',
-    socialMediaLinks: ['https://www.evoluzion.life/'],
-  },
-  {
     name: 'A la bonne ferme',
     imageUrl: '/static/media/collab-a-la-bonne-ferme-elrond.webp',
     socialMediaLinks: ['https://www.alabonneferme.fr/'],
+  },
+  {
+    name: 'Elven Tools',
+    imageUrl: '/static/media/collab-elven-tools-elrond.webp',
+    socialMediaLinks: ['https://www.elven.tools/'],
   },
 ];
 

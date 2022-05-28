@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <MainLayout>
       <HeaderMenu>
-        <HeaderMenuButtons enabled={['auth', 'maiar-ghosts', 'blog', 'wallet']} />
+        <HeaderMenuButtons enabled={['auth', 'maiar-ghosts', 'blog', 'wallet', 'contact']} />
       </HeaderMenu>
       <Box position="relative" width="100%">
         <Hero />
