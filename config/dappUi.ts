@@ -107,6 +107,11 @@ export const collab = [
     socialMediaLinks: ['https://efforteconomy.io/'],
   },
   {
+    name: 'Maka Bros',
+    imageUrl: '/static/media/collab-maka-bros-elrond.webp',
+    socialMediaLinks: ['https://www.maka-bros.com/'],
+  },
+  {
     name: 'Mutant Eheadz',
     imageUrl: '/static/media/collab-mutant-eheadz-elrond.webp',
     socialMediaLinks: ['https://www.elrondme.com/'],
