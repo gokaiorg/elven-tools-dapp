@@ -21,7 +21,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
   return (
     <Box
       display="flex"
-      gap={5}
+      gap={{ base: '2', md: '5' }}
       alignItems="center"
     >
       {enabled.includes('maiar-ghosts') && (
