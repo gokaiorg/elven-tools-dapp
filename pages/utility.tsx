@@ -9,7 +9,7 @@ const Mint: NextPage = () => {
   return (
     <MainLayout>
       <HeaderMenu>
-        <HeaderMenuButtons enabled={['auth', 'rarity', 'maiar-ghosts', 'utility']} />
+        <HeaderMenuButtons enabled={['auth', 'rarity', 'maiar-ghosts', 'analytics']} />
       </HeaderMenu>
       <Box
         display="flex"

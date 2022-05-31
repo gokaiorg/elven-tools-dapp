@@ -57,6 +57,19 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         </Text>
       )}
 
+       {enabled.includes('analytics') && (
+        <Text
+          as="a"
+          py={2}
+          px={{ base: '2', md: '6' }}
+          fontWeight="black"
+          color="white"
+          href="https://omniscient.tools/collections/maiar-ghosts"
+        >
+          Analytics
+        </Text>
+      )}
+
       {enabled.includes('rarity') && (
         <Text
           as="a"
