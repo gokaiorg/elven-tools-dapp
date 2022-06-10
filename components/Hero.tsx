@@ -38,8 +38,6 @@ export const Hero = () => {
           as="a"
           color="white"
           href="https://elrond.com/"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
         >
           Elrond Network
         </Text>
@@ -69,8 +67,6 @@ export const Hero = () => {
             }}
             borderRadius="full"
             href="https://linktr.ee/GokaiLabs"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             Discover
           </Text>
