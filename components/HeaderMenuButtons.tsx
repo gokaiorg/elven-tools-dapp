@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
-import { Box, Button, Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import { useCallback, FC } from 'react';
 import { ActionButton } from '../components/ActionButton';
-import { LoginModalButton } from '../components/LoginModalButton';
+import { LoginModalButton } from '../components/core/LoginModalButton';
 
 interface HeaderMenuButtonsProps {
   enabled: string[];
