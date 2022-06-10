@@ -61,12 +61,12 @@ export const Hero = () => {
             display="flex"
             p="1rem 2rem"
             mt={5}
+            color="elvenTools.color2.base"
             background="elvenTools.color2.lighter"
             _hover={{
               bg: 'elvenTools.color2.darker',
               color: 'elvenTools.color2.lighter',
             }}
-            color="elvenTools.color2.base"
             borderRadius="full"
             href="https://linktr.ee/GokaiLabs"
             target="_blank"

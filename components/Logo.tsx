@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
-import { Box, Text, Heading, keyframes } from '@chakra-ui/react';
 import { ImgG } from './ImgG';
+import { Box, Text } from '@chakra-ui/react';
 
 export const Logo = () => {
   return (
@@ -15,16 +15,18 @@ export const Logo = () => {
         <Box width="30px">
           <ImgG />
         </Box>
-        <Heading
+        <Text
           as="span"
           marginLeft="-4px"
           cursor="pointer"
           mb={0}
           fontSize="4xl"
+          fontWeight="bold"
+          fontFamily="heading"
           color="elvenTools.white"
         >
           okai Labs
-        </Heading>
+        </Text>
       </Box>
     </NextLink>
   );
