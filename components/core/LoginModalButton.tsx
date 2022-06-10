@@ -87,7 +87,7 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
       >
         <CustomModalOverlay />
         <ModalContent
-          bgColor="elvenTools.color3.base"
+          bgColor="elvenTools.color2.base"
           px={6}
           pt={7}
           pb={10}

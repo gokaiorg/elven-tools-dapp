@@ -21,6 +21,8 @@ export const Logo = () => {
           cursor="pointer"
           mb={0}
           fontSize="4xl"
+          fontWeight="bold"
+          fontFamily="heading"
           color="elvenTools.white"
         >
           okai Labs

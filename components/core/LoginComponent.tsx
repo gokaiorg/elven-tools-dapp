@@ -37,24 +37,53 @@ export const LoginComponent = memo(() => {
         {!isLoggedIn && (
           <>
             <ActionButton
+              color="elvenTools.color2.base"
+              background="elvenTools.color2.lighter"
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
+              borderRadius="full"
               isFullWidth
               onClick={handleLogin(LoginMethodsEnum.wallet)}
             >
               Elrond Web Wallet
             </ActionButton>
             <ActionButton
+              color="elvenTools.color2.base"
+              background="elvenTools.color2.lighter"
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
+              borderRadius="full"
               isFullWidth
               onClick={handleLogin(LoginMethodsEnum.extension)}
             >
               Maiar Browser Extension
             </ActionButton>
             <ActionButton
+              color="elvenTools.color2.base"
+              background="elvenTools.color2.lighter"
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
+              borderRadius="full"
               isFullWidth
               onClick={handleLogin(LoginMethodsEnum.walletconnect)}
             >
               Maiar Mobile App
             </ActionButton>
-            <ActionButton isFullWidth onClick={handleLedgerAccountsList}>
+            <ActionButton
+            color="elvenTools.color2.base"
+              background="elvenTools.color2.lighter"
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
+              borderRadius="full"
+              isFullWidth onClick={handleLedgerAccountsList}>
               Ledger
             </ActionButton>
           </>
