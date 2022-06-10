@@ -91,7 +91,6 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
           px={6}
           pt={7}
           pb={10}
-          px={0}
           position="relative"
         >
           <ModalCloseButton _focus={{ outline: 'none' }} />
