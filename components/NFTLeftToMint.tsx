@@ -1,10 +1,11 @@
 import { Box, Spinner, Text } from '@chakra-ui/react';
 import { FC } from 'react';
-import { isDropActive } from '../config/nftSmartContract';
+import { useElvenScQuery } from '../hooks/interaction/elvenScHooks/useElvenScQuery';
+import { SCQueryType } from '../hooks/interaction/useScQuery';
 
 interface NFTLeftToMintProps {
-  data?: string | number;
-  dropData?: string | number;
+  data?: number;
+  dropData?: number;
   dataLoading?: boolean;
 }
 
@@ -13,14 +14,19 @@ export const NFTLeftToMint: FC<NFTLeftToMintProps> = ({
   dropData,
   dataLoading,
 }) => {
+  const { data: dropActive } = useElvenScQuery<boolean>({
+    funcName: 'isDropActive',
+    type: SCQueryType.BOOLEAN,
+  });
+
   return (
     <Box
       display="flex"
       alignItems="center"
       justifyContent={{ base: 'center', md: 'flex-start' }}
     >
-      <Text fontSize={{ base: 'md', sm: 'xl' }} fontWeight="black">
-        {isDropActive ? 'Drop #1 -' : 'Total'} NFTs left to mint:{' '}
+      <Text fontSize={{ base: 'md', sm: 'xl' }} fontWeight="bold">
+        {dropActive ? 'Current drop' : 'Total'} NFTs left to mint:{' '}
       </Text>
       {dataLoading ? (
         <Spinner ml={3} color="elvenTools.color2.darker" />
@@ -31,7 +37,7 @@ export const NFTLeftToMint: FC<NFTLeftToMintProps> = ({
           fontWeight="black"
           ml={3}
         >
-          {isDropActive ? dropData : data}
+          {dropActive ? dropData : data}
         </Text>
       )}
     </Box>
