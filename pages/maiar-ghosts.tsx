@@ -8,7 +8,8 @@ import { CollectionInfoBox } from '../components/CollectionInfoBox';
 import { chainType, networkConfig } from '../config/network';
 import Image from 'next/image';
 import { ImgEarth } from '../components/ImgEarth';
-
+import { Helmet } from 'react-helmet';
+import { defaultMetaTags } from '../config/dappUi';
 import {
   collectionTicker,
   smartContractAddress,
@@ -20,6 +21,45 @@ import { Secondary } from '../components/Secondary';
 const Mint: NextPage = () => {
   return (
     <MainLayout>
+      <Helmet>
+        <title>{defaultMetaTags.titleMaiarGhosts}</title>
+        <meta
+          name="description"
+          content={defaultMetaTags.descriptionMaiarGhosts}
+        />
+        <meta
+          property="og:title"
+          content={defaultMetaTags.shortname}
+        />
+        <meta
+          property="og:description"
+          content={defaultMetaTags.descriptionMaiarGhosts}
+        />
+        <meta
+          property="og:image"
+          content={defaultMetaTags.imageMaiarGhosts}
+        />
+        <meta
+          property="og:url"
+          content={defaultMetaTags.urlMaiarGhosts}
+        />
+        <meta
+          name="twitter:title"
+          content={defaultMetaTags.shortname}
+        />
+        <meta
+          name="twitter:description"
+          content={defaultMetaTags.descriptionMaiarGhosts}
+        />
+        <meta
+          name="twitter:image"
+          content={defaultMetaTags.imageMaiarGhosts}
+        />
+        <meta
+          name="twitter:url"
+          content={defaultMetaTags.urlMaiarGhosts}
+        />
+      </Helmet>
       <HeaderMenu>
         <HeaderMenuButtons enabled={['auth', 'rarity', 'utility', 'analytics']} />
       </HeaderMenu>

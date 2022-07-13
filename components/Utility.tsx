@@ -6,28 +6,29 @@ export const Utility = () => {
   if (!Array.isArray(collab)) return null;
 
   return (
-    <Box mt={8} mb="48" color="white" textAlign={{ base: 'center', md: 'left' }}>
-      <Container maxW="1280px">
-        <Box flexDirection={{ base: 'column', md: 'row' }} display="flex" alignItems={{ base: 'center', md: 'start' }} p={5} mb={5} background="black" borderRadius="2xl">
+    <Box mt={8} mb="48" color="white" textAlign={{ base: 'center', lg: 'left' }}>
+      <Container maxW="1280px" display="flex" flexWrap="wrap" alignItems="stretch">
+        <Box flexDirection={{ base: 'column' }} width={{ base: '100%', lg: '32%' }} display="flex" alignItems={{ base: 'center', lg: 'start' }} p={5} mb={5} mx={1} background="black" borderRadius="3xl">
           <Box
             as="img"
+            mx="auto"
             width="200px"
             height="200px"
             src="/static/media/utility-mr-ghost-NFT-rewards-maiar-friends-elrond-network.webp"
             alt="Mr Ghost NFT utility - Maiar Friends Rewards - Maiar Ghosts"
             title="Mr Ghost NFT utility - Maiar Friends Rewards - Maiar Ghosts"
           />
-          <Box ml={{ base: '0', md: '4' }} mt={{ base: '4', md: '0' }}>
+          <Box mt={{ base: '4' }} display="flex" flexDirection="column" flex="1">
             <Text
               as="h2"
-              fontSize={{ base: '3xl', md: '2xl', lg: '3xl' }}
+              fontSize={{ base: '3xl' }}
               fontWeight="black"
             >NFTs rewards</Text>
             <Box fontSize={{ base: 'xl' }} mb={5}>
               Set your Mr Ghost NFT as avatar in Maiar app and become a <strong>@gokai</strong> friend to get 1 free Mr Ghost NFT per month!<br />
               No friends in Maiar? Add Gokai as friend with the <strong>+66949486177</strong>.
             </Box>
-            <Box display="inline-block" position="relative" zIndex="10" m="0 auto">
+            <Box display="flex" position="relative" zIndex="10" mt="auto" mx={{ base: "auto", lg: "inherit" }}>
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <Text
                   as="a"
@@ -49,24 +50,25 @@ export const Utility = () => {
             </Box>
           </Box>
         </Box>
-        <Box flexDirection={{ base: 'column', md: 'row' }} display="flex" alignItems={{ base: 'center', md: 'start' }} p={5} mb={5} background="black" borderRadius="2xl">
+        <Box flexDirection={{ base: 'column' }} width={{ base: '100%', lg: '32%' }} display="flex" alignItems={{ base: 'center', lg: 'start' }} p={5} mb={5} mx={1} background="black" borderRadius="3xl">
           <Box
             as="img"
+            mx="auto"
             width="200px"
             height="200px"
             src="/static/media/utility-mr-ghost-NFT-learn2earn-rondle-elrond-network.webp"
             alt="Mr Ghost NFT utility - Learn2Earn Rondle - Maiar Ghosts"
             title="Mr Ghost NFT utility - Learn2Earn Rondle - Maiar Ghosts"
           />
-          <Box ml={{ base: '0', md: '4' }} mt={{ base: '4', md: '0' }}>
+          <Box mt={{ base: '4' }} display="flex" flexDirection="column" flex="1">
             <Text
               as="h2"
-              fontSize={{ base: '3xl', md: '2xl', lg: '3xl' }}
+              fontSize={{ base: '3xl' }}
               fontWeight="black"
             >Learn2Earn</Text>
             <Box fontSize={{ base: 'xl' }} mb={5}>
               You can now play in <strong>Rondle</strong> dApp and earn $RONDLE, $EFFORT tokens and NFTs from several exciting Elrond blockchain projects!</Box>
-            <Box display="inline-block" position="relative" zIndex="10" m="0 auto">
+            <Box display="flex" position="relative" zIndex="10" mt="auto" mx={{ base: "auto", lg: "inherit" }}>
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <Text
                   as="a"
@@ -88,25 +90,26 @@ export const Utility = () => {
             </Box>
           </Box>
         </Box>
-        <Box flexDirection={{ base: 'column', md: 'row' }} display="flex" alignItems={{ base: 'center', md: 'start' }} p={5} mb={5} background="black" borderRadius="2xl">
+        <Box flexDirection={{ base: 'column' }} width={{ base: '100%', lg: '32%' }} display="flex" alignItems={{ base: 'center', lg: 'start' }} p={5} mb={5} mx={1} background="black" borderRadius="3xl">
           <Box
             as="img"
+            mx="auto"
             width="200px"
             height="200px"
             src="/static/media/utility-mr-ghost-NFT-discord-ambitious-organisation-elrond-network.webp"
             alt="Mr Ghost NFT utility - Discord Ambitious Organisation - Maiar Ghosts"
             title="Mr Ghost NFT utility - Discord Ambitious Organisation - Maiar Ghosts"
           />
-          <Box ml={{ base: '0', md: '4' }} mt={{ base: '4', md: '0' }}>
+          <Box mt={{ base: '4' }} display="flex" flexDirection="column" flex="1">
             <Text
             as="h2"
-            fontSize={{ base: '3xl', md: '2xl', lg: '3xl' }}
+            fontSize={{ base: '3xl' }}
             fontWeight="black"
             >Governance</Text>
             <Box fontSize={{ base: 'xl' }} mb={5}>
               Participate in the governance and take the strategic decisions for the organisation! Join our <strong>Discord Ambitious Organisation</strong> and verify your address in the <strong>#verify-member</strong> channel to be able to vote.
             </Box>
-            <Box display="inline-block" position="relative" zIndex="10" m="0 auto">
+            <Box display="flex" position="relative" zIndex="10" mt="auto" mx={{ base: "auto", lg: "inherit" }}>
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <Text
                   as="a"
@@ -125,26 +128,6 @@ export const Utility = () => {
                   Join
                 </Text>
               </motion.div>
-            </Box>
-          </Box>
-        </Box>
-        <Box flexDirection={{ base: 'column', md: 'row' }} display="flex" alignItems={{ base: 'center', md: 'start' }} p={5} mb={5} background="black" borderRadius="2xl">
-          <Box
-            as="img"
-            width="200px"
-            height="200px"
-            src="/static/media/utility-mr-ghost-NFT-cemetery-staking-elrond-network.webp"
-            alt="Mr Ghost NFT utility - Cemetery Staking - Maiar Ghosts"
-            title="Mr Ghost NFT utility - Cemetery Staking - Maiar Ghosts"
-          />
-          <Box ml={{ base: '0', md: '4' }} mt={{ base: '4', md: '0' }}>
-            <Text
-              as="h2"
-              fontSize={{ base: '3xl', md: '2xl', lg: '3xl' }}
-              fontWeight="black"
-            >Cemetery - NFT Staking</Text>
-            <Box fontSize={{ base: 'xl' }} mb={5}>
-              Coming soon!
             </Box>
           </Box>
         </Box>
