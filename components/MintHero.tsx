@@ -239,7 +239,7 @@ export const MintHero = () => {
         ) : (
           <Box textAlign={{ base: 'center', md: 'left' }}>
             <Text fontSize="2xl" fontWeight="bold" mt={10}>
-              Drop #1 - Sold Out.
+              Drop #2 - Today 8 PM UTC.
             </Text>
             <Text fontSize="2xl" fontWeight="bold">
               Please be back soon!
