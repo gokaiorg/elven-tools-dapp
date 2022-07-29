@@ -10,15 +10,21 @@ import Image from 'next/image';
 import { ImgEarth } from '../components/ImgEarth';
 import { Helmet } from 'react-helmet';
 import { defaultMetaTags } from '../config/dappUi';
-import {
-  collectionTicker,
-  smartContractAddress,
-} from '../config/nftSmartContract';
 import { shortenHash } from '../utils/shortenHash';
 import { Invest } from '../components/Invest';
 import { Secondary } from '../components/Secondary';
+import { useElvenScQuery } from '../hooks/interaction/elvenScHooks/useElvenScQuery';
+import { SCQueryType } from '../hooks/interaction/useScQuery';
+
+const smartContractAddress = process.env.NEXT_PUBLIC_NFT_SMART_CONTRACT;
 
 const Mint: NextPage = () => {
+    const { data: collectionTicker, isLoading: collectionTickerLoading } =
+    useElvenScQuery<number>({
+      funcName: 'getNftTokenId',
+      type: SCQueryType.STRING,
+    });
+  
   return (
     <MainLayout>
       <Helmet>
@@ -77,16 +83,25 @@ const Mint: NextPage = () => {
           justifyContent={{ base: 'center', md: 'center' }}
           gap={3}
         >
-          <CollectionInfoBox
-            content={collectionTicker}
-            label="Collection ticker. Click for details."
-            href={`${networkConfig[chainType].explorerAddress}/collections/${collectionTicker}`}
-          />
-          <CollectionInfoBox
-            content={shortenHash(smartContractAddress, 12)}
-            label={`Minter smart contract. Click for details.`}
-            href={`${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`}
-          />
+           <CollectionInfoBox
+          content={collectionTicker || ''}
+          label="Collection ticker. Click for details."
+          isLoading={collectionTickerLoading}
+          href={`${networkConfig[chainType].explorerAddress}/collections/${collectionTicker}`}
+        />
+        <CollectionInfoBox
+          content={
+            smartContractAddress
+              ? shortenHash(smartContractAddress || '', 12)
+              : 'No minter smart contract provided!'
+          }
+          label={`Minter smart contract. Click for details.`}
+          href={
+            smartContractAddress
+              ? `${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`
+              : undefined
+          }
+        />
         </Box>
         <MintHero />
         <Box marginBottom="-7px">

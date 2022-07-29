@@ -1,16 +1,10 @@
 import { Box, Text } from '@chakra-ui/react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { HeroImage } from './HeroImage';
 import { ImgEarth } from './ImgEarth';
 import { ImgWin } from './ImgWin';
-import { CollectionInfoBox } from './CollectionInfoBox';
-import { chainType, networkConfig } from '../config/network';
-import { shortenHash } from '../utils/shortenHash';
 import { useElvenScQuery } from '../hooks/interaction/elvenScHooks/useElvenScQuery';
 import { SCQueryType } from '../hooks/interaction/useScQuery';
-
-const smartContractAddress = process.env.NEXT_PUBLIC_NFT_SMART_CONTRACT;
 
 export const Hero = () => {
   const { data: collectionSize, isLoading: collectionSizeLoading } =
@@ -23,12 +17,6 @@ export const Hero = () => {
     useElvenScQuery<number>({
       type: SCQueryType.NUMBER,
       funcName: 'getTotalTokensLeft',
-    });
-
-  const { data: collectionTicker, isLoading: collectionTickerLoading } =
-    useElvenScQuery<number>({
-      funcName: 'getNftTokenId',
-      type: SCQueryType.STRING,
     });
 
   return (
@@ -76,40 +64,12 @@ export const Hero = () => {
       >
         Buy a Mr Ghost NFT and become a member of Gokai Labs
       </Text>
-      <Box
-        display="flex"
-        justifyContent={{ base: 'center', md: 'flex-start' }}
-        mt={10}
-        gap={3}
-        sx={{
-          '@media screen and (max-width: 650px)': {
-            flexDirection: 'column',
-          },
-        }}
-      >
-        <CollectionInfoBox
-          content={collectionTicker || ''}
-          label="Collection ticker. Click for details."
-          isLoading={collectionTickerLoading}
-          href={`${networkConfig[chainType].explorerAddress}/collections/${collectionTicker}`}
-        />
-        <CollectionInfoBox
-          content={
-            smartContractAddress
-              ? shortenHash(smartContractAddress || '', 12)
-              : 'No minter smart contract provided!'
-          }
-          label={`Minter smart contract. Click for details.`}
-          href={
-            smartContractAddress
-              ? `${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`
-              : undefined
-          }
-        />
-        <CollectionInfoBox
-          content={`${collectionSize - totalTokensLeft} / ${collectionSize}`}
-          isLoading={collectionSizeLoading || totalTokensLeftIsLoading}
-          label="Minter per collection supply"
+      <Box position="absolute" bottom="0" marginBottom="-7px">
+        <Image
+          src="/static/media/bg-mr-ghost-bottom.png"
+          alt="Mr Ghost Moon"
+          width={2048}
+          height={379}
         />
       </Box>
       <ImgWin />

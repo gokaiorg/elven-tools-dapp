@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Box, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Text, useBreakpointValue, Container } from '@chakra-ui/react';
 import { useCallback, useEffect } from 'react';
 import { Address } from '@elrondnetwork/erdjs';
 import { SCQueryType } from '../hooks/interaction/useScQuery';
@@ -9,6 +9,7 @@ import { Authenticated } from './core/Authenticated';
 import { useAccount } from '../hooks/auth/useAccount';
 import { LoginModalButton } from './core/LoginModalButton';
 import { networkConfig, chainType } from '../config/network';
+import { motion } from 'framer-motion';
 import { NFTLeftToMint } from './NFTLeftToMint';
 import { NFTAllowlistEnabled } from './NFTAllowlistEnabled';
 import { NFTMintedAlready } from './NFTMintedAlready';
@@ -191,28 +192,54 @@ export const MintHero = () => {
   const tokensLeftPerUser = getLeftToMintForUser();
 
   return (
-    <Box width="100%">
-      <Text
-        as="h1"
-        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
-        textAlign={{ base: 'center', md: 'left' }}
-        fontWeight="black"
-        lineHeight="shorter"
-        mb={5}
-      >
-        ⚡ Mint some of them
-      </Text>
-      <Text
-        as="h2"
-        fontSize="lg"
-        fontWeight="thin"
-        textAlign={{ base: 'center', md: 'left' }}
-      >
-        To be able to mint you have to be logged in to be able to mint. Remember
-        that it will mint only on the devent. If you want to do that, you need
-        to connect using one of the methods and the devnet address with some
-        xEGLD funds.
-      </Text>
+    <Container
+      display="flex"
+      flexDirection={{ base: 'column', md: 'row' }}
+      alignItems="center"
+      width="100%"
+      maxWidth="1280px"
+    >
+      <Box width={{ base: '100%', md: '40%' }} mr={{ base: '0', md: '3rem' }} display="flex" justifyContent="center">
+        <motion.div
+        animate={{
+          y: [-15, 15, -15],
+        }}
+        transition={{
+          duration: 1,
+          ease: 'easeInOut',
+          repeat: Infinity,
+          repeatDelay: 0,
+        }}
+        >
+          <img
+            src="/static/media/maiar-ghosts-mint-elrond-nft-dao.gif"
+            title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
+            alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
+            width={500}
+            height={500}
+          />
+        </motion.div>
+      </Box>
+      <Box width={{ base: '100%', md: '50%' }}>
+        <Text
+          as="h1"
+          fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+          textAlign={{ base: 'center', md: 'left' }}
+          fontWeight="black"
+          lineHeight="shorter"
+          mb={5}
+        >
+          Collection of 8658 unique Mr Ghost NFT haunting the Elrond blockchain
+        </Text>
+        <Text
+          as="h2"
+          fontSize="lg"
+          fontWeight="thin"
+          textAlign={{ base: 'center', md: 'left' }}
+        >
+          Mr Ghost was born from a wish to create an NFT around the M logo from
+          the Elrond Network ​​digital wallet: Maiar.
+        </Text>
       {!mintingPaused ? (
         <Box mt={6}>
           <NFTLeftToMint
@@ -226,9 +253,13 @@ export const MintHero = () => {
                 <Box
                   mt={6}
                   display="flex"
+                  alignItems="center"
                   justifyContent={isContentCentered ? 'center' : 'flex-start'}
                 >
-                  <LoginModalButton />
+                  Login to mint{" "}
+                  <Box borderRadius="full" border="1px solid #fff" ml="1rem">
+                    <LoginModalButton />
+                  </Box>
                 </Box>
               }
               spinnerCentered={isContentCentered}
@@ -304,7 +335,8 @@ export const MintHero = () => {
             Please be back soon!
           </Text>
         </Box>
-      )}
-    </Box>
+        )}
+      </Box>
+    </Container>
   );
 };
