@@ -50,12 +50,12 @@ export const roadmap = [
   },
   {
     title: 'IN PROGRESS',
-    points: ['Community building', 'Partnerships', 'Vote for Drop #2'],
+    points: ['Community building', 'Partnerships', 'Drop #2'],
   },
   {
     title: 'PLANNED',
     points: [
-      'Cemetery - NFT Staking',
+      'Cemetery',
       'DAO governance',
       'Become a Validator'
     ],
@@ -107,19 +107,44 @@ export const collab = [
     socialMediaLinks: ['https://plata.network/'],
   },
   {
-    name: 'Evoluzion Life',
-    imageUrl: '/static/media/collab-evoluzion-life-elrond.webp',
-    socialMediaLinks: ['https://www.evoluzion.life/'],
-  },
-  {
     name: 'Effort Economy',
     imageUrl: '/static/media/collab-effort-economy-elrond.webp',
     socialMediaLinks: ['https://efforteconomy.io/'],
   },
   {
+    name: 'Vital Network',
+    imageUrl: '/static/media/collab-vital-elrond.webp',
+    socialMediaLinks: ['https://vitalnetwork.io/'],
+  },
+  {
+    name: 'Snapshot',
+    imageUrl: '/static/media/collab-snapshot-elrond.webp',
+    socialMediaLinks: ['https://snapshot.org/#/'],
+  },
+  {
+    name: 'Elrond Sport Club',
+    imageUrl: '/static/media/collab-elrond-sport-club.webp',
+    socialMediaLinks: ['https://elrondsportsclub.com/'],
+  },
+  {
+    name: 'ERD Launchpad',
+    imageUrl: '/static/media/collab-erdlaunchpad-elrond.webp',
+    socialMediaLinks: ['https://erdlaunchpad.com'],
+  },
+  {
+    name: 'Evoluzion Life',
+    imageUrl: '/static/media/collab-evoluzion-life-elrond.webp',
+    socialMediaLinks: ['https://www.evoluzion.life/'],
+  },
+  {
     name: 'Maka Bros',
     imageUrl: '/static/media/collab-maka-bros-elrond.webp',
     socialMediaLinks: ['https://www.maka-bros.com/'],
+  },
+  {
+    name: 'HODL Cards',
+    imageUrl: '/static/media/collab-hodlcards-elrond.webp',
+    socialMediaLinks: ['https://hodlcards.net/'],
   },
   {
     name: 'Mutant Eheadz',
@@ -130,11 +155,6 @@ export const collab = [
     name: 'Orcpunks',
     imageUrl: '/static/media/collab-orcpunks-elrond.webp',
     socialMediaLinks: ['https://app.orcpunks.org/'],
-  },
-  {
-    name: 'Snapshot',
-    imageUrl: '/static/media/collab-snapshot-elrond.webp',
-    socialMediaLinks: ['https://snapshot.org/#/'],
   },
   {
     name: 'Wwwine',

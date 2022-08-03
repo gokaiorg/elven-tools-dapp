@@ -9,7 +9,7 @@ export const Collab = () => {
   return (
     <Box mt={32} mb="48">
       <HomeSectionTitle title="Collabs" />
-      <SimpleGrid columns={{ lg: 6, md: 6, sm: 4, base:2 }} spacing={5}>
+      <SimpleGrid columns={{ lg: 8, md: 6, sm: 4, base:2 }} spacing={5}>
         {collab.map((collabMember, index) => (
           <CollabMember key={index} {...collabMember} />
         ))}
