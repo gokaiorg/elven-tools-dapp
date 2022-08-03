@@ -6,11 +6,21 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
   title:
-    'Gokai Labs | Collectible NFT DAO project on Elrond Network - Maiar Ghosts NFT collection',
+    'Community-driven collectible NFT project on Elrond Network - Gokai Labs',
   description:
-    'Gokai Labs is a DAO project drived by the community via a governance NFT, Mr Ghost on Elrond Network. Get a Mr Ghost, become a member.',
+    'Gokai Labs works like a DAO, all decisions are made by the community. The Maiar Ghosts collection operates as a governance NFT. Vote and participate in the progress of the project. Get a Mr Ghost, become a member.',
   image: `${dappHostname}/social.png`,
   shortname: 'Gokai Labs',
+  titleMaiarGhosts: 'Mint, buy and sell Maiar Ghosts NFT on Elrond NFTs marketplace - Gokai Labs',
+  descriptionMaiarGhosts:
+    'Maiar Ghosts is a collection of 8658 unique Mr Ghost NFTs haunting the Elrond blockchain. Mr Ghost was born from a wish to create an NFT around the M logo from the Elrond Network digital wallet: Maiar. With 666 traits, Mr Ghost is one of the most fun Elrond NFTs to collect.',
+  imageMaiarGhosts: `${dappHostname}/social-maiar-ghosts.png`,
+  urlMaiarGhosts: `${dappHostname}/maiar-ghosts`,
+  titleUtility: 'Collect, Trade, Play and Earn with Mr Ghost NFT on Elrond Network - Gokai Labs',
+  descriptionUtility:
+    'The utility of Maiar Ghosts has just begun. You can collect them, trade them, vote in governance and play our various games! NFT for avatar in Maiar app, Effort Economy games, win NFTs and many more surprises to come.',
+  imageUtility: `${dappHostname}/social-maiar-ghosts-utility.png`,
+  urlUtility: `${dappHostname}/utility`,
 };
 
 // FAQ section data

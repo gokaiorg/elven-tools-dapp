@@ -13,11 +13,6 @@ export const MetaHead: FC<MetaHeadProps> = memo(
   ({ metaTitle, metaDescription, metaImage, metaUrl }) => {
     return (
       <Head>
-        <title>{metaTitle || defaultMetaTags.title}</title>
-        <meta
-          name="description"
-          content={metaDescription || defaultMetaTags.description}
-        />
         <meta name="author" content="Elven Tools | www.elven.tools"></meta>
         <link rel='icon' sizes='192x192' href='https://gokai.org/logo192.png' />
         <meta name='msapplication-square310x310logo' content='https://gokai.org/logo512.png'></meta>
@@ -27,35 +22,54 @@ export const MetaHead: FC<MetaHeadProps> = memo(
         <link rel='apple-touch-icon' sizes='152x152' href='https://gokai.org/logo192.png' />
         <meta name="theme-color" content="#000000" />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <title>{metaTitle || defaultMetaTags.title}</title>
+        <meta
+          name="description"
+          content={metaDescription || defaultMetaTags.description}
+          data-react-helmet="true"
+        />
         <meta
           property="og:title"
           content={metaTitle || defaultMetaTags.shortname}
+          data-react-helmet="true"
         />
         <meta
           property="og:description"
           content={metaDescription || defaultMetaTags.description}
+          data-react-helmet="true"
         />
         <meta
           property="og:image"
           content={metaImage || defaultMetaTags.image}
+          data-react-helmet="true"
         />
-        <meta property="og:url" content={metaUrl || dappHostname} />
-
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:url"
+          content={metaUrl || dappHostname}
+          data-react-helmet="true"
+        />
         <meta
           name="twitter:title"
           content={metaTitle || defaultMetaTags.shortname}
+          data-react-helmet="true"
         />
         <meta
           name="twitter:description"
           content={metaDescription || defaultMetaTags.description}
+          data-react-helmet="true"
         />
         <meta
           name="twitter:image"
           content={metaImage || defaultMetaTags.image}
+          data-react-helmet="true"
         />
-        <meta name="twitter:url" content={metaUrl || dappHostname} />
-        <meta name="twitter:title" content="Gokai Labs" />
+        <meta
+          name="twitter:url"
+          content={metaUrl || dappHostname}
+          data-react-helmet="true"
+        />
 
         <meta
           name="google-site-verification"
