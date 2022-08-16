@@ -70,10 +70,10 @@ export const team = [
     socialMediaLinks: ['https://www.linkedin.com/in/jeremy-douchamps/'],
   },
   {
-    name: 'Vladimir',
-    bio: 'Developper',
-    imageUrl: '/static/media/build-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
-    socialMediaLinks: ['https://github.com/VladimirAndrianov96'],
+    name: 'Louis',
+    bio: 'Artist',
+    imageUrl: '/static/media/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
   {
     name: 'Nati',
@@ -86,12 +86,6 @@ export const team = [
     bio: 'SEO Expert',
     imageUrl: '/static/media/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/albertlanne/'],
-  },
-  {
-    name: 'Louis',
-    bio: 'Artist',
-    imageUrl: '/static/media/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
-    socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
 ];
 
