@@ -2,7 +2,7 @@
 
 - Docs: [elven.tools/docs/minter-dapp-introduction.html](https://www.elven.tools/docs/minter-dapp-introduction.html)
 - Demo: [dapp-demo.elven.tools](https://dapp-demo.elven.tools)
-- Sneak peek: [youtu.be/ATSxD3mD4dc](https://youtu.be/ATSxD3mD4dc)
+- Elven Tools intro (including the Dapp): [youtu.be/Jou5jn8PFz8](https://youtu.be/Jou5jn8PFz8)
 
 The Dapp is built using Nextjs and a couple of helpful tools. It allows you to interact with the Elrond blockchain, smart contracts, and especially it is prepared for the [Elven Tools Smart Contract](https://github.com/ElvenTools/elven-nft-minter-sc). But you can always modify it and adjust for your needs.
 
@@ -80,10 +80,9 @@ Check detailed docs on it here: [How to start with the Dapp](https://www.elven.t
 
 ### Main assumption for the dapp:
 - it works on Nextjs
-- it uses erdjs 10.* without the dapp-core library.
+- it uses the newest version of erdjs without the dapp-core library.
 - it uses backend side rewrites to hide the API endpoint. The only exposed one is `/api`
 - it uses .env file - there is an example in the repo
-- it uses a couple of config files in the 'config' directory (it will be simplified in the future)
 - it uses chakra-ui
 
 More docs on it: [Minter Dapp introduction](https://www.elven.tools/docs/minter-dapp-introduction.html)
