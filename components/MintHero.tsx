@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Box, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Container, Text, useBreakpointValue } from '@chakra-ui/react';
 import { useCallback, useEffect } from 'react';
 import { Address } from '@elrondnetwork/erdjs';
 import { SCQueryType } from '../hooks/interaction/useScQuery';
@@ -7,12 +7,14 @@ import { useElvenScQuery } from '../hooks/interaction/elvenScHooks/useElvenScQue
 import { MintForm } from './MintForm';
 import { Authenticated } from './core/Authenticated';
 import { useAccount } from '../hooks/auth/useAccount';
+import { motion } from 'framer-motion';
 import { LoginModalButton } from './core/LoginModalButton';
 import { networkConfig, chainType } from '../config/network';
 import { NFTLeftToMint } from './NFTLeftToMint';
 import { NFTAllowlistEnabled } from './NFTAllowlistEnabled';
 import { NFTMintedAlready } from './NFTMintedAlready';
 import { NFTLeftToMintPerAddress } from './NFTLeftToMintPerAddress';
+import Image from 'next/image';
 
 // TODO: Prepare separate components for the segments here
 // TODO: use Valtio for global smart contract config state + dispatchers to be able to trigger changes from each component
@@ -191,28 +193,54 @@ export const MintHero = () => {
   const tokensLeftPerUser = getLeftToMintForUser();
 
   return (
-    <Box width="100%">
-      <Text
-        as="h1"
-        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
-        textAlign={{ base: 'center', md: 'left' }}
-        fontWeight="black"
-        lineHeight="shorter"
-        mb={5}
-      >
-        ⚡ Mint some of them
-      </Text>
-      <Text
-        as="h2"
-        fontSize="lg"
-        fontWeight="thin"
-        textAlign={{ base: 'center', md: 'left' }}
-      >
-        To be able to mint you have to be logged in to be able to mint. Remember
-        that it will mint only on the devent. If you want to do that, you need
-        to connect using one of the methods and the devnet address with some
-        xEGLD funds.
-      </Text>
+    <Container
+      display="flex"
+      flexDirection={{ base: 'column', md: 'row' }}
+      alignItems="center"
+      width="100%"
+      maxWidth="1280px"
+    >
+      <Box width={{ base: '100%', md: '40%' }} mr={{ base: '0', md: '3rem' }} display="flex" justifyContent="center">
+        <motion.div
+        animate={{
+          y: [-15, 15, -15],
+        }}
+        transition={{
+          duration: 1,
+          ease: 'easeInOut',
+          repeat: Infinity,
+          repeatDelay: 0,
+        }}
+        >
+          <Image
+          src="/static/media/maiar-ghosts-mint-elrond-nft-dao.gif"
+          title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
+          alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
+          width={500}
+          height={500}
+          />
+        </motion.div>
+      </Box>
+      <Box width={{ base: '100%', md: '50%' }}>
+        <Text
+          as="h1"
+          fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+          textAlign={{ base: 'center', md: 'left' }}
+          fontWeight="black"
+          lineHeight="shorter"
+          mb={5}
+        >
+          Collection of 8658 unique Mr Ghost NFT haunting the Elrond blockchain
+        </Text>
+        <Text
+          as="h2"
+          fontSize="lg"
+          fontWeight="thin"
+          textAlign={{ base: 'center', md: 'left' }}
+        >
+          Mr Ghost was born from a wish to create an NFT around the M logo from
+          the Elrond Network ​​digital wallet: Maiar.
+        </Text>
       {!mintingPaused ? (
         <Box mt={6}>
           <NFTLeftToMint
@@ -226,9 +254,13 @@ export const MintHero = () => {
                 <Box
                   mt={6}
                   display="flex"
+                  alignItems="center"
                   justifyContent={isContentCentered ? 'center' : 'flex-start'}
                 >
-                  <LoginModalButton />
+                  Login to mint{" "}
+                  <Box borderRadius="full" border="1px solid #fff" ml="1rem">
+                    <LoginModalButton />
+                  </Box>
                 </Box>
               }
               spinnerCentered={isContentCentered}
@@ -262,24 +294,16 @@ export const MintHero = () => {
                   justifyContent={{ base: 'center', md: 'flex-start' }}
                 >
                   <Text
-                    as="span"
-                    fontSize={{ base: 'md', sm: 'xl' }}
-                    fontWeight="bold"
-                  >
-                    Check your NFTs:
-                  </Text>
-                  <Text
                     as="a"
-                    ml={3}
                     target="_blank"
-                    color="elvenTools.color2.base"
-                    fontSize="2xl"
+                    color="elvenTools.color2.darker"
+                    fontSize="xl"
                     fontWeight="black"
                     textDecoration="underline"
                     rel="noopener noreferrer nofollow"
                     href={`${networkConfig[chainType].explorerAddress}/accounts/${address}/nfts`}
                   >
-                    here
+                    Check your NFTs!
                   </Text>
                 </Box>
               ) : null}
@@ -304,7 +328,8 @@ export const MintHero = () => {
             Please be back soon!
           </Text>
         </Box>
-      )}
-    </Box>
+        )}
+        </Box>
+    </Container>
   );
 };

@@ -1,117 +1,86 @@
 import { Box, Text } from '@chakra-ui/react';
-import { CollectionInfoBox } from './CollectionInfoBox';
-import { chainType, networkConfig } from '../config/network';
-import { shortenHash } from '../utils/shortenHash';
-import { useElvenScQuery } from '../hooks/interaction/elvenScHooks/useElvenScQuery';
-import { SCQueryType } from '../hooks/interaction/useScQuery';
-
-const smartContractAddress = process.env.NEXT_PUBLIC_NFT_SMART_CONTRACT;
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { HeroImage } from './HeroImage';
+import { ImgEarth } from './ImgEarth';
+import { ImgWin } from './ImgWin';
 
 export const Hero = () => {
-  const { data: collectionSize, isLoading: collectionSizeLoading } =
-    useElvenScQuery<number>({
-      funcName: 'getTotalSupply',
-      type: SCQueryType.NUMBER,
-    });
-
-  const { data: totalTokensLeft, isLoading: totalTokensLeftIsLoading } =
-    useElvenScQuery<number>({
-      type: SCQueryType.NUMBER,
-      funcName: 'getTotalTokensLeft',
-    });
-
-  const { data: collectionTicker, isLoading: collectionTickerLoading } =
-    useElvenScQuery<number>({
-      funcName: 'getNftTokenId',
-      type: SCQueryType.STRING,
-    });
-
-  const minted =
-    collectionSize && totalTokensLeft ? collectionSize - totalTokensLeft : 0;
-
   return (
-    <Box width="100%">
+    <Box
+      display="flex"
+      flexDirection="column"
+      width="100%"
+      height={{ base: 'auto', lg: 'calc(100vh - 85px)' }}
+      position="relative"
+      zIndex="1"
+      background="black"
+      overflow="hidden"
+      pt={{ base: '5', md: '32', lg: '0' }}
+    >
+      <HeroImage />
+      <ImgEarth />
       <Text
         as="h1"
-        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
-        textAlign={{ base: 'center', md: 'left' }}
+        fontSize={{ base: '4xl', md: '3xl', lg: '5xl' }}
+        maxWidth={{ base: '100%', md: '100%', lg: '60%' }}
+        textAlign={{ base: 'center', md: 'center' }}
         fontWeight="black"
         lineHeight="shorter"
+        mx="auto"
+        pt={{ base: '16', md: '0', lg: '20' }}
         mb={5}
+        zIndex="10"
       >
-        Open source Dapp template for the{' '}
+        Collectible NFT project on
+        <br />
         <Text
           as="a"
-          color="elvenTools.color3.base"
-          href="https://www.elven.tools"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
+          color="white"
+          href="https://elrond.com/"
         >
-          Elven Tools
-        </Text>{' '}
-        and{' '}
-        <Text
-          as="a"
-          color="elvenTools.color2.base"
-          href="https://www.elrond.com"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          Elrond
-        </Text>{' '}
-        blockchain.
+          Elrond Network
+        </Text>
       </Text>
       <Text
-        as="h2"
-        fontSize="lg"
-        fontWeight="thin"
-        textAlign={{ base: 'center', md: 'left' }}
+        as="p"
+        fontSize="2xl"
+        fontWeight="medium"
+        textAlign="center"
+        zIndex="10"
       >
-        The actual working example is connected to the Elven Tools smart
-        contract deployed on the Elrond blockchain{' '}
-        <Text as="span" fontWeight="medium">
-          devnet
-        </Text>
-        ! You can play with it. I will redeploy it from time to time to keep the
-        minting active. You can also use the template on the mainnet with a
-        couple of config changes. Check the Elven Tools website for docs.
+        Buy a Mr Ghost NFT and become a member of Gokai Labs
       </Text>
-      <Box
-        display="flex"
-        justifyContent={{ base: 'center', md: 'flex-start' }}
-        mt={10}
-        gap={3}
-        sx={{
-          '@media screen and (max-width: 650px)': {
-            flexDirection: 'column',
-          },
-        }}
-      >
-        <CollectionInfoBox
-          content={collectionTicker || '-'}
-          label="Collection ticker. Click for details."
-          isLoading={collectionTickerLoading}
-          href={`${networkConfig[chainType].explorerAddress}/collections/${collectionTicker}`}
-        />
-        <CollectionInfoBox
-          content={
-            smartContractAddress
-              ? shortenHash(smartContractAddress || '', 12)
-              : 'No minter smart contract provided!'
-          }
-          label={`Minter smart contract. Click for details.`}
-          href={
-            smartContractAddress
-              ? `${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`
-              : undefined
-          }
-        />
-        <CollectionInfoBox
-          content={`${minted} / ${collectionSize || 0}`}
-          isLoading={collectionSizeLoading || totalTokensLeftIsLoading}
-          label="Minted per collection supply"
+      <Box display="flex" position="relative" zIndex="10" m="0 auto">
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <Text
+            as="a"
+            fontSize="xl"
+            display="flex"
+            p="1rem 2rem"
+            mt={5}
+            color="elvenTools.color2.base"
+            background="elvenTools.color2.lighter"
+            _hover={{
+              bg: 'elvenTools.color2.darker',
+              color: 'elvenTools.color2.lighter',
+            }}
+            borderRadius="full"
+            href="https://linktr.ee/GokaiLabs"
+          >
+            Discover
+          </Text>
+        </motion.div>
+      </Box>
+      <Box position="absolute" bottom="-7px">
+        <Image
+          src="/static/media/bg-mr-ghost-bottom.png"
+          alt="Mr Ghost Moon"
+          width={2048}
+          height={379}
         />
       </Box>
+      <ImgWin />
     </Box>
   );
 };

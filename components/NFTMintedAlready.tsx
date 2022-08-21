@@ -15,25 +15,19 @@ export const NFTMintedAlready: FC<NFTMintedAlreadyProps> = ({
       display="flex"
       alignItems="center"
       justifyContent={{ base: 'center', md: 'flex-start' }}
+      fontSize={{ base: 'md' }}
     >
-      <Text fontSize={{ base: 'md', sm: 'xl' }} fontWeight="bold">
-        You have minted:{' '}
-      </Text>
+      <Text fontWeight="bold">You have minted: </Text>
 
       {dataLoading ? (
-        <Spinner ml={3} color="elvenTools.color2.base" />
+        <Spinner ml={3} color="elvenTools.color2.darker" />
       ) : (
-        <Text
-          color="elvenTools.color2.base"
-          fontSize="3xl"
-          fontWeight="black"
-          ml={3}
-        >
+        <Text color="elvenTools.color2.darker" fontWeight="black" ml={3}>
           {data}
         </Text>
       )}
 
-      <Text fontSize={{ base: 'md', sm: 'xl' }} fontWeight="bold" ml={3}>
+      <Text fontWeight="bold" ml={3}>
         in total
       </Text>
     </Box>

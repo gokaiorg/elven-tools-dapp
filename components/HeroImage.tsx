@@ -1,30 +1,31 @@
 import { Box } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import { ImgG } from '../components/ImgG';
 
 export const HeroImage = () => {
   return (
     <Box
-      minWidth="400px"
-      height="400px"
+      width={{ base: '80%', lg: '100%' }}
+      height={{ base: '495px', lg: '545px' }}
       display="flex"
-      justifyContent="flex-end"
-      sx={{
-        '@media screen and (max-width: 1000px)': {
-          display: 'none',
-        },
-      }}
+      justifyContent="center"
+      margin="auto"
+      position="absolute"
+      top={{ base: '-100px', lg: '-200px' }}
+      bottom="0"
+      right="0"
+      left="0"
+      zIndex="0"
+      opacity="0.2"
     >
-      <Box
-        padding={10}
-        bgColor="elvenTools.dark.darker"
-        borderRadius="2xl"
-        userSelect="none"
-        boxShadow="0 0 25px"
-        color="elvenTools.shadowColor"
-        display="flex"
-        bgGradient="linear-gradient(90deg, elvenTools.dark.base 0%, elvenTools.dark.darker 70%);"
+      <motion.div
+        animate={{
+          scale: [1, 2, 2, 1, 1],
+          opacity: [0, 0, 1],
+        }}
       >
-        <Box as="img" src="/img.gif" alt="" width="300px" height="300px" />
-      </Box>
+        <ImgG />
+      </motion.div>
     </Box>
   );
 };

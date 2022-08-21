@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gokai.org
+
+# Sitemaps
+Sitemap: https://gokai.org/sitemap.xml

@@ -8,11 +8,15 @@ export const HeaderMenu: FC<PropsWithChildren<PropsWithChildren>> = ({
   return (
     <Box
       display="flex"
+      position="relative"
+      zIndex="2"
       alignItems="center"
       justifyContent="space-between"
       flexWrap="wrap"
-      gap="2"
-      py={9}
+      background="black"
+      gap={{ base: '1', md: '2' }}
+      py={5}
+      px={5}
       sx={{
         '@media screen and (max-width: 800px)': {
           flexDirection: 'column',

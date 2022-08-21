@@ -48,9 +48,13 @@ export const MintForm: FC<MintFormProps> = ({ leftToMintForUser, cb }) => {
       <Box
         display="flex"
         gap={5}
+        mt={5}
         alignItems="center"
         justifyContent={{ base: 'center', md: 'flex-start' }}
       >
+        <Box>
+          0.1 EGLD /  NFT
+        </Box>
         <NumberInput
           maxW="100px"
           min={1}
@@ -66,7 +70,7 @@ export const MintForm: FC<MintFormProps> = ({ leftToMintForUser, cb }) => {
           />
           {leftToMintForUser <= 0 ? null : (
             <NumberInputStepper>
-              <NumberIncrementStepper borderColor="elvenTools.base.dark" />
+              <NumberIncrementStepper borderColor="elvenTools.color2.darker" />
               <NumberDecrementStepper />
             </NumberInputStepper>
           )}

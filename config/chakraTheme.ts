@@ -17,8 +17,7 @@ export const theme = extendTheme({
       body: {
         minHeight: '100vh',
         overflowX: 'hidden',
-        bgGradient:
-          'linear-gradient(90deg, elvenTools.bgStripes 0.1%, elvenTools.dark.base 0.1%, elvenTools.dark.base 50%, elvenTools.bgStripes 50%, elvenTools.bgStripes 50.1%, elvenTools.dark.base 50.1%, elvenTools.dark.base 100%);',
+        bgColor: '#dadada',
         bgSize: '700px',
         backgroundPositionX: '150px',
         color: 'elvenTools.white',
@@ -40,8 +39,8 @@ export const theme = extendTheme({
     },
   },
   fonts: {
-    heading: 'Poppins, sans-serif',
-    body: 'Poppins, sans-serif',
+    heading: 'McLaren, sans-serif',
+    body: 'DM Sans, sans-serif',
   },
   colors: {
     elvenTools: {
@@ -60,14 +59,14 @@ export const theme = extendTheme({
         darker: '#1c7bda',
       },
       color2: {
-        lighter: '#b0dd49',
-        base: '#A2D729',
-        darker: '#8ab722',
+        lighter: '#fff',
+        base: '#000',
+        darker: '#0381e6',
       },
       color3: {
         lighter: '#fb9567',
-        base: '#FA824C',
-        darker: '#f9611c',
+        base: '#212529',
+        darker: '#C9C6C5',
       },
     },
   },

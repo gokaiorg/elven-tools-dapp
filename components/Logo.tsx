@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import { ImgG } from './ImgG';
 import { Box, Text } from '@chakra-ui/react';
 
 export const Logo = () => {
@@ -11,28 +12,20 @@ export const Logo = () => {
         position="relative"
         userSelect="none"
       >
-        <Text
-          position="absolute"
-          right="0"
-          top="0"
-          fontSize="10px"
-          fontWeight="semibold"
-          px={1.5}
-          borderRadius="sm"
-          color="elvenTools.color2.base"
-        >
-          devnet
-        </Text>
-
+        <Box width="30px">
+          <ImgG />
+        </Box>
         <Text
           as="span"
+          marginLeft="-4px"
           cursor="pointer"
           mb={0}
           fontSize="4xl"
-          fontWeight="black"
+          fontWeight="bold"
+          fontFamily="heading"
           color="elvenTools.white"
         >
-          Weird Faces
+          okai Labs
         </Text>
       </Box>
     </NextLink>

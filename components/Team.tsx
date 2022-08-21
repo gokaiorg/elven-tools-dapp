@@ -7,9 +7,9 @@ export const Team = () => {
   if (!Array.isArray(team)) return null;
 
   return (
-    <Box mt={32}>
+    <Box mt={32} mb="48">
       <HomeSectionTitle title="Team" />
-      <SimpleGrid columns={{ lg: 3, md: 2, sm: 1 }} spacing={10}>
+      <SimpleGrid columns={{ lg: 4, md: 2, sm: 1 }} spacing={10}>
         {team.map((teamMember, index) => (
           <TeamMember key={index} {...teamMember} />
         ))}
