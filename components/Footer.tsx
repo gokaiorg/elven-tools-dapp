@@ -1,4 +1,4 @@
-import { Container, Box, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { SocialMediaIcons } from '../components/SocialMediaIcons';
 
 export const Footer = () => {

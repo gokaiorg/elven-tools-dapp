@@ -75,7 +75,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
           px={{ base: '2', md: '6' }}
           fontWeight="black"
           color="white"
-          href="https://omniscient.tools/collections/maiar-ghosts"
+          href="https://omniscient.tools/collections/MRG-1c3ba4"
         >
           Analytics
         </Text>

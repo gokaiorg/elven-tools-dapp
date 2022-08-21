@@ -1,4 +1,4 @@
-import { Text, Box } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 import { FC } from 'react';
 
 interface HomeSectionTitleProps {

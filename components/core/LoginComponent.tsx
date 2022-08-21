@@ -9,6 +9,9 @@ import { ActionButton } from '../ActionButton';
 import { LedgerAccountsList } from './LedgerAccountsList';
 
 export const LoginComponent = memo(() => {
+  // If you need the auth signature and token you can pass it here
+  // example: const { ... } = useLogin({ token: "some_hash_here" })
+  // all auth providers will return the signature, it will be saved in localstorage and global state
   const { login, isLoggedIn, error, walletConnectUri, getHWAccounts } =
     useLogin();
   const [loginMethod, setLoginMethod] = useState<LoginMethodsEnum>();
@@ -95,11 +98,13 @@ export const LoginComponent = memo(() => {
         </Box>
       )}
       {loginMethod === LoginMethodsEnum.ledger && (
-        <LedgerAccountsList
-          getHWAccounts={getHWAccounts}
-          resetLoginMethod={resetLoginMethod}
-          handleLogin={handleLogin}
-        />
+        <>
+          <LedgerAccountsList
+            getHWAccounts={getHWAccounts}
+            resetLoginMethod={resetLoginMethod}
+            handleLogin={handleLogin}
+          />
+        </>
       )}
     </>
   );

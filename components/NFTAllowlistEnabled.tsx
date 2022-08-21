@@ -1,9 +1,10 @@
 import { Box, Spinner, Text } from '@chakra-ui/react';
 import { FC } from 'react';
-import { isAllowlistEnabled } from '../config/nftSmartContract';
+import { SCQueryType } from '../hooks/interaction/useScQuery';
+import { useElvenScQuery } from '../hooks/interaction/elvenScHooks/useElvenScQuery';
 
 interface NFTAllowlistEnabledProps {
-  data?: string | number;
+  data?: number;
   dataLoading?: boolean;
 }
 
@@ -11,9 +12,14 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
   data,
   dataLoading,
 }) => {
+  const { data: allowlistState } = useElvenScQuery<boolean>({
+    funcName: 'isAllowlistEnabled',
+    type: SCQueryType.BOOLEAN,
+  });
+
   return (
     <>
-      {isAllowlistEnabled && (
+      {allowlistState && (
         <Box
           display="flex"
           alignItems="center"
@@ -24,8 +30,8 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
               You are{' '}
             </Text>
             {dataLoading ? (
-              <Spinner ml={3} color="elvenTools.color2.darker" />
-            ) : Number(data) !== 0 ? (
+              <Spinner ml={3} color="elvenTools.color2.dark" />
+            ) : data !== 0 ? (
               <Text
                 color="elvenTools.color2.darker"
                 as="span"

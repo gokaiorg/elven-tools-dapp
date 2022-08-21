@@ -4,21 +4,41 @@ import { MainLayout } from '../components/MainLayout';
 import { HeaderMenu } from '../components/HeaderMenu';
 import { HeaderMenuButtons } from '../components/HeaderMenuButtons';
 import { MintHero } from '../components/MintHero';
-import { CollectionInfoBox } from '../components/CollectionInfoBox';
-import { chainType, networkConfig } from '../config/network';
 import Image from 'next/image';
 import { ImgEarth } from '../components/ImgEarth';
 import { Helmet } from 'react-helmet';
 import { defaultMetaTags } from '../config/dappUi';
-import {
-  collectionTicker,
-  smartContractAddress,
-} from '../config/nftSmartContract';
-import { shortenHash } from '../utils/shortenHash';
 import { Invest } from '../components/Invest';
 import { Secondary } from '../components/Secondary';
+import { CollectionInfoBox } from '../components/CollectionInfoBox';
+import { chainType, networkConfig } from '../config/network';
+import { shortenHash } from '../utils/shortenHash';
+import { useElvenScQuery } from '../hooks/interaction/elvenScHooks/useElvenScQuery';
+import { SCQueryType } from '../hooks/interaction/useScQuery';
+const smartContractAddress = process.env.NEXT_PUBLIC_NFT_SMART_CONTRACT;
 
 const Mint: NextPage = () => {
+  const { data: collectionSize, isLoading: collectionSizeLoading } =
+    useElvenScQuery<number>({
+      funcName: 'getTotalSupply',
+      type: SCQueryType.NUMBER,
+    });
+
+  const { data: totalTokensLeft, isLoading: totalTokensLeftIsLoading } =
+    useElvenScQuery<number>({
+      type: SCQueryType.NUMBER,
+      funcName: 'getTotalTokensLeft',
+    });
+
+  const { data: collectionTicker, isLoading: collectionTickerLoading } =
+    useElvenScQuery<number>({
+      funcName: 'getNftTokenId',
+      type: SCQueryType.STRING,
+    });
+
+  const minted =
+    collectionSize && totalTokensLeft ? collectionSize - totalTokensLeft : 0;
+
   return (
     <MainLayout>
       <Helmet>
@@ -78,14 +98,23 @@ const Mint: NextPage = () => {
           gap={3}
         >
           <CollectionInfoBox
-            content={collectionTicker}
+            content={collectionTicker || '-'}
             label="Collection ticker. Click for details."
+            isLoading={collectionTickerLoading}
             href={`${networkConfig[chainType].explorerAddress}/collections/${collectionTicker}`}
           />
           <CollectionInfoBox
-            content={shortenHash(smartContractAddress, 12)}
+            content={
+              smartContractAddress
+                ? shortenHash(smartContractAddress || '', 12)
+                : 'No minter smart contract provided!'
+            }
             label={`Minter smart contract. Click for details.`}
-            href={`${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`}
+            href={
+              smartContractAddress
+                ? `${networkConfig[chainType].explorerAddress}/accounts/${smartContractAddress}`
+                : undefined
+            }
           />
         </Box>
         <MintHero />
