@@ -16,10 +16,10 @@ export const tokensLimitPerAddressTotal = 169;
 export const collectionTicker = 'MRG-1c3ba4';
 
 // Start or pause minting process. UI will react on this. Remember to keep itin in sync with Smart Contract. This is very important.
-export const isMintingStarted = false;
+export const isMintingStarted = true;
 
 // Enable/Disable the drop. UI will react on this. Remember to keep it in in sync with Smart Contract. This is very important.
-export const isDropActive = false;
+export const isDropActive = true;
 
 // The number of the NFTs for one address per current active drop can be ignored if there are no drops active
 export const tokensLimitPerAddressPerDrop = 13;
@@ -34,4 +34,4 @@ export const mintTxBaseGasLimit = 14000000;
 export const mintFunctionName = 'mint';
 
 // Single token seling price - configurable on smart contract when deployed 1 EGLD = 10^18
-export const tokenSellingPrice = '66600000000000000';
+export const tokenSellingPrice = '100000000000000000';

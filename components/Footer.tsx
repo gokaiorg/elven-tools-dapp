@@ -15,7 +15,21 @@ export const Footer = () => {
       px={5}
     >
       <SocialMediaIcons />
-      <Box ml={{ base: '0', md:'auto'}} mt={{ base: '5', md:'0'}} display="flex" alignItems="center" whiteSpace="nowrap">
+      <Box
+        borderRadius="8px"
+        mx="auto"
+        overflow="hidden"
+        display="table"
+        mt={{ base: '5', md:'0'}}
+      >
+        <iframe
+          src='https://egld.community/api/products/5691f3eb-fbf6-4987-b684-6b060cef40c4/upvotes/embed'
+          width='290'
+          height='70'
+        >
+        </iframe>
+      </Box>
+      <Box ml={{ base: '0'}} mt={{ base: '5', md:'0'}} display="flex" alignItems="center" whiteSpace="nowrap">
         Made with
         <svg
           width="25px"

@@ -29,6 +29,11 @@ export const SocialMediaIcons = () => {
         bgColor="elvenTools.color3.base"
         style={{ width: 30, height: 30 }}
       />
+      <SocialIcon
+        url="https://medium.com/@GokaiLabs"
+        bgColor="elvenTools.color3.base"
+        style={{ width: 30, height: 30 }}
+      />
     </Box>
   );
 };

@@ -20,7 +20,7 @@ export const NFTLeftToMint: FC<NFTLeftToMintProps> = ({
       justifyContent={{ base: 'center', md: 'flex-start' }}
     >
       <Text fontSize={{ base: 'md', sm: 'xl' }} fontWeight="black">
-        {isDropActive ? 'Drop #1 -' : 'Total'} NFTs left to mint:{' '}
+        {isDropActive ? 'Drop #2 -' : 'Total'} NFTs left to mint:{' '}
       </Text>
       {dataLoading ? (
         <Spinner ml={3} color="elvenTools.color2.darker" />
