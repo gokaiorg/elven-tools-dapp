@@ -8,7 +8,7 @@ export const defaultMetaTags = {
   title:
     'Community-driven collectible NFT project on Elrond Network - Gokai Labs',
   description:
-    'Gokai Labs works like a DAO, all decisions are made by the community. The Maiar Ghosts collection operates as a governance NFT. Vote and participate in the progress of the project. Get a Mr Ghost, become a member.',
+    'Elrond Network collectible NFT DAO driven by the community. The community makes all decisions. The Maiar Ghosts collection is an NFT for governance. Vote and contribute to the project\'s progress. Get a Mr Ghost and join the club.',
   image: `${dappHostname}/social.png`,
   shortname: 'Gokai Labs',
   titleMaiarGhosts: 'Mint, buy and sell Maiar Ghosts NFT on Elrond NFTs marketplace - Gokai Labs',
@@ -46,7 +46,7 @@ export const faq = [
 export const roadmap = [
   {
     title: 'DONE',
-    points: ['Airdrop', 'Pre-sale', 'Drop #1'],
+    points: ['Airdrop', 'Drop #1', 'DAO governance'],
   },
   {
     title: 'IN PROGRESS',
@@ -54,11 +54,7 @@ export const roadmap = [
   },
   {
     title: 'PLANNED',
-    points: [
-      'Cemetery',
-      'DAO governance',
-      'Become a Validator'
-    ],
+    points: ['Passive income', 'Play2Earn', 'Validator Node'],
   },
 ];
 
@@ -121,9 +117,9 @@ export const collab = [
     socialMediaLinks: ['https://elrondsportsclub.com/'],
   },
   {
-    name: 'ERD Launchpad',
-    imageUrl: '/static/media/collab-erdlaunchpad-elrond.webp',
-    socialMediaLinks: ['https://erdlaunchpad.com'],
+    name: 'Superciety',
+    imageUrl: '/static/media/collab-superciety-elrond.webp',
+    socialMediaLinks: ['https://superciety.com/'],
   },
   {
     name: 'Evoluzion Life',

@@ -21,6 +21,8 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
   return (
     <Box
       display="flex"
+      flexWrap="wrap"
+      justifyContent="center"
       gap={{ base: '2', md: '5' }}
       alignItems="center"
     >
@@ -42,6 +44,20 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
           href="https://docs.gokai.org/"
         >
           Light Paper
+        </Text>
+      )}
+
+      {enabled.includes('dao') && (
+        <Text
+          as="a"
+          py={2}
+          px={{ base: '2', md: '6' }}
+          fontWeight="black"
+          color="white"
+          whiteSpace="nowrap"
+          href="https://superciety.com/fellowships/gokai-dao"
+        >
+          DAO
         </Text>
       )}
 
