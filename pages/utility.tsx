@@ -50,7 +50,7 @@ const Mint: NextPage = () => {
         />
       </Helmet>
       <HeaderMenu>
-        <HeaderMenuButtons enabled={['auth', 'maiar-ghosts', 'analytics']} />
+        <HeaderMenuButtons enabled={['auth', 'maiar-ghosts', 'rarity', 'analytics']} />
       </HeaderMenu>
       <Box
         display="flex"

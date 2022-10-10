@@ -61,7 +61,7 @@ const Mint: NextPage = () => {
         />
       </Helmet>
       <HeaderMenu>
-        <HeaderMenuButtons enabled={['auth', 'utility', 'analytics']} />
+        <HeaderMenuButtons enabled={['auth', 'rarity', 'utility', 'analytics']} />
       </HeaderMenu>
       <Box
         display="flex"

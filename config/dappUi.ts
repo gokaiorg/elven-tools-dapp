@@ -46,15 +46,15 @@ export const faq = [
 export const roadmap = [
   {
     title: 'DONE',
-    points: ['Airdrop', 'Drop #1', 'DAO governance'],
+    points: ['Airdrop', 'Drop #1', 'DAO governance', 'Drop #2'],
   },
   {
     title: 'IN PROGRESS',
-    points: ['Community building', 'Partnerships', 'Drop #2'],
+    points: ['Community building', 'Partnerships', 'Passive income', 'Collector NFT'],
   },
   {
     title: 'PLANNED',
-    points: ['Passive income', 'Play2Earn', 'Validator Node'],
+    points: ['Drop #3', 'New dApp', 'Play2Earn', 'Validator Node'],
   },
 ];
 
@@ -127,19 +127,9 @@ export const collab = [
     socialMediaLinks: ['https://www.evoluzion.life/'],
   },
   {
-    name: 'Maka Bros',
-    imageUrl: '/static/media/collab-maka-bros-elrond.webp',
-    socialMediaLinks: ['https://www.maka-bros.com/'],
-  },
-  {
     name: 'HODL Cards',
     imageUrl: '/static/media/collab-hodlcards-elrond.webp',
     socialMediaLinks: ['https://hodlcards.net/'],
-  },
-  {
-    name: 'Mutant Eheadz',
-    imageUrl: '/static/media/collab-mutant-eheadz-elrond.webp',
-    socialMediaLinks: ['https://www.elrondme.com/'],
   },
   {
     name: 'Orcpunks',
@@ -170,6 +160,11 @@ export const collab = [
 
 export const secondary = [
   {
+    name: 'Buy and Sell Mr Ghost on Xoxno',
+    imageUrl: '/static/media/logo-xoxno.webp',
+    socialMediaLinks: ['https://xoxno.com/collection/MRG-1c3ba4'],
+  },
+  {
     name: 'Buy and Sell Mr Ghost on Frame It',
     imageUrl: '/static/media/logo-frameit.webp',
     socialMediaLinks: ['https://www.frameit.gg/marketplace/MRG-1c3ba4'],
@@ -183,11 +178,6 @@ export const secondary = [
     name: 'Buy and Sell Mr Ghost on Elrond NFT Swap',
     imageUrl: '/static/media/logo-elrond-nft-swap.webp',
     socialMediaLinks: ['https://elrondnftswap.com/collection/MRG-1c3ba4'],
-  },
-  {
-    name: 'Buy and Sell Mr Ghost on Xoxno',
-    imageUrl: '/static/media/logo-xoxno.webp',
-    socialMediaLinks: ['https://xoxno.com/collection/MRG-1c3ba4'],
   },
     {
     name: 'Buy and Sell Mr Ghost on Isengard',

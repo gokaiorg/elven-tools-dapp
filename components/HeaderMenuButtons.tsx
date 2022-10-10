@@ -29,6 +29,20 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
       {enabled.includes('maiar-ghosts') && (
         <ActionButton onClick={handleMintClick} whiteSpace="nowrap">Maiar Ghosts</ActionButton>
       )}
+
+      {enabled.includes('rarity') && (
+        <Text
+          as="a"
+          py={2}
+          px={{ base: '2', md: '6' }}
+          fontWeight="black"
+          color="white"
+          href="https://xoxno.com/collection/MRG-1c3ba4?filters=%7B%22name%22%3A%22%22%2C%22order%22%3A%22Rank%3A+High+to+Low%22%2C%22orderValue%22%3A%22metadata%2Frarity%2Frank+asc%22%2C%22tokens%22%3A%5B%5D%2C%22attributes%22%3A%5B%5D%2C%22saleType%22%3A%22Nft%22%2C%22tab%22%3A%22Rarity%22%7D"
+        >
+          Rarity
+        </Text>
+      )}
+
       {enabled.includes('utility') && (
         <ActionButton onClick={handleUtilityClick}>Utility</ActionButton>
       )}
