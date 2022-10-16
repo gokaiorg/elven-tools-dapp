@@ -4,7 +4,7 @@ import { FC } from 'react';
 interface EarnItemProps {
   name: string;
   imageUrl: string;
-  earnLink?: string[];
+  earnLink: string;
   bio?: string;
 }
 
