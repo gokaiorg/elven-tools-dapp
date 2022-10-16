@@ -7,93 +7,151 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
-  title: 'Elven Tools NFT minter dapp demo - Elrond blockchain',
+  title:
+    'Community-driven collectible NFT project on Elrond Network - Gokai Labs',
   description:
-    'Open source Dapp template for the Elven Tools and Elrond blockchain. The actual working example is connected to the Elven Tools smart contract deployed on the Elrond blockchain devnet!',
+    'GhostLand works like a DAO, all decisions are made by the community. The Maiar Ghosts collection operates as a governance NFT. Vote and participate in the progress of the project. Get a Mr Ghost, become a member.',
+  shortname: 'GhostLand',
   image: `${dappHostname}/og-image.png`,
 };
 
 // FAQ section data
 export const faq = [
   {
-    question: 'What is an ESDT on Elrond?',
+    question: 'What are NFTs and why should you buy them?',
     answer:
-      'ESDT stands for Elrond Standard Digital Token. Custom tokens at native speed and scalability, without ERC20. The Elrond network natively supports the issuance of custom tokens, without the need for contracts such as ERC20, but addressing the same use-cases. And due to the native in-protocol support, transactions with custom tokens do not require the VM at all. In effect, this means that custom tokens are as fast and as scalable as the native EGLD token itself.',
+      'NFTs are exciting. NFT stands for Non-Fungible Token, which are unique digital assets. Since an NFT can only have one owner at a time, when you buy an NFT you are buying exclusive ownership of a digital asset. Rarity increases the excitement around an item. NFTs offer a unique opportunity to participate in a very promising market system with endless possibilities, including the possibility of making considerable profits.',
   },
   {
-    question: 'What is an NFT on Elrond?',
+    question: 'Why choose the Elrond network and its EGLD token?',
     answer:
-      'The Elrond protocol introduces native NFT support by adding metadata and attributes on top of the already existing ESDT. This way, one can issue a semi-fungible token or a non-fungible token which is quite similar to an ESDT, but has a few more attributes, as well as an assignable URI. Once owning a quantity of a NFT/SFT, users will have their data store directly under their account, inside the trie.',
+      'Elrond is a high-speed blockchain that aims to provide scalability, efficiency and security and is able to perform 15,000 transactions per second at a transaction cost of $0.001. EGLD is the native token of the Elrond blockchain and is used to reward validators and to pay network fees. The Elrond platform is designed for the new Internet economy and decentralised WEB3 applications.',
   },
   {
-    question:
-      'Why knowing the collection ticker and minter smart contract is essential?',
+    question: 'Who is Mr Ghosts and why should I have at least one?',
     answer:
-      'It is crucial because these two prove that the NFTs come from a verified source. The NFT project should always show the collection ticker and minter smart contract to gain trust.',
-  },
-  {
-    question: 'What is Elven Tools?',
-    answer:
-      'The Elven Tools is an open-source toolset including the CLI tool, Smart Contract for handling the NFT collections, and this dapp template. You can, of course, use each tool separately. But the CLI helps with smart contract deployments and the setup process. You can also interact with the smart contract using the CLI or even use it as a buyer.',
+      'Mr Ghost is a collectible, unique, original and beautiful NFT on Elrond, Mr Ghost is the governance token of GhostLand DAO and its number is limited to 8658 maximum! Mr Ghost makes you a shareholder of GhostLand and a major player in the strategic decisions of the organisation! From now on you can vote in the Discord server to validate the next NFT drops, their prices and other questions the community is wondering about.',
   },
 ];
 
 // Roadmap section data
 export const roadmap = [
   {
-    title: 'Q2 2022',
+    title: 'Done',
     points: [
-      'erdjs 10 integration and refactoring',
-      'UI automated tests',
-      'Ledger auth implementation',
-      'Better UI and more useful hooks',
+      '✓ Create the most terrifying OG PFP DAO NFT collection in Elrond Network history',
+      '✓ Build an organic community populated by OGs',
+      '✓ Collaborate with the largest builders',
+      '✓ Launch Open Source dApp',
+      '✓ Airdrop the community',
+      '✓ Sold out Drop #1 & #2',
+      '✓ Launch Monthly & Weekly Rewards',
+      '✓ Airdrop Collector Vox01 NFT',
+      '✓ Get On-chain voting system',
     ],
   },
   {
-    title: 'Q3 2022',
+    title: 'In Progress',
     points: [
-      'More usefull UI components',
-      'More helpful docs and videos',
-      'More functionality for logged in user',
-      'Blog feature implementation',
+      '↻ Build a more amazing community',
+      '↻ Make our long-term partnerships stronger',
+      '↻ Airdrop Collector Vox02 NFT',
+      '↻ Launch Passive Income v1',
+      '↻ Launch Open Source dApp v2',
+      '↻ Produce merch',
     ],
   },
   {
-    title: 'Q4 2022',
+    title: 'Planned',
     points: [
-      'Backend cache (Redis?)',
-      'Image optimization (Cloudinary?)',
-      '...sky is the limit!',
+      'Build the most amazing community',
+      'Create multi-sig',
+      'Decentralize the project',
+      'Sold out Drop #3 to #13',
+      'Run a validator node',
+      'Build more',
     ],
   },
 ];
 
 export const team = [
   {
-    name: 'John Doe',
-    bio: 'Web designer and artist',
-    imageUrl: '/john.svg',
+    name: 'Jeremy',
+    bio: 'Founder',
+    imageUrl: '/media/jeremy-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: ['https://www.linkedin.com/in/jeremy-douchamps/'],
+  },
+  {
+    name: 'Sergiu',
+    bio: 'DevOps Engineer',
+    imageUrl: '/media/build-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: [
-      'https://www.twitter.com',
-      'https://www.behance.net',
-      'https://www.dribbble.com',
+      'https://www.linkedin.com/in/sergiupopa89/?originalSubdomain=ro',
     ],
   },
   {
-    name: 'Mark Doe',
-    bio: 'Smart Contract programmer',
-    imageUrl: '/mark.svg',
-    socialMediaLinks: ['https://www.twitter.com', 'https://www.github.com'],
+    name: 'Louis',
+    bio: 'Artist',
+    imageUrl: '/media/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
   {
-    name: 'Jack Doe',
-    bio: 'Community relations and marketing',
-    imageUrl: '/jack.svg',
-    socialMediaLinks: [
-      'https://www.twitter.com',
-      'https://www.discord.com',
-      'https://www.telegram.me',
-      'https://www.medium.com',
-    ],
+    name: 'Nati',
+    bio: 'Marketer',
+    imageUrl: '/media/nati-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: ['https://www.linkedin.com/in/nati-douchamps-1151a8144/'],
+  },
+  {
+    name: 'Albert',
+    bio: 'SEO Expert',
+    imageUrl: '/media/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    socialMediaLinks: ['https://www.linkedin.com/in/albertlanne/'],
+  },
+];
+
+export const earn = [
+  {
+    name: 'Passive Income',
+    bio: 'Hold and earn. 100% of the EGLD staking revenue is redistributed to holders. Get more than 5 MaiarGhosts and earn EGLDs automatically.',
+    imageUrl:
+      '/media/ghostland-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    earnLink: '/maiar-ghosts',
+  },
+  {
+    name: 'Monthly Rewards',
+    bio: 'Win a free NFT mint each month by using your Mr. Ghost NFT as your avatar in Maiar app and adding a friend.',
+    imageUrl:
+      '/media/ghostland-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    earnLink: 'https://forms.gle/wrK6DcASpPYQu6qr8',
+  },
+  {
+    name: 'Weekly Rewards',
+    bio: 'Every monday we organize weekly awards on Twitter. A trait is picked and the winners share the prize pool!',
+    imageUrl:
+      '/media/ghostland-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    earnLink: 'https://www.twitter.com/GokaiLabs',
+  },
+];
+
+export const secondary = [
+  {
+    name: 'Xoxno',
+    imageUrl: '/media/logo-xoxno.webp',
+    socialMediaLinks: ['https://xoxno.com/collection/MRG-1c3ba4'],
+  },
+  {
+    name: 'FrameIt',
+    imageUrl: '/media/logo-frameit.webp',
+    socialMediaLinks: ['https://www.frameit.gg/marketplace/MRG-1c3ba4'],
+  },
+  {
+    name: 'Deadrare',
+    imageUrl: '/media/logo-deadrare.webp',
+    socialMediaLinks: ['https://deadrare.io/collection/MRG-1c3ba4'],
+  },
+  {
+    name: 'Elrond NFT Swap',
+    imageUrl: '/media/logo-elrond-nft-swap.webp',
+    socialMediaLinks: ['https://elrondnftswap.com/collection/MRG-1c3ba4'],
   },
 ];

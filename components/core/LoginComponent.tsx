@@ -64,7 +64,7 @@ export const LoginComponent = memo(() => {
         )}
       </Stack>
       {loginMethod === LoginMethodsEnum.walletconnect && walletConnectUri && (
-        <Box mt={5}>
+        <Box mt={5} background="white">
           <MobileLoginQR walletConnectUri={walletConnectUri} />
         </Box>
       )}

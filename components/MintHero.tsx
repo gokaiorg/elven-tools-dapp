@@ -191,23 +191,18 @@ export const MintHero = () => {
   const tokensLeftPerUser = getLeftToMintForUser();
 
   return (
-    <Box width="100%">
+    <Box width="100%" borderColor="ghostLand.color2.base" borderWidth={1} p={4}>
       <Text
         as="h1"
-        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
-        textAlign={{ base: 'center', md: 'left' }}
+        fontSize={{ base: '2xl' }}
+        textAlign={{ base: 'left' }}
         fontWeight="black"
         lineHeight="shorter"
         mb={5}
       >
-        ⚡ Mint some of them
+        Collect MaiarGhosts and join the clan.
       </Text>
-      <Text
-        as="h2"
-        fontSize="lg"
-        fontWeight="thin"
-        textAlign={{ base: 'center', md: 'left' }}
-      >
+      <Text as="h2" fontSize="md" fontWeight="thin">
         To be able to mint you have to be logged in to be able to mint. Remember
         that it will mint only on the devent. If you want to do that, you need
         to connect using one of the methods and the devnet address with some
@@ -226,8 +221,10 @@ export const MintHero = () => {
                 <Box
                   mt={6}
                   display="flex"
+                  alignItems="center"
                   justifyContent={isContentCentered ? 'center' : 'flex-start'}
                 >
+                  <Box mr={4}>Login to mint </Box>
                   <LoginModalButton />
                 </Box>
               }
@@ -272,7 +269,7 @@ export const MintHero = () => {
                     as="a"
                     ml={3}
                     target="_blank"
-                    color="elvenTools.color2.base"
+                    color="elvenTools.color1.lighter"
                     fontSize="2xl"
                     fontWeight="black"
                     textDecoration="underline"
@@ -288,19 +285,10 @@ export const MintHero = () => {
         </Box>
       ) : (
         <Box>
-          <Text
-            fontSize="xl"
-            fontWeight="bold"
-            mt={10}
-            textAlign={{ base: 'center', md: 'left' }}
-          >
+          <Text fontSize="lg" fontWeight="bold" mt={10}>
             Minting was not started yet or is paused at the moment.
           </Text>
-          <Text
-            fontSize="xl"
-            fontWeight="bold"
-            textAlign={{ base: 'center', md: 'left' }}
-          >
+          <Text fontSize="lg" fontWeight="bold">
             Please be back soon!
           </Text>
         </Box>

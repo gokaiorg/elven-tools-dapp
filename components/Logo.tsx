@@ -1,5 +1,7 @@
 import NextLink from 'next/link';
 import { Box, Text } from '@chakra-ui/react';
+import { ImgEarth } from './ImgEarth';
+import { ImgG } from './ImgG';
 
 export const Logo = () => {
   return (
@@ -10,29 +12,24 @@ export const Logo = () => {
         gap={2}
         position="relative"
         userSelect="none"
+        cursor="pointer"
       >
-        <Text
-          position="absolute"
-          right="0"
-          top="0"
-          fontSize="10px"
-          fontWeight="semibold"
-          px={1.5}
-          borderRadius="sm"
-          color="elvenTools.color2.base"
-        >
-          devnet
-        </Text>
-
+        <ImgEarth />
+        <Box width="30px">
+          <ImgG />
+        </Box>
         <Text
           as="span"
+          marginLeft="-4px"
           cursor="pointer"
           mb={0}
-          fontSize="4xl"
-          fontWeight="black"
+          mt="14px"
+          fontSize={{ base: '18px', md: '28px' }}
+          fontWeight="bold"
+          fontFamily="heading"
           color="elvenTools.white"
         >
-          Weird Faces
+          hostLand
         </Text>
       </Box>
     </NextLink>
