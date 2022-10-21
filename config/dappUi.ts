@@ -140,14 +140,12 @@ export const earn = [
     bio: 'Hold and earn. 100 percent of the EGLD staking revenue is redistributed to holders. Get more than 5 MaiarGhosts and earn EGLD automatically and for life.',
     imageUrl:
       '/media/ghostland-passive-income-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
-    earnLink: '/maiar-ghosts',
   },
   {
     name: 'Weekly Rewards',
     bio: 'Every monday we organize weekly rewards on Twitter. A trait is picked and the winners share the prize pool!',
     imageUrl:
       '/media/ghostland-weekly-rewards-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
-    earnLink: 'https://www.twitter.com/GokaiLabs',
   },
   {
     name: 'Monthly Rewards',

@@ -4,21 +4,18 @@ import { FC } from 'react';
 interface EarnItemProps {
   name: string;
   imageUrl: string;
-  earnLink: string;
   bio?: string;
 }
 
 export const EarnItem: FC<EarnItemProps> = ({
   name,
   imageUrl,
-  earnLink,
   bio,
 }) => {
   return (
     <Text
       as="a"
       p={4}
-      href={earnLink}
       rel="noopener noreferrer nofollow"
       borderColor="ghostLand.color2.base"
       borderWidth={1}
