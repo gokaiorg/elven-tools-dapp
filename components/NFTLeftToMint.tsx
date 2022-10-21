@@ -29,10 +29,10 @@ export const NFTLeftToMint: FC<NFTLeftToMintProps> = ({
         {dropActive ? 'Current drop' : 'Total'} NFTs left to mint:{' '}
       </Text>
       {dataLoading ? (
-        <Spinner ml={3} color="ghostLand.color1.lighter" />
+        <Spinner ml={3} color="ghostLand.color1.darker" />
       ) : (
         <Text
-          color="ghostLand.color1.lighter"
+          color="ghostLand.color1.darker"
           fontSize="3xl"
           fontWeight="black"
           ml={3}

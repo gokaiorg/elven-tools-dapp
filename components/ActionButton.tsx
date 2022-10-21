@@ -23,7 +23,7 @@ export const ActionButton: FC<PropsWithChildren<ActionButtonProps>> = ({
   return (
     <Box
       as="button"
-      borderColor="ghostLand.color1.lighter"
+      borderColor="ghostLand.color1.darker"
       borderWidth={1}
       bgColor="transparent"
       p={2}
@@ -32,7 +32,7 @@ export const ActionButton: FC<PropsWithChildren<ActionButtonProps>> = ({
       cursor={disabled ? 'not-allowed' : 'pointer'}
       color="elvenTools.white"
       userSelect="none"
-      _hover={!disabled ? { bg: 'ghostLand.color2.lighter' } : {}}
+      _hover={!disabled ? { bg: 'ghostLand.color1.lighter' } : {}}
       transition="background-color .3s"
       width={isFullWidth ? '100%' : 'auto'}
       onClick={handleClick}

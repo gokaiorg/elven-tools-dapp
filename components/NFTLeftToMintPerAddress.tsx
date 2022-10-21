@@ -21,10 +21,10 @@ export const NFTLeftToMintPerAddress: FC<NFTLeftToMintPerAddressProps> = ({
         You can mint:
       </Text>
       {dataLoading ? (
-        <Spinner ml={3} color="ghostLand.color1.lighter" />
+        <Spinner ml={3} color="ghostLand.color1.darker" />
       ) : (
         <Text
-          color="ghostLand.color1.lighter"
+          color="ghostLand.color1.darker"
           fontSize="3xl"
           fontWeight="black"
           ml={3}

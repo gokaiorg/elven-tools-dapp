@@ -38,9 +38,9 @@ export const ActionButtonXL: FC<PropsWithChildren<ActionButtonXLProps>> = ({
       _hover={
         !disabled
           ? {
-              bg: 'ghostLand.dark.lighter',
-              borderColor: 'ghostLand.color1.lighter',
-              color: 'ghostLand.color1.lighter',
+              bg: 'ghostLand.color1.lighter',
+              borderColor: 'ghostLand.color1.darker',
+              color: 'ghostLand.color1.darker',
               backdropFilter: 'blur(3px)',
             }
           : {}

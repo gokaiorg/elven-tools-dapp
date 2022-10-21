@@ -38,15 +38,15 @@ export const theme = extendTheme({
       shadowColor: '#141414',
       dark: {
         lighter: 'rgb(0, 0, 0, 0.1)',
-        base: '#222831',
+        base: 'rgb(0, 0, 0, 0.5)',
         darker: '#000',
       },
       light: '#FAFFFD',
       white: '#ffffff',
       color1: {
-        lighter: '#6dd0f6',
+        lighter: 'rgb(109, 208, 246, 0.1)',
         base: '#549db9',
-        darker: '#00355c',
+        darker: '#6dd0f6',
       },
       color2: {
         lighter: 'rgb(229, 232, 241, 0.1)',

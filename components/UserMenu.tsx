@@ -14,7 +14,7 @@ export const UserMenu = () => {
       rel="noopener noreferrer"
     >
       <Avatar
-        borderColor="ghostLand.color1.lighter"
+        borderColor="ghostLand.color1.darker"
         borderWidth={1}
         size="md"
         src={`https://id.maiar.com/users/photos/profile/${address}`}

@@ -30,7 +30,7 @@ export const Team = () => {
       animate="animate"
       variants={fadeInUp}
     >
-      <SimpleGrid columns={{ lg: 5, md: 5, sm: 2 }} spacing={10}>
+      <SimpleGrid columns={{base: 1, sm: 2, md: 3, lg: 4 }} spacing={{base: 4, md: 10 }}>
         {team.map((teamMember, index) => (
           <TeamMember key={index} {...teamMember} />
         ))}

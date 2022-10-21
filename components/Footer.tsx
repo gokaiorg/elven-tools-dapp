@@ -3,7 +3,7 @@ import packageJson from '../package.json';
 
 export const Footer = () => {
   return (
-    <Box color="elvenTools.white" display="flex" alignItems="center">
+    <Box color="elvenTools.white" display="flex" alignItems="center" mt={{ base: 10, md: 0 }}>
       <Container
         maxW="container.xl"
         fontSize="sm"

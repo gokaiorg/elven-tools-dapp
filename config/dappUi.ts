@@ -8,29 +8,34 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
   title:
-    'Community-driven collectible NFT project on Elrond Network - Gokai Labs',
+    'Community-driven collectible NFT DAO on Elrond Network',
   description:
-    'GhostLand works like a DAO, all decisions are made by the community. The Maiar Ghosts collection operates as a governance NFT. Vote and participate in the progress of the project. Get a Mr Ghost, become a member.',
+    'Elrond Network collectible NFT DAO driven by the community. The community makes all decisions. The Maiar Ghosts collection is an NFT for governance. Vote and contribute to the project\'s progress. Get a Mr Ghost and join the clan.',
   shortname: 'GhostLand',
-  image: `${dappHostname}/og-image.png`,
+  image: `${dappHostname}/social.png`,
 };
 
 // FAQ section data
 export const faq = [
   {
-    question: 'What are NFTs and why should you buy them?',
+    question: 'What exactly are NFTs, and why should you invest in them?',
     answer:
-      'NFTs are exciting. NFT stands for Non-Fungible Token, which are unique digital assets. Since an NFT can only have one owner at a time, when you buy an NFT you are buying exclusive ownership of a digital asset. Rarity increases the excitement around an item. NFTs offer a unique opportunity to participate in a very promising market system with endless possibilities, including the possibility of making considerable profits.',
+      'NFTs are fascinating. NFT stands for Non-Fungible Token, and they are one-of-a-kind digital assets. Because an NFT can only have one owner at a time, purchasing an NFT grants you exclusive ownership of a digital asset. The rarity of an item heightens its allure. NFTs provide a one-of-a-kind opportunity to participate in a very promising market system with limitless potential.',
   },
   {
-    question: 'Why choose the Elrond network and its EGLD token?',
+    question: 'What is Mr Ghost, and why do I need at least one?',
     answer:
-      'Elrond is a high-speed blockchain that aims to provide scalability, efficiency and security and is able to perform 15,000 transactions per second at a transaction cost of $0.001. EGLD is the native token of the Elrond blockchain and is used to reward validators and to pay network fees. The Elrond platform is designed for the new Internet economy and decentralised WEB3 applications.',
+      'Mr Ghost is a collectible, one-of-a-kind, original, and lovely NFT from the MaiarGhosts collection on Elrond. Mr Ghost is the governance token of Ghost Land DAO, and its total number is 8658! Mr Ghost makes you a shareholder of Ghost Land and a key player in the organization\'s strategic decisions on Superciety. 1 ghost, 1 voice!',
   },
   {
-    question: 'Who is Mr Ghosts and why should I have at least one?',
+    question: 'Why should we use the Elrond network and the EGLD token?',
     answer:
-      'Mr Ghost is a collectible, unique, original and beautiful NFT on Elrond, Mr Ghost is the governance token of GhostLand DAO and its number is limited to 8658 maximum! Mr Ghost makes you a shareholder of GhostLand and a major player in the strategic decisions of the organisation! From now on you can vote in the Discord server to validate the next NFT drops, their prices and other questions the community is wondering about.',
+      'Elrond is a high-speed blockchain that aims to provide scalability, efficiency, and security. It can perform 15,000 transactions per second for a transaction fee of 0.001. The Elrond blockchain\'s native token, EGLD, is used to reward validators and pay network fees. Elrond is built for the new Internet economy and decentralized WEB3 applications.',
+  },
+  {
+    question: 'Why should we start a node on the Elrond network?',
+    answer:
+      'Launching a node and becoming a staking provider is the path to take. A node will always keep running, no matter what. In Asia, there is only 6 percent of Elrond nodes in activity. We are the perfect organization to be a part of the security of the Elrond network in Asia. We\'re currently 2350 EGLD short of this goal. 7290 NFTs are still to be minted. That means we\'ll need to hit a median mint price of 0.32 EGLD.',
   },
 ];
 
@@ -78,58 +83,77 @@ export const team = [
   {
     name: 'Jeremy',
     bio: 'Founder',
-    imageUrl: '/media/jeremy-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/media/ghostland-jeremy-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.linkedin.com/in/jeremy-douchamps/'],
   },
   {
+    name: 'Louis',
+    bio: 'Artist',
+    imageUrl: '/media/ghostland-louis-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    socialMediaLinks: ['https://www.instagram.com/louislanne/'],
+  },
+  {
     name: 'Sergiu',
-    bio: 'DevOps Engineer',
-    imageUrl: '/media/build-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    bio: 'DevOps',
+    imageUrl: '/media/ghostland-sergiu-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: [
       'https://www.linkedin.com/in/sergiupopa89/?originalSubdomain=ro',
     ],
   },
   {
-    name: 'Louis',
-    bio: 'Artist',
-    imageUrl: '/media/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
-    socialMediaLinks: ['https://www.instagram.com/louislanne/'],
+    name: 'Damien',
+    bio: 'Smart Contract Dev',
+    imageUrl: '/media/ghostland-damien-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    socialMediaLinks: [
+      'https://github.com/damienen',
+    ],
   },
   {
     name: 'Nati',
     bio: 'Marketer',
-    imageUrl: '/media/nati-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/media/ghostland-nati-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.linkedin.com/in/nati-douchamps-1151a8144/'],
   },
   {
     name: 'Albert',
     bio: 'SEO Expert',
-    imageUrl: '/media/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl: '/media/ghostland-albert-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.linkedin.com/in/albertlanne/'],
+  },
+  {
+    name: 'Kylian',
+    bio: 'Community manager',
+    imageUrl: '/media/ghostland-kylian-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    socialMediaLinks: ['https://twitter.com/timkyl2203'],
+  },
+  {
+    name: 'Thip',
+    bio: '3D Artist',
+    imageUrl: '/media/ghostland-thip-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    socialMediaLinks: ['https://www.artstation.com/ninjathip'],
   },
 ];
 
 export const earn = [
   {
     name: 'Passive Income',
-    bio: 'Hold and earn. 100% of the EGLD staking revenue is redistributed to holders. Get more than 5 MaiarGhosts and earn EGLDs automatically.',
+    bio: 'Hold and earn. 100 percent of the EGLD staking revenue is redistributed to holders. Get more than 5 MaiarGhosts and earn EGLD automatically and for life.',
     imageUrl:
-      '/media/ghostland-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+      '/media/ghostland-passive-income-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     earnLink: '/maiar-ghosts',
   },
   {
-    name: 'Monthly Rewards',
-    bio: 'Win a free NFT mint each month by using your Mr. Ghost NFT as your avatar in Maiar app and adding a friend.',
+    name: 'Weekly Rewards',
+    bio: 'Every monday we organize weekly rewards on Twitter. A trait is picked and the winners share the prize pool!',
     imageUrl:
-      '/media/ghostland-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
-    earnLink: 'https://forms.gle/wrK6DcASpPYQu6qr8',
+      '/media/ghostland-weekly-rewards-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    earnLink: 'https://www.twitter.com/GokaiLabs',
   },
   {
-    name: 'Weekly Rewards',
-    bio: 'Every monday we organize weekly awards on Twitter. A trait is picked and the winners share the prize pool!',
+    name: 'Monthly Rewards',
+    bio: 'Win a free NFT mint each month by using your Mr. Ghost NFT as your avatar in Maiar app. Entries are limited and already filled up.',
     imageUrl:
-      '/media/ghostland-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
-    earnLink: 'https://www.twitter.com/GokaiLabs',
+      '/media/ghostland-monthly-rewards-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
   },
 ];
 

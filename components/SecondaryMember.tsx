@@ -20,7 +20,7 @@ export const SecondaryMember: FC<SecondaryMemberProps> = ({
             <Box
               as="a"
               height="68px"
-              borderColor="ghostLand.color1.lighter"
+              borderColor="ghostLand.color1.darker"
               borderWidth={1}
               bgColor="ghostLand.dark.lighter"
               backdropFilter="blur(3px)"
@@ -35,9 +35,9 @@ export const SecondaryMember: FC<SecondaryMemberProps> = ({
               rel="sponsored"
               title={name}
               _hover={{
-                bg: 'ghostLand.color2.lighter',
-                borderColor: 'ghostLand.color1.lighter',
-                color: 'ghostLand.color1.lighter',
+                bg: 'ghostLand.color1.lighter',
+                borderColor: 'ghostLand.color1.darker',
+                color: 'ghostLand.color1.darker',
                 backdropFilter: 'blur(3px)',
               }}
               transition="background-color .3s"

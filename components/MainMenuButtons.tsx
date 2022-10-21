@@ -114,7 +114,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-lightpaper-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            src="/media/ghostland-vote-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
             alt="GhostLand Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Governance
@@ -126,7 +126,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-lightpaper-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            src="/media/ghostland-wallet-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
             alt="GhostLand Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Wallet
@@ -138,7 +138,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-lightpaper-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            src="/media/ghostland-github-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
             alt="GhostLand Github Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Github
