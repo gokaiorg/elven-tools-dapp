@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export const HeroImage = () => {
   return (
     <Box
-      width={{ base: '100%', md: '40%' }}
+      width={{ base: '100%' }}
       mr={{ base: '0', md: '3rem' }}
       display="flex"
       justifyContent="center"
