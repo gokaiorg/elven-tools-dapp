@@ -29,7 +29,7 @@ export const Logo = () => {
           fontFamily="heading"
           color="elvenTools.white"
         >
-          hostLand
+          host...
         </Text>
       </Box>
     </NextLink>
