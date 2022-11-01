@@ -78,8 +78,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-collect-trade-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand collect and trade Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-collect-trade-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse collect and trade Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Collect & Trade
         </ActionButtonXL>
@@ -90,8 +90,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand play and earn Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-play-earn-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse play and earn Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Play & Earn
         </ActionButtonXL>
@@ -102,8 +102,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-dao-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand DAO Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-dao-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse DAO Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Dao
         </ActionButtonXL>
@@ -114,8 +114,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-vote-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-vote-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Governance
         </ActionButtonXL>
@@ -126,8 +126,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-wallet-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-wallet-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Wallet
         </ActionButtonXL>
@@ -138,8 +138,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-github-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Github Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-github-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Github Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Github
         </ActionButtonXL>
@@ -150,8 +150,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-lightpaper-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-lightpaper-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Lightpaper Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Lightpaper
         </ActionButtonXL>
@@ -162,8 +162,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-roadmap-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand roadmap Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-roadmap-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse roadmap Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Roadmap
         </ActionButtonXL>
@@ -174,8 +174,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-team-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand team Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-team-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse team Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Team
         </ActionButtonXL>
@@ -186,8 +186,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-clan-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand collect and trade Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-clan-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse collect and trade Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Clan
         </ActionButtonXL>
@@ -198,8 +198,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-faq-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand FAQ Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-faq-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse FAQ Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Faq
         </ActionButtonXL>
@@ -210,8 +210,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-elrond-community-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand EGLD community Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-elrond-community-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse EGLD community Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           EGLD Community
         </ActionButtonXL>
@@ -222,8 +222,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-twitter-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Twitter Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-twitter-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Twitter Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Twitter
         </ActionButtonXL>
@@ -234,8 +234,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-discord-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Discord Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-discord-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Discord Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Discord
         </ActionButtonXL>
@@ -246,8 +246,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-elrond-builders-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Elrond Builders Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-elrond-builders-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Elrond Builders Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Builders
         </ActionButtonXL>
@@ -258,8 +258,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-medium-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Medium Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-medium-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Medium Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Medium
         </ActionButtonXL>
@@ -270,8 +270,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-instagram-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Instagram Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-instagram-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Instagram Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Instagram
         </ActionButtonXL>
@@ -282,8 +282,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-facebook-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Facebook Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-facebook-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Facebook Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Facebook
         </ActionButtonXL>
@@ -294,8 +294,8 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostland-giphy-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
-            alt="GhostLand Giphy Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
+            src="/media/ghostverse-giphy-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            alt="GhostVerse Giphy Mr Ghost Maiar Ghosts NFT DAO Elrond Network"
           />
           Giphy
         </ActionButtonXL>

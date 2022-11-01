@@ -11,7 +11,7 @@ const RoadmapPage: NextPage = () => {
       <HeaderMenu>
         <HeaderMenuButtons enabled={['auth']} />
       </HeaderMenu>
-      <HomeSectionTitle title="Play & Earn" />
+      <HomeSectionTitle title="Collect your favorite NFT and win prizes!" />
       <Earn />
     </MainLayout>
   );

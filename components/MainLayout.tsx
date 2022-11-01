@@ -19,7 +19,7 @@ export const MainLayout: FC<PropsWithChildren<MetaHeadProps>> = ({
         metaUrl={metaUrl}
       />
       <Box
-        minHeight="calc(100vh - 136px)"
+        minHeight="calc(100vh - 34px)"
         position="relative"
         zIndex={3}
         color="ghostLand.color2.darker"

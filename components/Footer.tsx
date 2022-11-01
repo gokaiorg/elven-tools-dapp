@@ -3,27 +3,13 @@ import packageJson from '../package.json';
 
 export const Footer = () => {
   return (
-    <Box color="elvenTools.white" display="flex" alignItems="center" mt={{ base: 10, md: 0 }}>
+    <Box color="elvenTools.white" display="flex" alignItems="center" mt={{ base: 'auto' }}>
       <Container
         maxW="container.xl"
         fontSize="sm"
         fontWeight="normal"
         textAlign="center"
       >
-        <Box
-          mx="auto"
-          overflow="hidden"
-          display="table"
-          position="relative"
-          zIndex={1}
-          my={{ base: '4' }}
-        >
-          <iframe
-            src="https://egld.community/api/products/5691f3eb-fbf6-4987-b684-6b060cef40c4/upvotes/embed"
-            width="290"
-            height="70"
-          ></iframe>
-        </Box>
         <Box
           fontSize="xs"
           fontWeight="bold"
@@ -51,7 +37,7 @@ export const Footer = () => {
           bottom="0"
         >
           <Image
-            src="/media/ghostland-cemetery-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            src="/media/ghostverse-cemetery-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
             alt="Mr Ghost Moon"
             objectFit="contain"
             width={2048}

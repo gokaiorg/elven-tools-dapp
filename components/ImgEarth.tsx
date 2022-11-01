@@ -17,7 +17,7 @@ export const ImgEarth = () => {
       >
         <Box
           as="img"
-          src="/media/ghostland-earth-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+          src="/media/ghostverse-earth-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
           width={{ base: '40px' }}
           height={{ base: '40px' }}
           alt="Mr Ghost Earth - Elrond NFT DAO - Maiar Ghosts"

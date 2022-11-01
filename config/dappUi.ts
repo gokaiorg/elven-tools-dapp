@@ -11,7 +11,7 @@ export const defaultMetaTags = {
     'Community-driven collectible NFT DAO on Elrond Network',
   description:
     'Elrond Network collectible NFT DAO driven by the community. The community makes all decisions. The Maiar Ghosts collection is an NFT for governance. Vote and contribute to the project\'s progress. Get a Mr Ghost and join the clan.',
-  shortname: 'GhostLand',
+  shortname: 'GhostVerse',
   image: `${dappHostname}/social.png`,
 };
 
@@ -25,7 +25,7 @@ export const faq = [
   {
     question: 'What is Mr Ghost, and why do I need at least one?',
     answer:
-      'Mr Ghost is a collectible, one-of-a-kind, original, and lovely NFT from the MaiarGhosts collection on Elrond. Mr Ghost is the governance token of Ghost Land DAO, and its total number is 8658! Mr Ghost makes you a shareholder of Ghost Land and a key player in the organization\'s strategic decisions on Superciety. 1 ghost, 1 voice!',
+      'Mr Ghost is a collectible, one-of-a-kind, original, and lovely NFT from the MaiarGhosts collection on Elrond. Mr Ghost is the governance token of the GhostVerse DAO, and its total number is 8658! Mr Ghost makes you a shareholder of the GhostVerse and a key player in the organization\'s strategic decisions on Superciety. 1 ghost, 1 voice!',
   },
   {
     question: 'Why should we use the Elrond network and the EGLD token?',
@@ -63,17 +63,21 @@ export const roadmap = [
       '↻ Airdrop Collector Vox02 NFT',
       '↻ Launch Passive Income v1',
       '↻ Launch Open Source dApp v2',
+      '↻ Passive income dashboard',
+      '↻ Collection rarity',
       '↻ Produce merch',
+      '↻ Have fun',
     ],
   },
   {
     title: 'Planned',
     points: [
       'Build the most amazing community',
-      'Create multi-sig',
-      'Decentralize the project',
+      'Set up the multi-sig wallet',
+      'Decentralize more',
       'Sold out Drop #3 to #13',
       'Run a validator node',
+      'Lifetime passive income',
       'Build more',
     ],
   },
@@ -83,19 +87,19 @@ export const team = [
   {
     name: 'Jeremy',
     bio: 'Founder',
-    imageUrl: '/media/ghostland-jeremy-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-jeremy-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.linkedin.com/in/jeremy-douchamps/'],
   },
   {
     name: 'Louis',
     bio: 'Artist',
-    imageUrl: '/media/ghostland-louis-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-louis-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
   {
     name: 'Sergiu',
     bio: 'DevOps',
-    imageUrl: '/media/ghostland-sergiu-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-sergiu-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: [
       'https://www.linkedin.com/in/sergiupopa89/?originalSubdomain=ro',
     ],
@@ -103,7 +107,7 @@ export const team = [
   {
     name: 'Damien',
     bio: 'Smart Contract Dev',
-    imageUrl: '/media/ghostland-damien-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-damien-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: [
       'https://github.com/damienen',
     ],
@@ -111,25 +115,25 @@ export const team = [
   {
     name: 'Nati',
     bio: 'Marketer',
-    imageUrl: '/media/ghostland-nati-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-nati-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.linkedin.com/in/nati-douchamps-1151a8144/'],
   },
   {
     name: 'Albert',
     bio: 'SEO Expert',
-    imageUrl: '/media/ghostland-albert-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-albert-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.linkedin.com/in/albertlanne/'],
   },
   {
     name: 'Kylian',
     bio: 'Community manager',
-    imageUrl: '/media/ghostland-kylian-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-kylian-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://twitter.com/timkyl2203'],
   },
   {
     name: 'Thip',
     bio: '3D Artist',
-    imageUrl: '/media/ghostland-thip-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+    imageUrl: '/media/ghostverse-thip-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
     socialMediaLinks: ['https://www.artstation.com/ninjathip'],
   },
 ];
@@ -139,19 +143,19 @@ export const earn = [
     name: 'Passive Income',
     bio: 'Hold and earn. 100 percent of the EGLD staking revenue is redistributed to holders. Get more than 5 MaiarGhosts and earn EGLD automatically and for life.',
     imageUrl:
-      '/media/ghostland-passive-income-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+      '/media/ghostverse-passive-income-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
   },
   {
     name: 'Weekly Rewards',
     bio: 'Every monday we organize weekly rewards on Twitter. A trait is picked and the winners share the prize pool!',
     imageUrl:
-      '/media/ghostland-weekly-rewards-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+      '/media/ghostverse-weekly-rewards-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
   },
   {
     name: 'Monthly Rewards',
     bio: 'Win a free NFT mint each month by using your Mr. Ghost NFT as your avatar in Maiar app. Entries are limited and already filled up.',
     imageUrl:
-      '/media/ghostland-monthly-rewards-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
+      '/media/ghostverse-monthly-rewards-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png',
   },
 ];
 
