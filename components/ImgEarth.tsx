@@ -17,11 +17,11 @@ export const ImgEarth = () => {
       >
         <Box
           as="img"
-          src="/media/ghostverse-earth-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+          src="/media/ghostverse-earth-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
           width={{ base: '40px' }}
           height={{ base: '40px' }}
-          alt="Mr Ghost Earth - Elrond NFT DAO - Maiar Ghosts"
-          title="Mr Ghost Earth - Elrond NFT DAO - Maiar Ghosts"
+          alt="Mr Ghost Earth - MultiversX NFT DAO - MxGhosts"
+          title="Mr Ghost Earth - MultiversX NFT DAO - MxGhosts"
         />
       </motion.div>
     </Box>

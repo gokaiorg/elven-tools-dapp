@@ -11,7 +11,7 @@ const RoadmapPage: NextPage = () => {
       <HeaderMenu>
         <HeaderMenuButtons enabled={['auth']} />
       </HeaderMenu>
-      <HomeSectionTitle title="Running Elrond Node to secure the network and ensure a decentralized passive income in EGLD." />
+      <HomeSectionTitle title="Running MultiversX Node to secure the network and ensure a decentralized passive income in EGLD." />
       <Roadmap />
     </MainLayout>
   );

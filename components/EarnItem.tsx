@@ -7,11 +7,7 @@ interface EarnItemProps {
   bio?: string;
 }
 
-export const EarnItem: FC<EarnItemProps> = ({
-  name,
-  imageUrl,
-  bio,
-}) => {
+export const EarnItem: FC<EarnItemProps> = ({ name, imageUrl, bio }) => {
   return (
     <Text
       as="a"

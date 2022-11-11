@@ -21,9 +21,9 @@ export const HeroImage = () => {
         }}
       >
         <Image
-          src="/media/ghostverse-mint-mr-ghost-maiar-ghosts-nft-dao-elrond-network.gif"
-          title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
-          alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
+          src="/media/ghostverse-mint-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.gif"
+          title="Mint Mr Ghost Mr Ghost Minting - MultiversX NFT DAO - MxGhosts"
+          alt="Mint Mr Ghost Mr Ghost Minting - MultiversX NFT DAO - MxGhosts"
           width={300}
           height={300}
         />

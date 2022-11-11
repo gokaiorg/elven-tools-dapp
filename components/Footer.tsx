@@ -3,7 +3,12 @@ import packageJson from '../package.json';
 
 export const Footer = () => {
   return (
-    <Box color="elvenTools.white" display="flex" alignItems="center" mt={{ base: 'auto' }}>
+    <Box
+      color="elvenTools.white"
+      display="flex"
+      alignItems="center"
+      mt={{ base: 'auto' }}
+    >
       <Container
         maxW="container.xl"
         fontSize="sm"
@@ -37,7 +42,7 @@ export const Footer = () => {
           bottom="0"
         >
           <Image
-            src="/media/ghostverse-cemetery-mr-ghost-maiar-ghosts-nft-dao-elrond-network.png"
+            src="/media/ghostverse-cemetery-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
             alt="Mr Ghost Moon"
             objectFit="contain"
             width={2048}

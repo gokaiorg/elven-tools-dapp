@@ -215,7 +215,12 @@ export const MintHero = () => {
       animate="animate"
       variants={fadeInUp}
     >
-      <Box width="100%" borderColor="ghostLand.color2.base" borderWidth={1} p={4}>
+      <Box
+        width="100%"
+        borderColor="ghostLand.color2.base"
+        borderWidth={1}
+        p={4}
+      >
         <Text
           as="h1"
           fontSize={{ base: '2xl' }}
@@ -224,13 +229,13 @@ export const MintHero = () => {
           lineHeight="shorter"
           mb={5}
         >
-          Collect MaiarGhosts and join the clan.
+          Collect MxGhosts and join the clan.
         </Text>
         <Text as="h2" fontSize="md" fontWeight="thin">
-          To be able to mint you have to be logged in to be able to mint. Remember
-          that it will mint only on the devent. If you want to do that, you need
-          to connect using one of the methods and the devnet address with some
-          xEGLD funds.
+          To be able to mint you have to be logged in to be able to mint.
+          Remember that it will mint only on the devent. If you want to do that,
+          you need to connect using one of the methods and the devnet address
+          with some xEGLD funds.
         </Text>
         {!mintingPaused ? (
           <Box mt={6}>

@@ -43,7 +43,7 @@ export const LoginComponent = memo(() => {
               isFullWidth
               onClick={handleLogin(LoginMethodsEnum.wallet)}
             >
-              Elrond Web Wallet
+              MultiversX Web Wallet
             </ActionButton>
             <ActionButton
               isFullWidth

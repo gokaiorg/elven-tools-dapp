@@ -13,15 +13,15 @@ const Mint: NextPage = () => {
       <HeaderMenu>
         <HeaderMenuButtons enabled={['auth', 'about']} />
       </HeaderMenu>
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          flexDirection={{ base: 'column-reverse', md: 'row-reverse' }}
-        >
-          <MintHero />
-          <HeroImage />
-        </Box>
-        <Secondary />
+      <Box
+        display="flex"
+        justifyContent="space-between"
+        flexDirection={{ base: 'column-reverse', md: 'row-reverse' }}
+      >
+        <MintHero />
+        <HeroImage />
+      </Box>
+      <Secondary />
     </MainLayout>
   );
 };

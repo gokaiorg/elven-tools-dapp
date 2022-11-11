@@ -24,7 +24,7 @@ export const Secondary = () => {
   if (!Array.isArray(secondary)) return null;
 
   return (
-     <motion.div
+    <motion.div
       exit={{ opacity: 0 }}
       initial="initial"
       animate="animate"
