@@ -17,7 +17,7 @@ export const ImgEarth = () => {
       >
         <Box
           as="img"
-          src="/media/ghostverse-earth-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+          src="/media/ghostverse-earth-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
           width={{ base: '40px' }}
           height={{ base: '40px' }}
           alt="Mr Ghost Earth - MultiversX NFT DAO - MxGhosts"

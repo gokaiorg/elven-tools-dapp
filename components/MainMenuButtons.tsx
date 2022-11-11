@@ -78,7 +78,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-collect-trade-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-collect-trade-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse collect and trade Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Collect & Trade
@@ -90,7 +90,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-play-earn-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-play-earn-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse play and earn Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Play & Earn
@@ -102,7 +102,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-dao-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-dao-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse DAO Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Dao
@@ -114,7 +114,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-vote-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-vote-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Lightpaper Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Governance
@@ -126,7 +126,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-wallet-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-wallet-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Lightpaper Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Wallet
@@ -138,7 +138,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-github-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-github-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Github Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Github
@@ -150,7 +150,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-lightpaper-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-lightpaper-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Lightpaper Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Lightpaper
@@ -162,7 +162,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-roadmap-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-roadmap-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse roadmap Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Roadmap
@@ -174,7 +174,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-team-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-team-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse team Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Team
@@ -186,7 +186,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-clan-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-clan-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse collect and trade Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Clan
@@ -198,7 +198,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-faq-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-faq-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse FAQ Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Faq
@@ -210,7 +210,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-multiversx-community-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-egld-community-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse EGLD community Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           EGLD Community
@@ -222,7 +222,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-twitter-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-twitter-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Twitter Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Twitter
@@ -234,7 +234,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-discord-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-discord-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Discord Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Discord
@@ -246,7 +246,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-multiversx-builders-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-elrond-builders-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse MultiversX Builders Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Builders
@@ -258,7 +258,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-medium-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-medium-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Medium Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Medium
@@ -270,7 +270,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-instagram-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-instagram-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Instagram Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Instagram
@@ -282,7 +282,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-facebook-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-facebook-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Facebook Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Facebook
@@ -294,7 +294,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
             boxSize={{ base: '100px', md: '140px' }}
             objectFit="contain"
             my={4}
-            src="/media/ghostverse-giphy-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-giphy-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="GhostVerse Giphy Mr Ghost MxGhosts NFT DAO MultiversX"
           />
           Giphy

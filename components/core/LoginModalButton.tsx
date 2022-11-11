@@ -52,7 +52,7 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
   return (
     <>
       {isLoggedIn ? (
-        <ActionButton onClick={logout}>
+        <ActionButton onClick={logout} aria-label="logout">
           <Tooltip label="Logout" fontSize="md">
             <svg
               width="30px"
@@ -66,9 +66,10 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
               />
             </svg>
           </Tooltip>
+          <Text display="none">Logout</Text>
         </ActionButton>
       ) : (
-        <ActionButton onClick={open}>
+        <ActionButton onClick={open} aria-label="login">
           <Tooltip label="Login" fontSize="md">
             <svg
               width="30px"
@@ -81,7 +82,8 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
                 fillRule="evenodd"
               />
             </svg>
-          </Tooltip>
+            </Tooltip>
+            <Text display="none">Login</Text>
         </ActionButton>
       )}
       <Modal

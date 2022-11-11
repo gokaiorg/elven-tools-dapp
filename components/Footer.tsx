@@ -42,10 +42,10 @@ export const Footer = () => {
           bottom="0"
         >
           <Image
-            src="/media/ghostverse-cemetery-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png"
+            src="/media/ghostverse-cemetery-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp"
             alt="Mr Ghost Moon"
             objectFit="contain"
-            width={2048}
+            width="2048"
             height="auto"
           />
         </Box>

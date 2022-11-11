@@ -87,21 +87,21 @@ export const team = [
     name: 'Jeremy',
     bio: 'Founder',
     imageUrl:
-      '/media/ghostverse-jeremy-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-jeremy-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/jeremy-douchamps/'],
   },
   {
     name: 'Louis',
     bio: 'Artist',
     imageUrl:
-      '/media/ghostverse-louis-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-louis-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
   {
     name: 'Sergiu',
     bio: 'DevOps',
     imageUrl:
-      '/media/ghostverse-sergiu-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-sergiu-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: [
       'https://www.linkedin.com/in/sergiupopa89/?originalSubdomain=ro',
     ],
@@ -110,35 +110,35 @@ export const team = [
     name: 'Damien',
     bio: 'Smart Contract Dev',
     imageUrl:
-      '/media/ghostverse-damien-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-damien-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: ['https://github.com/damienen'],
   },
   {
     name: 'Nati',
     bio: 'Marketer',
     imageUrl:
-      '/media/ghostverse-nati-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-nati-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/nati-douchamps-1151a8144/'],
   },
   {
     name: 'Albert',
     bio: 'SEO Expert',
     imageUrl:
-      '/media/ghostverse-albert-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-albert-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/albertlanne/'],
   },
   {
     name: 'Kylian',
     bio: 'Community manager',
     imageUrl:
-      '/media/ghostverse-kylian-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-kylian-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: ['https://twitter.com/timkyl2203'],
   },
   {
     name: 'Thip',
     bio: '3D Artist',
     imageUrl:
-      '/media/ghostverse-thip-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-thip-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
     socialMediaLinks: ['https://www.artstation.com/ninjathip'],
   },
 ];
@@ -148,19 +148,19 @@ export const earn = [
     name: 'Passive Income',
     bio: 'Hold and earn. 100 percent of the EGLD staking revenue is redistributed to holders. Get more than 5 MxGhosts and earn EGLD automatically and for life.',
     imageUrl:
-      '/media/ghostverse-passive-income-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-passive-income-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
   },
   {
     name: 'Weekly Rewards',
     bio: 'Every monday we organize weekly rewards on Twitter. A trait is picked and the winners share the prize pool!',
     imageUrl:
-      '/media/ghostverse-weekly-rewards-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-weekly-rewards-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
   },
   {
     name: 'Monthly Rewards',
     bio: 'Win a free NFT mint each month by using your Mr. Ghost NFT as your avatar in Maiar app. Entries are limited and already filled up.',
     imageUrl:
-      '/media/ghostverse-monthly-rewards-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.png',
+      '/media/ghostverse-monthly-rewards-mr-ghost-mxghosts-nft-dao-multiversx-blockchain.webp',
   },
 ];
 
