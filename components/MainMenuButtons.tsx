@@ -11,7 +11,7 @@ export const MainMenuButtons: FC<MainMenuButtonsProps> = ({ enabled }) => {
   const router = useRouter();
 
   const handleMintClick = useCallback(() => {
-    router.push('/maiar-ghosts');
+    router.push('/mxghosts');
   }, [router]);
   const handlePlayAndEarnClick = useCallback(() => {
     router.push('/play-and-earn');

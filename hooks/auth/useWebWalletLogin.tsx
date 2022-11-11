@@ -26,7 +26,7 @@ export const useWebWalletLogin = (params?: Login) => {
         ? encodeURIComponent(
             `${window.location.origin}${params?.callbackRoute || '/mint'}`
           )
-        : '/mint';
+        : '/mxghosts';
     const providerLoginData = {
       callbackUrl,
       ...(params?.token && { token: params?.token }),
