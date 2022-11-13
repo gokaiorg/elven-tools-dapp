@@ -4,30 +4,11 @@ import { MainLayout } from '../components/MainLayout';
 import { HeaderMenu } from '../components/HeaderMenu';
 import { HeaderMenuButtons } from '../components/HeaderMenuButtons';
 import { Utility } from '../components/Utility';
-import { Helmet } from 'react-helmet';
 import { defaultMetaTags } from '../config/dappUi';
 
 const Mint: NextPage = () => {
   return (
     <MainLayout>
-      <Helmet>
-        <title>{defaultMetaTags.titleUtility}</title>
-        <meta name="description" content={defaultMetaTags.descriptionUtility} />
-        <meta property="og:title" content={defaultMetaTags.shortname} />
-        <meta
-          property="og:description"
-          content={defaultMetaTags.descriptionUtility}
-        />
-        <meta property="og:image" content={defaultMetaTags.imageUtility} />
-        <meta property="og:url" content={defaultMetaTags.urlUtility} />
-        <meta name="twitter:title" content={defaultMetaTags.shortname} />
-        <meta
-          name="twitter:description"
-          content={defaultMetaTags.descriptionUtility}
-        />
-        <meta name="twitter:image" content={defaultMetaTags.imageUtility} />
-        <meta name="twitter:url" content={defaultMetaTags.urlUtility} />
-      </Helmet>
       <HeaderMenu>
         <HeaderMenuButtons
           enabled={['auth', 'maiar-ghosts', 'rarity', 'analytics']}
