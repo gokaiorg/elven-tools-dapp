@@ -14,12 +14,7 @@ interface FaqItemProps {
 
 export const FaqItem: FC<FaqItemProps> = ({ question, answer }) => {
   return (
-    <AccordionItem
-      border={0}
-      bgColor="black"
-      mb={6}
-      borderRadius="3xl"
-    >
+    <AccordionItem border={0} bgColor="black" mb={6} borderRadius="3xl">
       <AccordionButton
         _focus={{ outline: 'none' }}
         color="elvenTools.white"

@@ -19,7 +19,7 @@ export const CollabMember: FC<CollabMemberProps> = ({
         <Box>
           {socialMediaLinks.map((link, index) => (
             <Box
-              as='a'
+              as="a"
               height="120px"
               fontSize="xl"
               display="flex"
@@ -29,7 +29,14 @@ export const CollabMember: FC<CollabMemberProps> = ({
               title={name}
               justifyContent="center"
             >
-              <Image src={imageUrl} alt={name} title={name} width="100%" height="100%" objectFit="contain" />
+              <Image
+                src={imageUrl}
+                alt={name}
+                title={name}
+                width="100%"
+                height="100%"
+                objectFit="contain"
+              />
             </Box>
           ))}
         </Box>

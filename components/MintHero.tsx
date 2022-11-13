@@ -132,26 +132,31 @@ export const MintHero = () => {
       width="100%"
       maxWidth="1280px"
     >
-      <Box width={{ base: '100%', md: '40%' }} mr={{ base: '0', md: '3rem' }} display="flex" justifyContent="center">
-        <motion.div
-        animate={{
-          y: [-15, 15, -15],
-        }}
-        transition={{
-          duration: 1,
-          ease: 'easeInOut',
-          repeat: Infinity,
-          repeatDelay: 0,
-        }}
+      <Box
+        width={{ base: '100%', md: '40%' }}
+        mr={{ base: '0', md: '3rem' }}
+        display="flex"
+        justifyContent="center"
       >
+        <motion.div
+          animate={{
+            y: [-15, 15, -15],
+          }}
+          transition={{
+            duration: 1,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatDelay: 0,
+          }}
+        >
           <img
-          src="/static/media/maiar-ghosts-mint-elrond-nft-dao.gif"
-          title="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
-          alt="Mint Mr Ghost Mr Ghost Minting - Elrond NFT DAO - Maiar Ghosts"
-          width={500}
-          height={500}
-        />
-      </motion.div>
+            src="/static/media/maiar-ghosts-mint-elrond-nft-dao.gif"
+            title="Mint Mr Ghost Mr Ghost Minting - MultiversX NFT DAO - MxGhosts"
+            alt="Mint Mr Ghost Mr Ghost Minting - MultiversX NFT DAO - MxGhosts"
+            width={500}
+            height={500}
+          />
+        </motion.div>
       </Box>
       <Box width={{ base: '100%', md: '50%' }}>
         <Text
@@ -162,7 +167,8 @@ export const MintHero = () => {
           lineHeight="shorter"
           mb={5}
         >
-          Collection of 8658 unique Mr Ghost NFT haunting the Elrond blockchain
+          Collection of 8658 unique Mr Ghost NFT haunting the MultiversX
+          blockchain
         </Text>
         <Text
           as="h2"
@@ -170,8 +176,7 @@ export const MintHero = () => {
           fontWeight="thin"
           textAlign={{ base: 'center', md: 'left' }}
         >
-          Mr Ghost was born from a wish to create an NFT around the M logo from
-          the Elrond Network ​​digital wallet: Maiar.
+          Maiar Ghosts are now becoming MxGhosts and you can find them on the Ghostverse.
         </Text>
         {isMintingStarted ? (
           <Box mt={6}>
@@ -189,7 +194,7 @@ export const MintHero = () => {
                     alignItems="center"
                     justifyContent={isContentCentered ? 'center' : 'flex-start'}
                   >
-                    Login to mint{" "}
+                    Login to mint{' '}
                     <Box borderRadius="full" border="1px solid #fff" ml="1rem">
                       <LoginModalButton />
                     </Box>
@@ -237,13 +242,26 @@ export const MintHero = () => {
             </Box>
           </Box>
         ) : (
-          <Box textAlign={{ base: 'center', md: 'left' }}>
-            <Text fontSize="2xl" fontWeight="bold" mt={10}>
-              Drop #2 - Sold Out.
+          <Box m="0 auto" display="flex" position="relative" textAlign={{ base: 'center', md: 'left' }}>
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+            <Text
+              as="a"
+              fontSize="xl"
+              display="inline-block"
+              p="1rem 2rem"
+              mt={5}
+              color="elvenTools.color2.base"
+              background="elvenTools.color2.lighter"
+              _hover={{
+                bg: 'elvenTools.color2.darker',
+                color: 'elvenTools.color2.lighter',
+              }}
+              borderRadius="full"
+              href="https://ghostverse.org/"
+            >
+              Visit
             </Text>
-            <Text fontSize="2xl" fontWeight="bold">
-              Please be back soon!
-            </Text>
+          </motion.div>
           </Box>
         )}
       </Box>

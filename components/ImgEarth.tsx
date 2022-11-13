@@ -6,7 +6,7 @@ export const ImgEarth = () => {
     <Box
       height={{ base: '50px', md: '100px', lg: '150px' }}
       width={{ base: '50px', md: '100px', lg: '150px' }}
-      position="absolute" 
+      position="absolute"
       zIndex="0"
       left="5%"
       top="5%"
@@ -27,8 +27,8 @@ export const ImgEarth = () => {
           src="/static/media/mr-ghost-earth-elrond-nft-dao-maiar-ghosts.webp"
           width={{ base: '50px', md: '100px', lg: '150px' }}
           height={{ base: '50px', md: '100px', lg: '150px' }}
-          alt="Mr Ghost Earth - Elrond NFT DAO - Maiar Ghosts"
-          title="Mr Ghost Earth - Elrond NFT DAO - Maiar Ghosts"
+          alt="Mr Ghost Earth - MultiversX NFT DAO - MxGhosts"
+          title="Mr Ghost Earth - MultiversX NFT DAO - MxGhosts"
         />
       </motion.div>
     </Box>

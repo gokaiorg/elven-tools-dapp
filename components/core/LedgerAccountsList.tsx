@@ -52,7 +52,7 @@ export const LedgerAccountsList: FC<LedgerAccountsListProps> = ({
           mounted.current
         ) {
           setError(
-            'Not connected, please check the connection and make sure that you have the Elrond app opened on your Ledger device.'
+            'Not connected, please check the connection and make sure that you have the MultiversX app opened on your Ledger device.'
           );
         }
       } finally {

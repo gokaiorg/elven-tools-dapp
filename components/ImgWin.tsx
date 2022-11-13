@@ -20,8 +20,8 @@ export const ImgWin = () => {
           src="/static/media/mr-ghost-winning-elrond-nft-dao-maiar-ghosts.webp"
           width="256px"
           height="auto"
-          alt="Mr Ghost Winning - Elrond NFT DAO - Maiar Ghosts"
-          title="Mr Ghost Winning - Elrond NFT DAO - Maiar Ghosts"
+          alt="Mr Ghost Winning - MultiversX NFT DAO - MxGhosts"
+          title="Mr Ghost Winning - MultiversX NFT DAO - MxGhosts"
           zIndex={11}
         />
       </motion.div>

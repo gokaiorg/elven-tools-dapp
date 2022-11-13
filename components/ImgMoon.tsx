@@ -20,8 +20,8 @@ export const ImgMoon = () => {
           width="300px"
           height="300px"
           src="/static/media/mr-ghost-mooning-elrond-nft-dao-maiar-ghosts.webp"
-          alt="Mr Ghost Mooning - Elrond NFT DAO - Maiar Ghosts"
-          title="Mr Ghost Mooning - Elrond NFT DAO - Maiar Ghosts"
+          alt="Mr Ghost Mooning - MultiversX NFT DAO - MxGhosts"
+          title="Mr Ghost Mooning - MultiversX NFT DAO - MxGhosts"
         />
       </motion.div>
     </Box>

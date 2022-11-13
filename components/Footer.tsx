@@ -7,7 +7,7 @@ export const Footer = () => {
       height="120px"
       color="elvenTools.color3.base"
       display="flex"
-      flexDirection={{ base: 'column', md:'row'}}
+      flexDirection={{ base: 'column', md: 'row' }}
       alignItems="center"
       fontSize="sm"
       fontWeight="normal"
@@ -20,16 +20,21 @@ export const Footer = () => {
         mx="auto"
         overflow="hidden"
         display="table"
-        mt={{ base: '5', md:'0'}}
+        mt={{ base: '5', md: '0' }}
       >
         <iframe
-          src='https://egld.community/api/products/5691f3eb-fbf6-4987-b684-6b060cef40c4/upvotes/embed'
-          width='290'
-          height='70'
-        >
-        </iframe>
+          src="https://egld.community/api/products/5691f3eb-fbf6-4987-b684-6b060cef40c4/upvotes/embed"
+          width="290"
+          height="70"
+        ></iframe>
       </Box>
-      <Box ml={{ base: '0'}} mt={{ base: '5', md:'0'}} display="flex" alignItems="center" whiteSpace="nowrap">
+      <Box
+        ml={{ base: '0' }}
+        mt={{ base: '5', md: '0' }}
+        display="flex"
+        alignItems="center"
+        whiteSpace="nowrap"
+      >
         Made with
         <svg
           width="25px"

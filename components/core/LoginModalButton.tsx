@@ -9,7 +9,7 @@ import {
   Spinner,
   Flex,
   ModalHeader,
-  Tooltip
+  Tooltip,
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import { ActionButton } from '../ActionButton';
@@ -68,17 +68,17 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
           </svg>
         </ActionButton>
       ) : (
-          <ActionButton onClick={open}>
-            <Tooltip label='Login' fontSize='md'>
-              <svg
+        <ActionButton onClick={open}>
+          <Tooltip label="Login" fontSize="md">
+            <svg
               width="24px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              >
-                <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" />
-              </svg>
-            </Tooltip>
+            >
+              <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" />
+            </svg>
+          </Tooltip>
         </ActionButton>
       )}
       <Modal

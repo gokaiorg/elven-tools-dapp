@@ -32,24 +32,11 @@ export const Hero = () => {
         mb={5}
         zIndex="10"
       >
-        Collectible NFT DAO
+        Creative Web3 agency building on
         <br />
-        <Text
-          as="a"
-          color="white"
-          href="https://elrond.com/"
-        >
-          Elrond Network
+        <Text as="a" color="white" href="https://multiversx.com/">
+          MultiversX
         </Text>
-      </Text>
-      <Text
-        as="p"
-        fontSize="2xl"
-        fontWeight="medium"
-        textAlign="center"
-        zIndex="10"
-      >
-        Buy a Mr Ghost NFT and become a member of Gokai Labs
       </Text>
       <Box display="flex" position="relative" zIndex="10" m="0 auto">
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>

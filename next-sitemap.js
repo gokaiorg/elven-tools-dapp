@@ -9,4 +9,4 @@ module.exports = {
       'https://gokai.org/sitemap-1.xml',
     ],
   },
-}
+};

@@ -7,8 +7,6 @@ import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/800.css';
 import '@fontsource/poppins/900.css';
-import '@fontsource/dm-sans';
-import '@fontsource/mclaren';
 
 import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';

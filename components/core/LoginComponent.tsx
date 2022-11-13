@@ -47,7 +47,7 @@ export const LoginComponent = memo(() => {
               isFullWidth
               onClick={handleLogin(LoginMethodsEnum.wallet)}
             >
-              Elrond Web Wallet
+              MultiversX Web Wallet
             </ActionButton>
             <ActionButton
               color="elvenTools.color2.base"
@@ -76,14 +76,16 @@ export const LoginComponent = memo(() => {
               Maiar Mobile App
             </ActionButton>
             <ActionButton
-            color="elvenTools.color2.base"
+              color="elvenTools.color2.base"
               background="elvenTools.color2.lighter"
               _hover={{
                 bg: 'elvenTools.color2.darker',
                 color: 'elvenTools.color2.lighter',
               }}
               borderRadius="full"
-              isFullWidth onClick={handleLedgerAccountsList}>
+              isFullWidth
+              onClick={handleLedgerAccountsList}
+            >
               Ledger
             </ActionButton>
           </>

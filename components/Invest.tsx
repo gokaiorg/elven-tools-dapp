@@ -18,35 +18,30 @@ export const Invest = () => {
       borderRadius="2xl"
       position="relative"
     >
-      <Box
-        background="white"
-        borderRadius="100%"
-        p={3}
-        mb={2}
-      >
+      <Box background="white" borderRadius="100%" p={3} mb={2}>
         <ImgLogoMaiar />
       </Box>
       <Box fontWeight="black" color="black">
-        <Box as='h3' mb={2} fontSize="3xl">
+        <Box as="h3" mb={2} fontSize="3xl">
           How to invest?
         </Box>
         <Box fontSize="xl">
           To buy NFTs we recommend you to get Maiar Wallet on your phone and
           connect your wallet to login.
-          <br/>
-          You can also create an{" "}
+          <br />
+          You can also create an{' '}
           <Box
-            as='a'
+            as="a"
             textDecoration="underline"
             {...{
-              target: "_blank",
+              target: '_blank',
             }}
             href="https://wallet.elrond.com/"
-            data-testid="Elrond Web Wallet - Gokai Labs NFT DAO - Maiar Ghosts"
-            title="Elrond Web Wallet - Gokai Labs NFT DAO - Maiar Ghosts"
+            data-testid="MultiversX Web Wallet - Gokai Labs NFT DAO - MxGhosts"
+            title="MultiversX Web Wallet - Gokai Labs NFT DAO - MxGhosts"
           >
-            Elrond Web Wallet
-          </Box>{" "}
+            MultiversX Web Wallet
+          </Box>{' '}
         </Box>
       </Box>
       <Box position="absolute" bottom="-30px">
@@ -56,7 +51,7 @@ export const Invest = () => {
             fontSize="xl"
             display="flex"
             p="1rem 2rem"
-            color= 'white'
+            color="white"
             background="elvenTools.color2.darker"
             _hover={{
               bg: 'elvenTools.color2.lighter',

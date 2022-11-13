@@ -9,7 +9,13 @@ export const Secondary = () => {
   return (
     <Box mt={24} mb="24">
       <HomeSectionTitle title="Where to buy and sell?" />
-      <SimpleGrid columns={{ base:5 }} spacing={5} width="360px" margin="auto" justifyItems="center">
+      <SimpleGrid
+        columns={{ base: 5 }}
+        spacing={5}
+        width="360px"
+        margin="auto"
+        justifyItems="center"
+      >
         {secondary.map((secondaryMember, index) => (
           <SecondaryMember key={index} {...secondaryMember} />
         ))}

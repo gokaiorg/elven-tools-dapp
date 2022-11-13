@@ -6,21 +6,11 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
   title:
-    'Community-driven collectible NFT project on Elrond Network - Gokai Labs',
+    'Community-driven collectible NFT project on MultiversX Network - Gokai Labs',
   description:
-    'Elrond Network collectible NFT DAO driven by the community. The community makes all decisions. The Maiar Ghosts collection is an NFT for governance. Vote and contribute to the project\'s progress. Get a Mr Ghost and join the club.',
+    "MultiversX Network collectible NFT DAO driven by the community. The community makes all decisions. The MxGhosts collection is an NFT for governance. Vote and contribute to the project's progress. Get a Mr Ghost and join the club.",
   image: `${dappHostname}/social.png`,
   shortname: 'Gokai Labs',
-  titleMaiarGhosts: 'Mint, buy and sell Maiar Ghosts NFT on Elrond NFTs marketplace - Gokai Labs',
-  descriptionMaiarGhosts:
-    'Maiar Ghosts is a collection of 8658 unique Mr Ghost NFTs haunting the Elrond blockchain. Mr Ghost was born from a wish to create an NFT around the M logo from the Elrond Network digital wallet: Maiar. With 666 traits, Mr Ghost is one of the most fun Elrond NFTs to collect.',
-  imageMaiarGhosts: `${dappHostname}/social-maiar-ghosts.png`,
-  urlMaiarGhosts: `${dappHostname}/maiar-ghosts`,
-  titleUtility: 'Collect, Trade, Play and Earn with Mr Ghost NFT on Elrond Network - Gokai Labs',
-  descriptionUtility:
-    'The utility of Maiar Ghosts has just begun. You can collect them, trade them, vote in governance and play our various games! NFT for avatar in Maiar app, Effort Economy games, win NFTs and many more surprises to come.',
-  imageUtility: `${dappHostname}/social-maiar-ghosts-utility.png`,
-  urlUtility: `${dappHostname}/utility`,
 };
 
 // FAQ section data
@@ -31,14 +21,14 @@ export const faq = [
       'NFTs are exciting. NFT stands for Non-Fungible Token, which are unique digital assets. Since an NFT can only have one owner at a time, when you buy an NFT you are buying exclusive ownership of a digital asset. Rarity increases the excitement around an item. NFTs offer a unique opportunity to participate in a very promising market system with endless possibilities, including the possibility of making considerable profits.',
   },
   {
-    question: 'Why choose the Elrond network and its EGLD token?',
+    question: 'Why choose the MultiversX network and its EGLD token?',
     answer:
-      'Elrond is a high-speed blockchain that aims to provide scalability, efficiency and security and is able to perform 15,000 transactions per second at a transaction cost of $0.001. EGLD is the native token of the Elrond blockchain and is used to reward validators and to pay network fees. The Elrond platform is designed for the new Internet economy and decentralised WEB3 applications.',
+      'MultiversX is a high-speed blockchain that aims to provide scalability, efficiency and security and is able to perform 15,000 transactions per second at a transaction cost of $0.001. EGLD is the native token of the MultiversX blockchain and is used to reward validators and to pay network fees. The MultiversX platform is designed for the new Internet economy and decentralised WEB3 applications.',
   },
   {
     question: 'Who is Mr Ghosts and why should I have at least one?',
     answer:
-      'Mr Ghost is a collectible, unique, original and beautiful NFT on Elrond , Mr Ghost is the governance token of Gokai Labs DAO and its number is limited to 8658 maximum! Mr Ghost makes you a shareholder of Gokai Labs and a major player in the strategic decisions of the organisation! From now on you can vote in the Discord server to validate the next NFT drops, their prices and other questions the community is wondering about.',
+      'Mr Ghost is a collectible, unique, original and beautiful NFT on MultiversX , Mr Ghost is the governance token of Gokai Labs DAO and its number is limited to 8658 maximum! Mr Ghost makes you a shareholder of Gokai Labs and a major player in the strategic decisions of the organisation! From now on you can vote in the Discord server to validate the next NFT drops, their prices and other questions the community is wondering about.',
   },
 ];
 
@@ -50,7 +40,12 @@ export const roadmap = [
   },
   {
     title: 'IN PROGRESS',
-    points: ['Community building', 'Partnerships', 'Passive income', 'Collector NFT'],
+    points: [
+      'Community building',
+      'Partnerships',
+      'Passive income',
+      'Collector NFT',
+    ],
   },
   {
     title: 'PLANNED',
@@ -62,13 +57,15 @@ export const team = [
   {
     name: 'Jeremy',
     bio: 'Founder',
-    imageUrl: '/static/media/jeremy-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl:
+      '/static/media/jeremy-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/jeremy-douchamps/'],
   },
   {
     name: 'Louis',
     bio: 'Artist',
-    imageUrl: '/static/media/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl:
+      '/static/media/louislanne-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.instagram.com/louislanne/'],
   },
   {
@@ -80,7 +77,8 @@ export const team = [
   {
     name: 'Albert',
     bio: 'SEO Expert',
-    imageUrl: '/static/media/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
+    imageUrl:
+      '/static/media/bebert-gokai-labs-elrond-nft-dao-maiar-ghosts.webp',
     socialMediaLinks: ['https://www.linkedin.com/in/albertlanne/'],
   },
 ];
@@ -175,11 +173,11 @@ export const secondary = [
     socialMediaLinks: ['https://deadrare.io/collection/MRG-1c3ba4'],
   },
   {
-    name: 'Buy and Sell Mr Ghost on Elrond NFT Swap',
+    name: 'Buy and Sell Mr Ghost on MultiversX NFT Swap',
     imageUrl: '/static/media/logo-elrond-nft-swap.webp',
     socialMediaLinks: ['https://elrondnftswap.com/collection/MRG-1c3ba4'],
   },
-    {
+  {
     name: 'Buy and Sell Mr Ghost on Isengard',
     imageUrl: '/static/media/logo-isengard.webp',
     socialMediaLinks: ['https://isengard.market/collection/MRG-1c3ba4'],

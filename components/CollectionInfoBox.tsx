@@ -30,12 +30,7 @@ export const CollectionInfoBox: FC<CollectionInfoBoxProps> = ({
       arrowSize={12}
       borderRadius={10}
     >
-      <Box
-        py={3}
-        px={3}
-        whiteSpace="nowrap"
-        borderColor="elvenTools.white"
-      >
+      <Box py={3} px={3} whiteSpace="nowrap" borderColor="elvenTools.white">
         <Text fontWeight="normal">
           {href ? (
             <a href={href} target="_blank" rel="noopener noreferrer nofollow">
