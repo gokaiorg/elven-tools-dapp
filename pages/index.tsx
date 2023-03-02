@@ -9,6 +9,8 @@ import { Roadmap } from '../components/Roadmap';
 import { Team } from '../components/Team';
 import { ImgMoon } from '../components/ImgMoon';
 import { Collab } from '../components/Collab';
+import { Invest } from '../components/Invest';
+
 
 const Home: NextPage = () => {
   return (
@@ -34,6 +36,7 @@ const Home: NextPage = () => {
         <Faq />
         <Team />
         <Collab />
+        <Invest />
       </Container>
     </MainLayout>
   );

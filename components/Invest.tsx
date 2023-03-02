@@ -10,7 +10,7 @@ export const Invest = () => {
       pt={10}
       pb={20}
       px={5}
-      background="elvenTools.color3.darker"
+      background="black"
       display="flex"
       flexDirection="column"
       alignItems="center"
@@ -18,30 +18,16 @@ export const Invest = () => {
       borderRadius="2xl"
       position="relative"
     >
-      <Box background="white" borderRadius="100%" p={3} mb={2}>
+      <Box mb={2}>
         <ImgLogoMaiar />
       </Box>
-      <Box fontWeight="black" color="black">
+      <Box fontWeight="black" color="white">
         <Box as="h3" mb={2} fontSize="3xl">
-          How to invest?
+          New to MultiversX?
         </Box>
         <Box fontSize="xl">
-          To buy NFTs we recommend you to get Maiar Wallet on your phone and
+          To ride into the MultiversX we recommend you to get xPortal on your phone and
           connect your wallet to login.
-          <br />
-          You can also create an{' '}
-          <Box
-            as="a"
-            textDecoration="underline"
-            {...{
-              target: '_blank',
-            }}
-            href="https://wallet.elrond.com/"
-            data-testid="MultiversX Web Wallet - Gokai Labs NFT DAO - MxGhosts"
-            title="MultiversX Web Wallet - Gokai Labs NFT DAO - MxGhosts"
-          >
-            MultiversX Web Wallet
-          </Box>{' '}
         </Box>
       </Box>
       <Box position="absolute" bottom="-30px">
@@ -58,9 +44,9 @@ export const Invest = () => {
               color: 'elvenTools.color2.darker',
             }}
             borderRadius="full"
-            href="https://get.maiar.com/referral/7nvae7kpo1"
+            href="https://xport.al/referral/7nvae7kpo1"
           >
-            Get Maiar
+            Install xPortal
           </Text>
         </motion.div>
       </Box>
