@@ -51,7 +51,7 @@ export const Roadmap = () => {
         </Box>
       </Box>
 
-      <HomeSectionTitle title="GreenGarden Cannabis Shop" />
+      <HomeSectionTitle title="Green Ghost Cannabis Shop" />
       <Box
         display="flex"
         flexDirection="column"
@@ -70,7 +70,7 @@ export const Roadmap = () => {
           top="-3rem"
           color="black"
         >
-          Gokai Labs is building a tokenized cannabis shop in Thailand.
+          Gokai Labs is building a tokenized the Green Ghost cannabis shop in Thailand.
         </Text>
         <Box display="flex" position="relative" zIndex="10" m="0 auto">
           <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
